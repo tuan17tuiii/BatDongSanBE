@@ -2,7 +2,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddCors();
-//ahaa
+//ahaa123h1konasdadui
+
+
+
+//asdasdasdasdsadghuydeptrai dat an cut
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
