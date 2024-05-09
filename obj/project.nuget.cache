@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LOg+FX9C5IQ9RyRpaIHEeui2kwfcv1Fijjq2rw9lYtqiKMwEhaJvpDoL/yfiZ6k53ktBdNUUKnPUZncJIBBo3Q==",
+  "dgSpecHash": "DDXBKlCcdMwc5K+lGpDmCmwsX/A2WW1g6cIoveIQ26wuZZRKbPBLFoLVMs6/KY4Mr/uUihQMQH5H8HELWhdu6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tn018\\source\\repos\\BatDongSan\\BatDongSan.csproj",
+  "projectFilePath": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\BatDongSan.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tn018\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\tn018\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

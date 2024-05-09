@@ -433,11 +433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tn018\\source\\repos\\BatDongSan\\BatDongSan.csproj",
+      "projectUniqueName": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\BatDongSan.csproj",
       "projectName": "BatDongSan",
-      "projectPath": "C:\\Users\\tn018\\source\\repos\\BatDongSan\\BatDongSan.csproj",
+      "projectPath": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\BatDongSan.csproj",
       "packagesPath": "C:\\Users\\tn018\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tn018\\source\\repos\\BatDongSan\\obj\\",
+      "outputPath": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tn018\\AppData\\Roaming\\NuGet\\NuGet.Config",
