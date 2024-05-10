@@ -17,7 +17,7 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<Advertisement> Advertisements { get; set; }
 
-    public virtual DbSet<Category> Categories { get; set; }
+   
 
     public virtual DbSet<City> Cities { get; set; }
 
@@ -64,18 +64,7 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.Time).HasColumnName("time");
         });
 
-        modelBuilder.Entity<Category>(entity =>
-        {
-            entity.ToTable("category");
-
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
-            entity.Property(e => e.CategoryName)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("category_name");
-        });
+       
 
         modelBuilder.Entity<City>(entity =>
         {
