@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BatDongSan.Models;
 
-public partial class ImageBatdongsan
+public partial class ImageRealestate
 {
     public int Id { get; set; }
 
@@ -11,5 +11,5 @@ public partial class ImageBatdongsan
 
     public string? UrlImage { get; set; }
 
-    public virtual Batdongsan? Batdongsan { get; set; }
+    public virtual Realestate? Batdongsan { get; set; }
 }

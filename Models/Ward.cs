@@ -11,7 +11,7 @@ public partial class Ward
 
     public int? IdStreet { get; set; }
 
-    public virtual ICollection<Batdongsan> Batdongsans { get; set; } = new List<Batdongsan>();
-
     public virtual Street? IdStreetNavigation { get; set; }
+
+    public virtual ICollection<Realestate> Realestates { get; set; } = new List<Realestate>();
 }

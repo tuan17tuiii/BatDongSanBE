@@ -1,5 +1,5 @@
 using BatDongSan.Converters;
-using BatDongSan.Models;
+
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel;
 
@@ -14,7 +14,7 @@ builder.Services.AddControllers().AddJsonOptions(option =>
 
 var connectionString = builder.Configuration["ConnectionStrings:DefaultConnection"];
 
-builder.Services.AddDbContext<DatabaseContext>(option => option.UseLazyLoadingProxies().UseSqlServer(connectionString));
+//builder.Services.AddDbContext<DatabaseContext>(option => option.UseLazyLoadingProxies().UseSqlServer(connectionString));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -23,11 +23,11 @@ public partial class User
 
     public virtual Advertisement? Advertisement { get; set; }
 
-    public virtual ICollection<Batdongsan> BatdongsanUserbuys { get; set; } = new List<Batdongsan>();
-
-    public virtual ICollection<Batdongsan> BatdongsanUsersells { get; set; } = new List<Batdongsan>();
-
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
+
+    public virtual ICollection<Realestate> RealestateUserbuys { get; set; } = new List<Realestate>();
+
+    public virtual ICollection<Realestate> RealestateUsersells { get; set; } = new List<Realestate>();
 
     public virtual Role? Role { get; set; }
 

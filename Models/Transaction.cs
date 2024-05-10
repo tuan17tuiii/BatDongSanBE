@@ -21,7 +21,7 @@ public partial class Transaction
 
     public virtual User? Buyer { get; set; }
 
-    public virtual Batdongsan? IdBatdongsanNavigation { get; set; }
+    public virtual Realestate? IdBatdongsanNavigation { get; set; }
 
     public virtual User? Seller { get; set; }
 }

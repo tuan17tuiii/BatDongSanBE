@@ -17,15 +17,15 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<Advertisement> Advertisements { get; set; }
 
-    public virtual DbSet<Batdongsan> Batdongsans { get; set; }
-
     public virtual DbSet<Category> Categories { get; set; }
 
     public virtual DbSet<City> Cities { get; set; }
 
     public virtual DbSet<Comment> Comments { get; set; }
 
-    public virtual DbSet<ImageBatdongsan> ImageBatdongsans { get; set; }
+    public virtual DbSet<ImageRealestate> ImageRealestates { get; set; }
+
+    public virtual DbSet<Realestate> Realestates { get; set; }
 
     public virtual DbSet<Region> Regions { get; set; }
 
@@ -35,7 +35,7 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<Transaction> Transactions { get; set; }
 
-    public virtual DbSet<TypeBatdongsan> TypeBatdongsans { get; set; }
+    public virtual DbSet<TypeRealestate> TypeRealestates { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
 
@@ -43,7 +43,7 @@ public partial class DatabaseContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-VPOBRTF;Database=BatDongSan;user id=sa;password=123456;trusted_connection=true;encrypt=false");
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-VPOBRTF;Database=BatDongSan;user id=sa;password=121314;trusted_connection=true;encrypt=false");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -51,9 +51,7 @@ public partial class DatabaseContext : DbContext
         {
             entity.ToTable("advertisement");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.AdvertisementName)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -66,13 +64,73 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.Time).HasColumnName("time");
         });
 
-        modelBuilder.Entity<Batdongsan>(entity =>
+        modelBuilder.Entity<Category>(entity =>
         {
-            entity.ToTable("batdongsan");
+            entity.ToTable("category");
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
                 .HasColumnName("id");
+            entity.Property(e => e.CategoryName)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("category_name");
+        });
+
+        modelBuilder.Entity<City>(entity =>
+        {
+            entity.ToTable("city");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CityName)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("city_name");
+        });
+
+        modelBuilder.Entity<Comment>(entity =>
+        {
+            entity.ToTable("comment");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.BatdongsanId).HasColumnName("batdongsan_id");
+            entity.Property(e => e.Content)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("content");
+            entity.Property(e => e.CreatedAt).HasColumnName("created_at");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Comments)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK_comment_user");
+        });
+
+        modelBuilder.Entity<ImageRealestate>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK_image_batdongsan");
+
+            entity.ToTable("image_realestate");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.BatdongsanId).HasColumnName("batdongsan_id");
+            entity.Property(e => e.UrlImage)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("url_image");
+
+            entity.HasOne(d => d.Batdongsan).WithMany(p => p.ImageRealestates)
+                .HasForeignKey(d => d.BatdongsanId)
+                .HasConstraintName("FK_image_batdongsan_batdongsan");
+        });
+
+        modelBuilder.Entity<Realestate>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK_batdongsan");
+
+            entity.ToTable("realestate	");
+
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Acreage).HasColumnName("acreage");
             entity.Property(e => e.Bathrooms).HasColumnName("bathrooms");
             entity.Property(e => e.Bedrooms).HasColumnName("bedrooms");
@@ -95,94 +153,28 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.UsersellId).HasColumnName("usersell_id");
             entity.Property(e => e.WardId).HasColumnName("ward_id");
 
-            entity.HasOne(d => d.TypeNavigation).WithMany(p => p.Batdongsans)
+            entity.HasOne(d => d.TypeNavigation).WithMany(p => p.Realestates)
                 .HasForeignKey(d => d.Type)
                 .HasConstraintName("FK_batdongsan_type_batdongsan");
 
-            entity.HasOne(d => d.Userbuy).WithMany(p => p.BatdongsanUserbuys)
+            entity.HasOne(d => d.Userbuy).WithMany(p => p.RealestateUserbuys)
                 .HasForeignKey(d => d.UserbuyId)
                 .HasConstraintName("FK_batdongsan_user1");
 
-            entity.HasOne(d => d.Usersell).WithMany(p => p.BatdongsanUsersells)
+            entity.HasOne(d => d.Usersell).WithMany(p => p.RealestateUsersells)
                 .HasForeignKey(d => d.UsersellId)
                 .HasConstraintName("FK_batdongsan_user2");
 
-            entity.HasOne(d => d.Ward).WithMany(p => p.Batdongsans)
+            entity.HasOne(d => d.Ward).WithMany(p => p.Realestates)
                 .HasForeignKey(d => d.WardId)
                 .HasConstraintName("FK_batdongsan_ward");
-        });
-
-        modelBuilder.Entity<Category>(entity =>
-        {
-            entity.ToTable("category");
-
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
-            entity.Property(e => e.CategoryName)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("category_name");
-        });
-
-        modelBuilder.Entity<City>(entity =>
-        {
-            entity.ToTable("city");
-
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
-            entity.Property(e => e.CityName)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("city_name");
-        });
-
-        modelBuilder.Entity<Comment>(entity =>
-        {
-            entity.ToTable("comment");
-
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
-            entity.Property(e => e.BatdongsanId).HasColumnName("batdongsan_id");
-            entity.Property(e => e.Content)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("content");
-            entity.Property(e => e.CreatedAt).HasColumnName("created_at");
-            entity.Property(e => e.UserId).HasColumnName("user_id");
-
-            entity.HasOne(d => d.User).WithMany(p => p.Comments)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK_comment_user");
-        });
-
-        modelBuilder.Entity<ImageBatdongsan>(entity =>
-        {
-            entity.ToTable("image_batdongsan");
-
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
-            entity.Property(e => e.BatdongsanId).HasColumnName("batdongsan_id");
-            entity.Property(e => e.UrlImage)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("url_image");
-
-            entity.HasOne(d => d.Batdongsan).WithMany(p => p.ImageBatdongsans)
-                .HasForeignKey(d => d.BatdongsanId)
-                .HasConstraintName("FK_image_batdongsan_batdongsan");
         });
 
         modelBuilder.Entity<Region>(entity =>
         {
             entity.ToTable("region");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.IdCity).HasColumnName("id_city");
             entity.Property(e => e.RegionName)
                 .HasMaxLength(250)
@@ -198,9 +190,7 @@ public partial class DatabaseContext : DbContext
         {
             entity.ToTable("role");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Name)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -211,9 +201,7 @@ public partial class DatabaseContext : DbContext
         {
             entity.ToTable("street");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.IdRegion).HasColumnName("id_region");
             entity.Property(e => e.StreetName)
                 .HasMaxLength(250)
@@ -229,9 +217,7 @@ public partial class DatabaseContext : DbContext
         {
             entity.ToTable("transaction");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Amount).HasColumnName("amount");
             entity.Property(e => e.BuyerId).HasColumnName("buyer_id");
             entity.Property(e => e.IdBatdongsan).HasColumnName("id_batdongsan");
@@ -255,13 +241,13 @@ public partial class DatabaseContext : DbContext
                 .HasConstraintName("FK_transaction_user1");
         });
 
-        modelBuilder.Entity<TypeBatdongsan>(entity =>
+        modelBuilder.Entity<TypeRealestate>(entity =>
         {
-            entity.ToTable("type_batdongsan");
+            entity.HasKey(e => e.Id).HasName("PK_type_batdongsan");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.ToTable("type_realestate");
+
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Type)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -272,9 +258,9 @@ public partial class DatabaseContext : DbContext
         {
             entity.ToTable("user");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.HasIndex(e => e.Username, "NonClusteredIndex-20240510-180547").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.AdvertisementId).HasColumnName("advertisement_id");
             entity.Property(e => e.Email)
                 .HasMaxLength(250)
@@ -311,9 +297,7 @@ public partial class DatabaseContext : DbContext
         {
             entity.ToTable("ward");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.IdStreet).HasColumnName("id_street");
             entity.Property(e => e.WardName)
                 .HasMaxLength(250)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BatDongSan.Models;
 
-public partial class Batdongsan
+public partial class Realestate
 {
     public int Id { get; set; }
 
@@ -37,11 +37,11 @@ public partial class Batdongsan
 
     public int? UsersellId { get; set; }
 
-    public virtual ICollection<ImageBatdongsan> ImageBatdongsans { get; set; } = new List<ImageBatdongsan>();
+    public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 
     public virtual ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
 
-    public virtual TypeBatdongsan? TypeNavigation { get; set; }
+    public virtual TypeRealestate? TypeNavigation { get; set; }
 
     public virtual User? Userbuy { get; set; }
 
