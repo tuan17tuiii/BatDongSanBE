@@ -30,5 +30,5 @@ namespace BatDongSan.Controllers
 			.ToArray();
 		}
 	}
-	//commit Dat
+	//commit Dat def
 }
