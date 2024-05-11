@@ -17,11 +17,11 @@ public partial class Transaction
 
     public double? Amount { get; set; }
 
-    public int? IdBatdongsan { get; set; }
+    public int? RealestateId { get; set; }
 
     public virtual User? Buyer { get; set; }
 
-    public virtual Realestate? IdBatdongsanNavigation { get; set; }
+    public virtual Realestate? Realestate { get; set; }
 
     public virtual User? Seller { get; set; }
 }

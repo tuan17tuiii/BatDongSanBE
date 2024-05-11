@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "BatDongSan.Controllers.RoleController",
+    "Method": "Create",
+    "RelativePath": "role/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "BatDongSan.Models.Role",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RoleController",
+    "Method": "findAll",
+    "RelativePath": "role/findAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BatDongSan.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

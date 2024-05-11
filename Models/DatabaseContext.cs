@@ -17,8 +17,6 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<Advertisement> Advertisements { get; set; }
 
-   
-
     public virtual DbSet<City> Cities { get; set; }
 
     public virtual DbSet<Comment> Comments { get; set; }
@@ -41,10 +39,7 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<Ward> Wards { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-VPOBRTF;Database=BatDongSan;user id=sa;password=121314;trusted_connection=true;encrypt=false");
-
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Advertisement>(entity =>
@@ -63,8 +58,6 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.Price).HasColumnName("price");
             entity.Property(e => e.Time).HasColumnName("time");
         });
-
-       
 
         modelBuilder.Entity<City>(entity =>
         {
@@ -102,14 +95,14 @@ public partial class DatabaseContext : DbContext
             entity.ToTable("image_realestate");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.BatdongsanId).HasColumnName("batdongsan_id");
+            entity.Property(e => e.RealestateId).HasColumnName("realestate_id");
             entity.Property(e => e.UrlImage)
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("url_image");
 
-            entity.HasOne(d => d.Batdongsan).WithMany(p => p.ImageRealestates)
-                .HasForeignKey(d => d.BatdongsanId)
+            entity.HasOne(d => d.Realestate).WithMany(p => p.ImageRealestates)
+                .HasForeignKey(d => d.RealestateId)
                 .HasConstraintName("FK_image_batdongsan_batdongsan");
         });
 
@@ -209,7 +202,7 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Amount).HasColumnName("amount");
             entity.Property(e => e.BuyerId).HasColumnName("buyer_id");
-            entity.Property(e => e.IdBatdongsan).HasColumnName("id_batdongsan");
+            entity.Property(e => e.RealestateId).HasColumnName("realestate_id");
             entity.Property(e => e.SellerId).HasColumnName("seller_id");
             entity.Property(e => e.TransactionDate).HasColumnName("transaction_date");
             entity.Property(e => e.TransactionType)
@@ -221,8 +214,8 @@ public partial class DatabaseContext : DbContext
                 .HasForeignKey(d => d.BuyerId)
                 .HasConstraintName("FK_transaction_user");
 
-            entity.HasOne(d => d.IdBatdongsanNavigation).WithMany(p => p.Transactions)
-                .HasForeignKey(d => d.IdBatdongsan)
+            entity.HasOne(d => d.Realestate).WithMany(p => p.Transactions)
+                .HasForeignKey(d => d.RealestateId)
                 .HasConstraintName("FK_transaction_batdongsan");
 
             entity.HasOne(d => d.Seller).WithMany(p => p.TransactionSellers)
@@ -251,10 +244,6 @@ public partial class DatabaseContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.AdvertisementId).HasColumnName("advertisement_id");
-            entity.Property(e => e.Email)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("email");
             entity.Property(e => e.Name)
                 .HasMaxLength(250)
                 .IsUnicode(false)
