@@ -45,9 +45,18 @@ namespace BatDongSan.Services
             }).ToList();
         }
 
+        public dynamic findById(int id)
+        {
+            return db.Roles.Where(c => c.Id == id).Select(c => new
+            {
+                Id = c.Id,
+                Name = c.Name,
+            }).FirstOrDefault();//ko co firstordefault la tra ve list còn có là trả về đối tượng 
+        }
+
         public bool update(Role role)
         {
-            {
+            
                 try
                 {
                     db.Entry(role).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
@@ -57,7 +66,7 @@ namespace BatDongSan.Services
                 {
                     return false;
                 }
-            }
+            
         }
     }
 }

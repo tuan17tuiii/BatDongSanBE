@@ -21,6 +21,18 @@ builder.Services.AddDbContext<DatabaseContext>(option => option.UseLazyLoadingPr
 
 builder.Services.AddScoped<UserService,UserServiceImpl>();
 builder.Services.AddScoped<RoleService, RoleServiceImpl>();
+builder.Services.AddScoped<AdvertisementService, AdvertisementServiceImpl>();
+builder.Services.AddScoped<CityService, CityServiceImpl>();
+builder.Services.AddScoped<CommentService, CommentServiceImpl>();
+builder.Services.AddScoped<ImageRealestateService, ImageRealestateServiceImpl >();
+builder.Services.AddScoped<RealestateService, RealestateServiceImpl>();
+builder.Services.AddScoped<RegionService, RegionServiceImpl>();
+builder.Services.AddScoped<StreetService, StreetServiceImpl>();
+builder.Services.AddScoped<TypeRealestateService, TypeRealestateServiceImpl>();
+builder.Services.AddScoped<UserService, UserServiceImpl>();
+builder.Services.AddScoped<WardService, WardServiceImpl>();
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

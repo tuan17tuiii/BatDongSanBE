@@ -45,5 +45,19 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
+        [Produces("application/json")]
+        [HttpGet("findById/{id}")]
+        public IActionResult FindById(int id)
+        {
+            try
+            {
+                return Ok(roleService.findById(id));
+
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
     }
 }

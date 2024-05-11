@@ -8,5 +8,6 @@ namespace BatDongSan.Services
         public bool create(Role role);
         public bool update(Role role);
         public bool delete(int id);
+        public dynamic findById(int id);
     }
 }

@@ -8,5 +8,6 @@ namespace BatDongSan.Services
         public bool create(City city);
         public bool update(City city);
         public bool delete(int id);
+        public dynamic findById(int id);
     }
 }

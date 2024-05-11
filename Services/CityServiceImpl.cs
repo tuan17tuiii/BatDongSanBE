@@ -44,6 +44,17 @@ namespace BatDongSan.Services
             }).ToList();
         }
 
+        public dynamic findById(int id)
+        {
+
+            return db.Cities.Where(c => c.Id == id).Select(c => new
+            {
+                Id = c.Id,
+                CityName = c.CityName
+            }).FirstOrDefault(); 
+            
+        }
+
         public bool update(City city)
         {
             try
