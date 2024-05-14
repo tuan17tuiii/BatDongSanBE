@@ -53,8 +53,8 @@ namespace BatDongSan.Services
                 CityId = c.CityIt , 
                 WardId = c.WardId, 
                 StreetId = c.StreetId,
-                UserbuyId = c.UserbuyId,
-                UsersellId = c.UsersellId,
+                Userbuy_Id = c.UserbuyId,
+                Usersell_Id = c.UsersellId,
             }).ToList();
         }
 

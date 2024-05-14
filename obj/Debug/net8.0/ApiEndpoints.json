@@ -84,6 +84,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "Create",
+    "RelativePath": "realstate/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "realestate",
+        "Type": "BatDongSan.Models.Realestate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "FindAll",
+    "RelativePath": "realstate/findAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BatDongSan.Controllers.RoleController",
     "Method": "Create",
     "RelativePath": "role/create",
@@ -123,6 +149,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.TypeRealstateController",
+    "Method": "findAll",
+    "RelativePath": "typerealstate/findAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
