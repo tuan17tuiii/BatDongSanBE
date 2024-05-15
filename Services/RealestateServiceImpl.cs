@@ -49,10 +49,6 @@ namespace BatDongSan.Services
                 Bathrooms = c.Bathrooms ,
                 Status = c.Status,
                 CreatedAt = c.CreatedAt, 
-                RegionId = c.RegionId,
-                CityId = c.CityIt , 
-                WardId = c.WardId, 
-                StreetId = c.StreetId,
                 Userbuy_Id = c.UserbuyId,
                 Usersell_Id = c.UsersellId,
             }).ToList();

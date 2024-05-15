@@ -11,7 +11,7 @@ builder.Services.AddCors();
 
 builder.Services.AddControllers().AddJsonOptions(option =>
 {
-    option.JsonSerializerOptions.Converters.Add(new DateConverter());//add them DateConvert
+	option.JsonSerializerOptions.Converters.Add(new DateConverter());//add them DateConvert
 });//chi co controller kh co view => web API
 
 var connectionString = builder.Configuration["ConnectionStrings:DefaultConnection"];
@@ -19,18 +19,14 @@ Debug.WriteLine(connectionString);
 
 builder.Services.AddDbContext<DatabaseContext>(option => option.UseLazyLoadingProxies().UseSqlServer(connectionString));
 
-builder.Services.AddScoped<UserService,UserServiceImpl>();
+builder.Services.AddScoped<UserService, UserServiceImpl>();
 builder.Services.AddScoped<RoleService, RoleServiceImpl>();
 builder.Services.AddScoped<AdvertisementService, AdvertisementServiceImpl>();
-builder.Services.AddScoped<CityService, CityServiceImpl>();
 builder.Services.AddScoped<CommentService, CommentServiceImpl>();
-builder.Services.AddScoped<ImageRealestateService, ImageRealestateServiceImpl >();
+builder.Services.AddScoped<ImageRealestateService, ImageRealestateServiceImpl>();
 builder.Services.AddScoped<RealestateService, RealestateServiceImpl>();
-builder.Services.AddScoped<RegionService, RegionServiceImpl>();
-builder.Services.AddScoped<StreetService, StreetServiceImpl>();
 builder.Services.AddScoped<TypeRealestateService, TypeRealestateServiceImpl>();
 builder.Services.AddScoped<UserService, UserServiceImpl>();
-builder.Services.AddScoped<WardService, WardServiceImpl>();
 
 
 
@@ -41,11 +37,11 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 app.UseCors(builder => builder
-                .AllowAnyHeader()
-                .AllowAnyMethod()
-                .SetIsOriginAllowed((host) => true)
-                .AllowCredentials()
-            );
+				.AllowAnyHeader()
+				.AllowAnyMethod()
+				.SetIsOriginAllowed((host) => true)
+				.AllowCredentials()
+			);
 //ssdfsdf
 //sd
 // Configure the HTTP request pipeline.

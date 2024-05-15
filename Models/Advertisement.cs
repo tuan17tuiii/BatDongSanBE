@@ -15,5 +15,7 @@ public partial class Advertisement
 
     public DateOnly? Time { get; set; }
 
+    public bool? Status { get; set; }
+
     public virtual ICollection<User> Users { get; set; } = new List<User>();
 }

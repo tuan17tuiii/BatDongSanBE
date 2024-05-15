@@ -17,19 +17,13 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<Advertisement> Advertisements { get; set; }
 
-    public virtual DbSet<City> Cities { get; set; }
-
     public virtual DbSet<Comment> Comments { get; set; }
 
     public virtual DbSet<ImageRealestate> ImageRealestates { get; set; }
 
     public virtual DbSet<Realestate> Realestates { get; set; }
 
-    public virtual DbSet<Region> Regions { get; set; }
-
     public virtual DbSet<Role> Roles { get; set; }
-
-    public virtual DbSet<Street> Streets { get; set; }
 
     public virtual DbSet<Transaction> Transactions { get; set; }
 
@@ -37,11 +31,10 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    public virtual DbSet<Ward> Wards { get; set; }
-
-    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.UseCollation("Latin1_General_CI_AS");
+
         modelBuilder.Entity<Advertisement>(entity =>
         {
             entity.ToTable("advertisement");
@@ -56,18 +49,8 @@ public partial class DatabaseContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("describe");
             entity.Property(e => e.Price).HasColumnName("price");
+            entity.Property(e => e.Status).HasColumnName("status");
             entity.Property(e => e.Time).HasColumnName("time");
-        });
-
-        modelBuilder.Entity<City>(entity =>
-        {
-            entity.ToTable("city");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.CityName)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("city_name");
         });
 
         modelBuilder.Entity<Comment>(entity =>
@@ -116,16 +99,22 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.Acreage).HasColumnName("acreage");
             entity.Property(e => e.Bathrooms).HasColumnName("bathrooms");
             entity.Property(e => e.Bedrooms).HasColumnName("bedrooms");
-            entity.Property(e => e.CityIt).HasColumnName("city_it");
+            entity.Property(e => e.City)
+                .HasMaxLength(250)
+                .HasColumnName("city");
             entity.Property(e => e.CreatedAt).HasColumnName("created_at");
             entity.Property(e => e.Describe)
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("describe");
             entity.Property(e => e.Price).HasColumnName("price");
-            entity.Property(e => e.RegionId).HasColumnName("region_id");
+            entity.Property(e => e.Region)
+                .HasMaxLength(250)
+                .HasColumnName("region");
             entity.Property(e => e.Status).HasColumnName("status");
-            entity.Property(e => e.StreetId).HasColumnName("street_id");
+            entity.Property(e => e.Street)
+                .HasMaxLength(250)
+                .HasColumnName("street");
             entity.Property(e => e.Title)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -133,7 +122,6 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.Type).HasColumnName("type");
             entity.Property(e => e.UserbuyId).HasColumnName("userbuy_id");
             entity.Property(e => e.UsersellId).HasColumnName("usersell_id");
-            entity.Property(e => e.WardId).HasColumnName("ward_id");
 
             entity.HasOne(d => d.TypeNavigation).WithMany(p => p.Realestates)
                 .HasForeignKey(d => d.Type)
@@ -146,26 +134,6 @@ public partial class DatabaseContext : DbContext
             entity.HasOne(d => d.Usersell).WithMany(p => p.RealestateUsersells)
                 .HasForeignKey(d => d.UsersellId)
                 .HasConstraintName("FK_batdongsan_user2");
-
-            entity.HasOne(d => d.Ward).WithMany(p => p.Realestates)
-                .HasForeignKey(d => d.WardId)
-                .HasConstraintName("FK_batdongsan_ward");
-        });
-
-        modelBuilder.Entity<Region>(entity =>
-        {
-            entity.ToTable("region");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.IdCity).HasColumnName("id_city");
-            entity.Property(e => e.RegionName)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("region_name");
-
-            entity.HasOne(d => d.IdCityNavigation).WithMany(p => p.Regions)
-                .HasForeignKey(d => d.IdCity)
-                .HasConstraintName("FK_region_city");
         });
 
         modelBuilder.Entity<Role>(entity =>
@@ -177,22 +145,6 @@ public partial class DatabaseContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("name");
-        });
-
-        modelBuilder.Entity<Street>(entity =>
-        {
-            entity.ToTable("street");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.IdRegion).HasColumnName("id_region");
-            entity.Property(e => e.StreetName)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("street_name");
-
-            entity.HasOne(d => d.IdRegionNavigation).WithMany(p => p.Streets)
-                .HasForeignKey(d => d.IdRegion)
-                .HasConstraintName("FK_street_region");
         });
 
         modelBuilder.Entity<Transaction>(entity =>
@@ -232,7 +184,6 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Type)
                 .HasMaxLength(250)
-                .IsUnicode(false)
                 .HasColumnName("type");
         });
 
@@ -244,6 +195,10 @@ public partial class DatabaseContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.AdvertisementId).HasColumnName("advertisement_id");
+            entity.Property(e => e.Email)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("email");
             entity.Property(e => e.Name)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -257,6 +212,11 @@ public partial class DatabaseContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("phone");
             entity.Property(e => e.RoleId).HasColumnName("role_id");
+            entity.Property(e => e.SecurityCode)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("securityCode");
+            entity.Property(e => e.Status).HasColumnName("status");
             entity.Property(e => e.Username)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -269,22 +229,6 @@ public partial class DatabaseContext : DbContext
             entity.HasOne(d => d.Role).WithMany(p => p.Users)
                 .HasForeignKey(d => d.RoleId)
                 .HasConstraintName("FK_user_role");
-        });
-
-        modelBuilder.Entity<Ward>(entity =>
-        {
-            entity.ToTable("ward");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.IdStreet).HasColumnName("id_street");
-            entity.Property(e => e.WardName)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("ward_name");
-
-            entity.HasOne(d => d.IdStreetNavigation).WithMany(p => p.Wards)
-                .HasForeignKey(d => d.IdStreet)
-                .HasConstraintName("FK_ward_street");
         });
 
         OnModelCreatingPartial(modelBuilder);

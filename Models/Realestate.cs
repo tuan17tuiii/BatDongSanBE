@@ -25,13 +25,11 @@ public partial class Realestate
 
     public DateOnly? CreatedAt { get; set; }
 
-    public int? RegionId { get; set; }
+    public string? Region { get; set; }
 
-    public int? CityIt { get; set; }
+    public string? City { get; set; }
 
-    public int? WardId { get; set; }
-
-    public int? StreetId { get; set; }
+    public string? Street { get; set; }
 
     public int? UserbuyId { get; set; }
 
@@ -46,6 +44,4 @@ public partial class Realestate
     public virtual User? Userbuy { get; set; }
 
     public virtual User? Usersell { get; set; }
-
-    public virtual Ward? Ward { get; set; }
 }
