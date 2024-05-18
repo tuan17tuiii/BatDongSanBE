@@ -46,7 +46,7 @@ namespace BatDongSan.Controllers
 		}
 
 		[Produces("application/json")]
-		[HttpGet("findByUsername")]
+		[HttpGet("findByUsername/{username}")]
 		public IActionResult findByUsername(string username)
 		{
 			try
@@ -67,6 +67,21 @@ namespace BatDongSan.Controllers
 			try
 			{
 				return Ok(userService.Verify(code, username));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpPut("Update")]
+		public IActionResult Update([FromBody] User user)
+		{
+			try
+			{
+				return Ok(userService.update(user));
 
 			}
 			catch

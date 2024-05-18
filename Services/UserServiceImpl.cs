@@ -111,7 +111,8 @@ namespace BatDongSan.Services
 				AdvertisementId = c.AdvertisementId,
 				Status = c.Status,
 				securityCode = c.SecurityCode,
-			}).ToList();
+                email = c.Email,
+			}).FirstOrDefault();
 		}
 
 		public bool update(User user)
