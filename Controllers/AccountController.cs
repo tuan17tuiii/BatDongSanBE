@@ -13,6 +13,51 @@ namespace BatDongSan.Controllers
 			this.userService = _userService;
 		}
 
+		[Produces("application/json")]
+		[HttpGet("findAll")]
+		public IActionResult findAll()
+		{
+			try
+			{
+				return Ok(userService.findAll());
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpGet("findAllAdmin")]
+		public IActionResult findAllAdmin()
+		{
+			try
+			{
+				return Ok(userService.findAllAdmin());
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpGet("findAllUser")]
+		public IActionResult findAllUser()
+		{
+			try
+			{
+				return Ok(userService.findAllUser ());
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
 		[Consumes("application/json")]
 		[Produces("application/json")]
 		[HttpPost("register")]
@@ -31,12 +76,14 @@ namespace BatDongSan.Controllers
 
 		[Consumes("application/json")]
 		[Produces("application/json")]
-		[HttpPost("login")]
-		public IActionResult login([FromBody] User user)
+		[HttpPost("loginAdmin")]
+		public IActionResult loginAdmin([FromBody] User user)
 		{
 			try
 			{
-				return Ok(userService.Login(user.Username, user.Password));
+				return Ok(new{ 
+					Result = userService.LoginAdmin(user.Username, user.Password) 
+				});
 
 			}
 			catch

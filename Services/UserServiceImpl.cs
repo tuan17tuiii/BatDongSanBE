@@ -72,8 +72,42 @@ namespace BatDongSan.Services
                 AdvertisementId = c.AdvertisementId,
                 Status = c.Status,
                 securityCode = c.SecurityCode,
+				email = c.Email,
             }).ToList();
         }
+		public dynamic findAllAdmin()
+		{
+			return db.Users.Where(c => c.RoleId == 1).Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
+				email = c.Email,
+			}).ToList();
+		}
+
+		public dynamic findAllUser()
+		{
+			return db.Users.Where(c => c.RoleId == 2).Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
+				email = c.Email,
+			}).ToList();
+		}
 
 		public dynamic Verify(string code, string username)
 		{
@@ -128,9 +162,9 @@ namespace BatDongSan.Services
             }
         }
 
-		public bool Login(string username, string password)
+		public bool LoginAdmin(string username, string password)
 		{
-			var account = db.Users.SingleOrDefault(c => c.Username == username && c.Status == true);
+			var account = db.Users.SingleOrDefault(c => c.Username == username && c.Status == true && c.RoleId == 1);
 			if (account != null)
 			{
 				return BCrypt.Net.BCrypt.Verify(password, account.Password);
