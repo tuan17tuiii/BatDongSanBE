@@ -1,6 +1,9 @@
 ﻿using BatDongSan.Models;
 using BatDongSan.Services;
+using DemoFramework_Core.Helpers;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace BatDongSan.Controllers
 {
@@ -8,9 +11,14 @@ namespace BatDongSan.Controllers
     public class RealstateController : Controller
     {
         private RealestateService realestateService;
-        public RealstateController(RealestateService _realestateService)
+        private IWebHostEnvironment webHostEnvironment;
+        private IConfiguration configuration;
+
+        public RealstateController(RealestateService _realestateService, IWebHostEnvironment _webHostEnvironment, IConfiguration _configuration)
         {
             realestateService = _realestateService;
+            webHostEnvironment = _webHostEnvironment;
+            configuration = _configuration;
         }
         [Produces("application/json")]
         [HttpGet("findAll")]
@@ -33,15 +41,32 @@ namespace BatDongSan.Controllers
         {
             try
             {
-                return Ok(new
+                int productId = realestateService.create(realestate); // Tạo sản phẩm và lấy ID của sản phẩm
+
+                if (productId != -1)
                 {
-                    Result = realestateService.create(realestate)
-                });
+                    // Nếu thành công, trả về kết quả thành công và ID của sản phẩm
+                    return Ok(new
+                    {
+                        Result = "Success",
+                        ProductId = productId
+                    });
+                }
+                else
+                {
+                    // Nếu thất bại, trả về kết quả thất bại
+                    return Ok(new
+                    {
+                        Result = "Faid"
+                    });
+                }
             }
             catch
             {
                 return BadRequest();
             }
         }
+
+
     }
 }

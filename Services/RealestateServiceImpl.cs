@@ -9,16 +9,18 @@ namespace BatDongSan.Services
         {
             db = _db;
         }
-        public bool create(Realestate realestate)
+        public int create(Realestate realestate)
         {
             try
             {
                 db.Realestates.Add(realestate);
-                return db.SaveChanges() > 0;
+                db.SaveChanges();
+                return realestate.Id;
+
             }
             catch
             {
-                return false;
+                return -1;
             }
         }
 

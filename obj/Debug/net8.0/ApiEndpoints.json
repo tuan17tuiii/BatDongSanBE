@@ -1,5 +1,120 @@
 [
   {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "findAll",
+    "RelativePath": "account/findAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "findAllAdmin",
+    "RelativePath": "account/findAllAdmin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "findAllUser",
+    "RelativePath": "account/findAllUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "findByUsername",
+    "RelativePath": "account/findByUsername/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "loginAdmin",
+    "RelativePath": "account/loginAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "BatDongSan.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "register",
+    "RelativePath": "account/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "BatDongSan.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "Update",
+    "RelativePath": "account/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "BatDongSan.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "Verify",
+    "RelativePath": "account/Verify/{code}/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BatDongSan.Controllers.AdvertisementController",
     "Method": "Create",
     "RelativePath": "advertisement/create",
@@ -58,9 +173,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BatDongSan.Controllers.CityController",
+    "ContainingType": "BatDongSan.Controllers.ImageRealStateController",
+    "Method": "Create",
+    "RelativePath": "image/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageRealestate",
+        "Type": "BatDongSan.Models.ImageRealestate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.ImageRealStateController",
     "Method": "FindAll",
-    "RelativePath": "city/findAll",
+    "RelativePath": "image/findAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -68,17 +199,48 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BatDongSan.Controllers.CityController",
-    "Method": "FindById",
-    "RelativePath": "city/findById/{id}",
-    "HttpMethod": "GET",
+    "ContainingType": "BatDongSan.Controllers.ImageRealStateController",
+    "Method": "Select",
+    "RelativePath": "image/select",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
+        "Name": "files",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile[]",
+        "IsRequired": false
+      },
+      {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.ImageRealStateController",
+    "Method": "Uploads",
+    "RelativePath": "image/uploads",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "files",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "fileNames",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

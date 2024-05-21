@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\191db13079d448e5be99bf4220ce210d.jpg",
+      "PackagePath": "staticwebassets\\images\\191db13079d448e5be99bf4220ce210d.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\26d08cfe322149d29f9fa1b1af4d1bf5.jpg",
+      "PackagePath": "staticwebassets\\images\\26d08cfe322149d29f9fa1b1af4d1bf5.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\76529081d1924c238340ac17df6e162f.jpg",
+      "PackagePath": "staticwebassets\\images\\76529081d1924c238340ac17df6e162f.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\7cd221bdf99643a3b37be6315e0bb5ac.jpg",
+      "PackagePath": "staticwebassets\\images\\7cd221bdf99643a3b37be6315e0bb5ac.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\b9700ccba0cd4502b341987b6a7aaa15.jpg",
+      "PackagePath": "staticwebassets\\images\\b9700ccba0cd4502b341987b6a7aaa15.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\f231a779dfc94b8eb0a2e8b09ced2a97.jpg",
+      "PackagePath": "staticwebassets\\images\\f231a779dfc94b8eb0a2e8b09ced2a97.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BatDongSan.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BatDongSan.props",
+      "PackagePath": "build\\BatDongSan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BatDongSan.props",
+      "PackagePath": "buildMultiTargeting\\BatDongSan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BatDongSan.props",
+      "PackagePath": "buildTransitive\\BatDongSan.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
