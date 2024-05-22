@@ -39,7 +39,7 @@ namespace BatDongSan.Services
 
         public dynamic findAll()
         {
-            return db.Realestates.Select(c => new
+            return db.Realestates.OrderByDescending(c => c.Id).Select(c => new
             {
                 Id = c.Id,
                 Title = c.Title,
@@ -51,6 +51,9 @@ namespace BatDongSan.Services
                 Bathrooms = c.Bathrooms ,
                 Status = c.Status,
                 CreatedAt = c.CreatedAt, 
+                City = c.City,
+                Region = c.Region,
+                Street = c.Street,
                 Userbuy_Id = c.UserbuyId,
                 Usersell_Id = c.UsersellId,
             }).ToList();

@@ -46,14 +46,8 @@ namespace BatDongSan.Controllers
                     {
                         return BadRequest(new { message = "Tệp không phải là một hình ảnh hợp lệ." });
                     }
-
-
                     var fileName = FileHelpers.GenerateFileName(file.FileName);
-                    
                     var path = Path.Combine(webHostEnvironment.WebRootPath, "images", fileName);
-                    
-                    
-
                     using (var fileStream = new FileStream(path, FileMode.Create))
                     {
                         file.CopyTo(fileStream);
@@ -73,20 +67,33 @@ namespace BatDongSan.Controllers
         }
         [Produces("application/json")]
         [HttpPost("uploads")]
-        public IActionResult Uploads(IFormFile[] files , int id , List<string> fileNames)//nhan tung gia tri rieng le
+        public IActionResult Uploads(IFormFile[] files , int id , List<string> fileNames)
         {
             try
             {
-                Debug.WriteLine("id: " + id);
-                
-                
+
+               
                 foreach (var fileName in fileNames)
                 {
-                    var imageRealState = new ImageRealestate();
-                    imageRealState.RealestateId = id;
-                    var imagePath = fileName.Substring(fileName.IndexOf("images/") + "images/".Length);
-                    imageRealState.UrlImage = imagePath;
-                    Create(imageRealState);
+                    if (fileName == "null")
+                    {
+                        Debug.WriteLine("fileName: " + fileName);
+                        var imageRealState = new ImageRealestate();
+                        imageRealState.RealestateId = id;
+                        imageRealState.UrlImage = "no-image1.PNG";
+                        Create(imageRealState);
+                    }
+                    else
+                    {
+                        Debug.WriteLine("fileName: " + fileName);
+                        var imageRealState = new ImageRealestate();
+                        imageRealState.RealestateId = id;
+                        var imagePath = fileName.Substring(fileName.IndexOf("images/") + "images/".Length);
+                        imageRealState.UrlImage = imagePath;
+                        Create(imageRealState);
+                    }
+                        
+                    
                 }
                 return Ok(new
                 {
@@ -121,7 +128,7 @@ namespace BatDongSan.Controllers
         public IActionResult FindAll()
         {
             try
-            {
+            {   
                 return Ok(imageRealestateService.findAll());
 
             }
@@ -130,5 +137,6 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
+        
     }
 }
