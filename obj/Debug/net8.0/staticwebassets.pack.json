@@ -1,6 +1,38 @@
 {
   "Files": [
     {
+<<<<<<< HEAD
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\232f9ba0856249a185735e3300fd9f5a.jpg",
+      "PackagePath": "staticwebassets\\images\\232f9ba0856249a185735e3300fd9f5a.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\5988e4a3199641309cebea8e12b25390.jpg",
+      "PackagePath": "staticwebassets\\images\\5988e4a3199641309cebea8e12b25390.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\66a72b62610145359a8adec255c0dce7.jpg",
+      "PackagePath": "staticwebassets\\images\\66a72b62610145359a8adec255c0dce7.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\9d5754cb104845f3a13e30751a1d85ef.jpg",
+      "PackagePath": "staticwebassets\\images\\9d5754cb104845f3a13e30751a1d85ef.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\9ed4d85d28c14cc09734e8e0fe1b6903.jpg",
+      "PackagePath": "staticwebassets\\images\\9ed4d85d28c14cc09734e8e0fe1b6903.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\a62c0b30b3d14ddbb50fb1e0349c0a5c.jpg",
+      "PackagePath": "staticwebassets\\images\\a62c0b30b3d14ddbb50fb1e0349c0a5c.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\c79cf255da2b4bfe9db1f0ed1d76d5e1.jpg",
+      "PackagePath": "staticwebassets\\images\\c79cf255da2b4bfe9db1f0ed1d76d5e1.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\cf61ceadd2b648959a0b7e96271b821e.jpg",
+      "PackagePath": "staticwebassets\\images\\cf61ceadd2b648959a0b7e96271b821e.jpg"
+=======
       "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\19e38f4e2c0b4e7789ca009d2626c555.jpg",
       "PackagePath": "staticwebassets\\images\\19e38f4e2c0b4e7789ca009d2626c555.jpg"
     },
@@ -55,6 +87,7 @@
     {
       "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f9efc6acdc544099920b463a0cc18a8e.jpg",
       "PackagePath": "staticwebassets\\images\\f9efc6acdc544099920b463a0cc18a8e.jpg"
+>>>>>>> 5e27550ee67327a966bd290af2eff83b21dcea8b
     },
     {
       "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\no-image1.PNG",
