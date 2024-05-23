@@ -1056,3 +1056,4 @@ D:\BatDongSanBE\obj\Debug\net8.0\BatDongSan.pdb
 D:\BatDongSanBE\obj\Debug\net8.0\BatDongSan.genruntimeconfig.cache
 D:\BatDongSanBE\obj\Debug\net8.0\ref\BatDongSan.dll
 D:\BatDongSanBE\bin\Debug\net8.0\BatDongSan.staticwebassets.runtime.json
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\bin\Debug\net8.0\BatDongSan.staticwebassets.runtime.json
