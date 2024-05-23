@@ -171,5 +171,22 @@ namespace BatDongSan.Services
 			}
 			return false;
 		}
+
+		public dynamic findById(int id)
+		{
+			return db.Users.Where(c => c.Id == id).Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
+				email = c.Email,
+			}).FirstOrDefault();
+		}
 	}
 }

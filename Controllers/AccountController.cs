@@ -108,6 +108,21 @@ namespace BatDongSan.Controllers
 		}
 
 		[Produces("application/json")]
+		[HttpGet("findById/{id}")]
+		public IActionResult findById(int id)
+		{
+			try
+			{
+				return Ok(userService.findById(id));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
 		[HttpGet("Verify/{code}/{username}")]
 		public IActionResult Verify(string code,string username)
 		{
