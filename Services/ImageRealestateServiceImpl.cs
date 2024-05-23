@@ -1,4 +1,5 @@
 ﻿using BatDongSan.Models;
+using System.Diagnostics;
 
 namespace BatDongSan.Services
 {
@@ -37,12 +38,41 @@ namespace BatDongSan.Services
 
         public dynamic findAll()
         {
-            return db.ImageRealestates.Select(c => new
+            try
             {
-                Id = c.Id,
-                RealestateId = c.RealestateId,
-                UrlImage = c.UrlImage,
-            }).ToList();
+                // Lấy tất cả dữ liệu vào bộ nhớ trước khi thực hiện GroupBy
+                var allImages = db.ImageRealestates.ToList();
+
+                // Thực hiện GroupBy và lấy ảnh đầu tiên từ mỗi nhóm
+                var groupedData = allImages
+                                  .GroupBy(c => c.RealestateId)
+                                  .Select(g => g.FirstOrDefault())
+                                  .Where(c => c != null)
+                                  .ToList();
+
+                // Chuyển đổi dữ liệu thành đối tượng ẩn danh
+                var result = groupedData
+                             .Select(c => new
+                             {
+                                 Id = c.Id,
+                                 RealestateId = c.RealestateId,
+                                 UrlImage = c.UrlImage,
+                             }).ToList();
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+                throw;
+            }
+        }
+
+
+        public dynamic findById(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public bool update(ImageRealestate imageRealestate)

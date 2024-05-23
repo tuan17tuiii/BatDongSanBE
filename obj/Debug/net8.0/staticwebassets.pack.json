@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\19e38f4e2c0b4e7789ca009d2626c555.jpg",
+      "PackagePath": "staticwebassets\\images\\19e38f4e2c0b4e7789ca009d2626c555.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\1bd1cde3047049ddb73b3fdac9126cf1.jpg",
+      "PackagePath": "staticwebassets\\images\\1bd1cde3047049ddb73b3fdac9126cf1.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\2119d02d3c614d36abc1d5f388687921.jpg",
+      "PackagePath": "staticwebassets\\images\\2119d02d3c614d36abc1d5f388687921.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\3305f085aaba4c32a8678b00a683d065.jpg",
+      "PackagePath": "staticwebassets\\images\\3305f085aaba4c32a8678b00a683d065.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\477530aef0c54f4cacf5c565ed64570f.jpg",
+      "PackagePath": "staticwebassets\\images\\477530aef0c54f4cacf5c565ed64570f.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\95a349fe61b848fbb5d8fdbf8d9647c7.jpg",
+      "PackagePath": "staticwebassets\\images\\95a349fe61b848fbb5d8fdbf8d9647c7.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\a5397202f96340878ee3599813804e1b.jpg",
+      "PackagePath": "staticwebassets\\images\\a5397202f96340878ee3599813804e1b.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\db4ea0ad44f64cfca40953dbddea2525.jpg",
+      "PackagePath": "staticwebassets\\images\\db4ea0ad44f64cfca40953dbddea2525.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\f77d6bc6d9f54ddd9814ce203bf7d527.jpg",
+      "PackagePath": "staticwebassets\\images\\f77d6bc6d9f54ddd9814ce203bf7d527.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\f9efc6acdc544099920b463a0cc18a8e.jpg",
+      "PackagePath": "staticwebassets\\images\\f9efc6acdc544099920b463a0cc18a8e.jpg"
+    },
+    {
+      "Id": "D:\\BatDongSanBE\\wwwroot\\images\\no-image1.PNG",
+      "PackagePath": "staticwebassets\\images\\no-image1.PNG"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BatDongSan.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BatDongSan.props",
+      "PackagePath": "build\\BatDongSan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BatDongSan.props",
+      "PackagePath": "buildMultiTargeting\\BatDongSan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BatDongSan.props",
+      "PackagePath": "buildTransitive\\BatDongSan.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

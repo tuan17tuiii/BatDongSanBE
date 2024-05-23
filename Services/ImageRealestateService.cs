@@ -9,5 +9,7 @@ namespace BatDongSan.Services
         public bool create(ImageRealestate imageRealestate);
         public bool update(ImageRealestate imageRealestate);
         public bool delete(int id);
+        public dynamic findById(int id);
+       
     }
 }
