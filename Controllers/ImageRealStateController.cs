@@ -137,6 +137,19 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
-        
+        [Produces("application/json")]
+        [HttpGet("findByRealstateId/{id}")]
+        public IActionResult findByRealstateId(int id)
+        {
+            try
+            {
+                return Ok(imageRealestateService.findByRealstateId(id));
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
+
     }
 }

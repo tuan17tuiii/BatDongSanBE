@@ -34,6 +34,20 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
+        [Produces("application/json")]
+        [HttpGet("findById/{id}")]
+        public IActionResult FindById(int id)
+        {
+            try
+            {
+                return Ok(realestateService.findById(id));
+
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
         [Consumes("application/json")]
         [Produces("application/json")]
         [HttpPost("create")]
