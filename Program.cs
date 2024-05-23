@@ -4,6 +4,7 @@ using BatDongSan.Services;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Text.Json.Serialization;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,7 +19,11 @@ var connectionString = builder.Configuration["ConnectionStrings:DefaultConnectio
 Debug.WriteLine(connectionString);
 
 builder.Services.AddDbContext<DatabaseContext>(option => option.UseLazyLoadingProxies().UseSqlServer(connectionString));
-
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+	options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+	options.JsonSerializerOptions.WriteIndented = true; // Tùy ch?n
+});
 builder.Services.AddScoped<UserService, UserServiceImpl>();
 builder.Services.AddScoped<RoleService, RoleServiceImpl>();
 builder.Services.AddScoped<AdvertisementService, AdvertisementServiceImpl>();
