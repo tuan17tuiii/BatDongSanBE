@@ -26,7 +26,23 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
-        [Consumes("application/json")]
+
+		[Produces("application/json")]
+		[HttpGet("findByID/{id}")]
+		public IActionResult findByID(int id)
+		{
+			try
+			{
+				return Ok(advertisementService.findById(id));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Consumes("application/json")]
         [Produces("application/json")]
         [HttpPost("create")]
         public IActionResult Create([FromBody] Advertisement advertisement)
