@@ -42,15 +42,17 @@ app.UseCors(builder => builder
 				.SetIsOriginAllowed((host) => true)
 				.AllowCredentials()
 			);
-//ssdfsdf
-//sd
-// Configure the HTTP request pipeline.
+app.UseStaticFiles();
+
+
 if (app.Environment.IsDevelopment())
 {
 	app.UseSwagger();
 	app.UseSwaggerUI();
 }//ssdfsdf
  //sd
+
+
 
 app.UseHttpsRedirection();
 
