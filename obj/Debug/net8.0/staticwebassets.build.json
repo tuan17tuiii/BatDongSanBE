@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 {
   "Version": 1,
-  "Hash": "RhyTSjVyU1ImrL7RRQQUB/QECHL7wksN1mbPppcdcs0=",
+  "Hash": "VPQqWgEBePMwjTW3cjJv4EOaLk6VtHXuJdrBH+cQTxA=",
   "Source": "BatDongSan",
   "BasePath": "_content/BatDongSan",
   "Mode": "Default",
@@ -18,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\19e38f4e2c0b4e7789ca009d2626c555.jpg",
+      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\232f9ba0856249a185735e3300fd9f5a.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/19e38f4e2c0b4e7789ca009d2626c555.jpg",
+      "RelativePath": "images/232f9ba0856249a185735e3300fd9f5a.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -34,15 +33,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\19e38f4e2c0b4e7789ca009d2626c555.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\232f9ba0856249a185735e3300fd9f5a.jpg"
     },
     {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\1bd1cde3047049ddb73b3fdac9126cf1.jpg",
+      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\5988e4a3199641309cebea8e12b25390.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/1bd1cde3047049ddb73b3fdac9126cf1.jpg",
+      "RelativePath": "images/5988e4a3199641309cebea8e12b25390.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -53,15 +52,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\1bd1cde3047049ddb73b3fdac9126cf1.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\5988e4a3199641309cebea8e12b25390.jpg"
     },
     {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\2119d02d3c614d36abc1d5f388687921.jpg",
+      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\66a72b62610145359a8adec255c0dce7.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/2119d02d3c614d36abc1d5f388687921.jpg",
+      "RelativePath": "images/66a72b62610145359a8adec255c0dce7.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -72,15 +71,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\2119d02d3c614d36abc1d5f388687921.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\66a72b62610145359a8adec255c0dce7.jpg"
     },
     {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3305f085aaba4c32a8678b00a683d065.jpg",
+      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\9d5754cb104845f3a13e30751a1d85ef.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/3305f085aaba4c32a8678b00a683d065.jpg",
+      "RelativePath": "images/9d5754cb104845f3a13e30751a1d85ef.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -91,15 +90,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\3305f085aaba4c32a8678b00a683d065.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\9d5754cb104845f3a13e30751a1d85ef.jpg"
     },
     {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\39f3255cdf16468c84da27ac82e453c0.jpg",
+      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\9ed4d85d28c14cc09734e8e0fe1b6903.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/39f3255cdf16468c84da27ac82e453c0.jpg",
+      "RelativePath": "images/9ed4d85d28c14cc09734e8e0fe1b6903.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -110,15 +109,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\39f3255cdf16468c84da27ac82e453c0.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\9ed4d85d28c14cc09734e8e0fe1b6903.jpg"
     },
     {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\477530aef0c54f4cacf5c565ed64570f.jpg",
+      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a4e375fda16547b3878a7c9490bbe5a8.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/477530aef0c54f4cacf5c565ed64570f.jpg",
+      "RelativePath": "images/a4e375fda16547b3878a7c9490bbe5a8.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -129,15 +128,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\477530aef0c54f4cacf5c565ed64570f.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\a4e375fda16547b3878a7c9490bbe5a8.jpg"
     },
     {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\5693d6f401474a18b80c9a003dad56ee.jpg",
+      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a62c0b30b3d14ddbb50fb1e0349c0a5c.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/5693d6f401474a18b80c9a003dad56ee.jpg",
+      "RelativePath": "images/a62c0b30b3d14ddbb50fb1e0349c0a5c.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -148,15 +147,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\5693d6f401474a18b80c9a003dad56ee.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\a62c0b30b3d14ddbb50fb1e0349c0a5c.jpg"
     },
     {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\95330493470a4191be27d29533133ef7.jpg",
+      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ac8e45219ba24d4f8de6bea1ec68ee12.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/95330493470a4191be27d29533133ef7.jpg",
+      "RelativePath": "images/ac8e45219ba24d4f8de6bea1ec68ee12.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,15 +166,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\95330493470a4191be27d29533133ef7.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\ac8e45219ba24d4f8de6bea1ec68ee12.jpg"
     },
     {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\95a349fe61b848fbb5d8fdbf8d9647c7.jpg",
+      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\c79cf255da2b4bfe9db1f0ed1d76d5e1.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/95a349fe61b848fbb5d8fdbf8d9647c7.jpg",
+      "RelativePath": "images/c79cf255da2b4bfe9db1f0ed1d76d5e1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -186,15 +185,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\95a349fe61b848fbb5d8fdbf8d9647c7.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\c79cf255da2b4bfe9db1f0ed1d76d5e1.jpg"
     },
     {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a5397202f96340878ee3599813804e1b.jpg",
+      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\cf61ceadd2b648959a0b7e96271b821e.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/a5397202f96340878ee3599813804e1b.jpg",
+      "RelativePath": "images/cf61ceadd2b648959a0b7e96271b821e.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -205,15 +204,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\a5397202f96340878ee3599813804e1b.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\cf61ceadd2b648959a0b7e96271b821e.jpg"
     },
     {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\db4ea0ad44f64cfca40953dbddea2525.jpg",
+      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ff1fd96700744d40b47e544b463554fd.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/db4ea0ad44f64cfca40953dbddea2525.jpg",
+      "RelativePath": "images/ff1fd96700744d40b47e544b463554fd.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -224,64 +223,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\db4ea0ad44f64cfca40953dbddea2525.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\eb37a3c46d3346bcab338eacbb7c8a3f.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/eb37a3c46d3346bcab338eacbb7c8a3f.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\eb37a3c46d3346bcab338eacbb7c8a3f.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f77d6bc6d9f54ddd9814ce203bf7d527.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/f77d6bc6d9f54ddd9814ce203bf7d527.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\f77d6bc6d9f54ddd9814ce203bf7d527.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f9efc6acdc544099920b463a0cc18a8e.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/f9efc6acdc544099920b463a0cc18a8e.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\f9efc6acdc544099920b463a0cc18a8e.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\ff1fd96700744d40b47e544b463554fd.jpg"
     },
     {
       "Identity": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\no-image1.PNG",
@@ -303,350 +245,4 @@
       "OriginalItemSpec": "wwwroot\\images\\no-image1.PNG"
     }
   ]
-=======
-{
-  "Version": 1,
-<<<<<<< HEAD
-  "Hash": "TGSBKe8nzHTxXQu8kkH5VhYA6/182FfT648t1zotk4Q=",
-=======
-  "Hash": "rcB0/K8vbAPJoaeNfj+7H4irk2OQDftWmm5NaR/A8RA=",
->>>>>>> 5e27550ee67327a966bd290af2eff83b21dcea8b
-  "Source": "BatDongSan",
-  "BasePath": "_content/BatDongSan",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "BatDongSan\\wwwroot",
-      "Source": "BatDongSan",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "Pattern": "**"
-    }
-  ],
-  "Assets": [
-    {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\232f9ba0856249a185735e3300fd9f5a.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\19e38f4e2c0b4e7789ca009d2626c555.jpg",
->>>>>>> 5e27550ee67327a966bd290af2eff83b21dcea8b
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/232f9ba0856249a185735e3300fd9f5a.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\232f9ba0856249a185735e3300fd9f5a.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\5988e4a3199641309cebea8e12b25390.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\1bd1cde3047049ddb73b3fdac9126cf1.jpg",
->>>>>>> 5e27550ee67327a966bd290af2eff83b21dcea8b
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/5988e4a3199641309cebea8e12b25390.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\5988e4a3199641309cebea8e12b25390.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\66a72b62610145359a8adec255c0dce7.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\2119d02d3c614d36abc1d5f388687921.jpg",
->>>>>>> 5e27550ee67327a966bd290af2eff83b21dcea8b
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/66a72b62610145359a8adec255c0dce7.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\66a72b62610145359a8adec255c0dce7.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\9d5754cb104845f3a13e30751a1d85ef.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3305f085aaba4c32a8678b00a683d065.jpg",
->>>>>>> 5e27550ee67327a966bd290af2eff83b21dcea8b
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/9d5754cb104845f3a13e30751a1d85ef.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\9d5754cb104845f3a13e30751a1d85ef.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\9ed4d85d28c14cc09734e8e0fe1b6903.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\39f3255cdf16468c84da27ac82e453c0.jpg",
->>>>>>> 5e27550ee67327a966bd290af2eff83b21dcea8b
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/39f3255cdf16468c84da27ac82e453c0.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\39f3255cdf16468c84da27ac82e453c0.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\477530aef0c54f4cacf5c565ed64570f.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/9ed4d85d28c14cc09734e8e0fe1b6903.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\9ed4d85d28c14cc09734e8e0fe1b6903.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\a62c0b30b3d14ddbb50fb1e0349c0a5c.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\5693d6f401474a18b80c9a003dad56ee.jpg",
->>>>>>> 5e27550ee67327a966bd290af2eff83b21dcea8b
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/5693d6f401474a18b80c9a003dad56ee.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\5693d6f401474a18b80c9a003dad56ee.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\95330493470a4191be27d29533133ef7.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/95330493470a4191be27d29533133ef7.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\95330493470a4191be27d29533133ef7.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\95a349fe61b848fbb5d8fdbf8d9647c7.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/a62c0b30b3d14ddbb50fb1e0349c0a5c.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\a62c0b30b3d14ddbb50fb1e0349c0a5c.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\c79cf255da2b4bfe9db1f0ed1d76d5e1.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a5397202f96340878ee3599813804e1b.jpg",
->>>>>>> 5e27550ee67327a966bd290af2eff83b21dcea8b
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/c79cf255da2b4bfe9db1f0ed1d76d5e1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\c79cf255da2b4bfe9db1f0ed1d76d5e1.jpg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\cf61ceadd2b648959a0b7e96271b821e.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\db4ea0ad44f64cfca40953dbddea2525.jpg",
->>>>>>> 5e27550ee67327a966bd290af2eff83b21dcea8b
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/cf61ceadd2b648959a0b7e96271b821e.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "wwwroot\\images\\cf61ceadd2b648959a0b7e96271b821e.jpg"
-=======
-      "OriginalItemSpec": "wwwroot\\images\\db4ea0ad44f64cfca40953dbddea2525.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\eb37a3c46d3346bcab338eacbb7c8a3f.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/eb37a3c46d3346bcab338eacbb7c8a3f.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\eb37a3c46d3346bcab338eacbb7c8a3f.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f77d6bc6d9f54ddd9814ce203bf7d527.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/f77d6bc6d9f54ddd9814ce203bf7d527.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\f77d6bc6d9f54ddd9814ce203bf7d527.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f9efc6acdc544099920b463a0cc18a8e.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/f9efc6acdc544099920b463a0cc18a8e.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\f9efc6acdc544099920b463a0cc18a8e.jpg"
->>>>>>> 5e27550ee67327a966bd290af2eff83b21dcea8b
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\no-image1.PNG",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/no-image1.PNG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\no-image1.PNG"
-    }
-  ]
->>>>>>> cc63a5a66bfb425faa3e63ffc0c9e3a0c975036f
 }

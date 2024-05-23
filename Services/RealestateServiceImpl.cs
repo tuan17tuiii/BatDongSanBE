@@ -56,8 +56,16 @@ namespace BatDongSan.Services
                 Street = c.Street,
                 Userbuy_Id = c.UserbuyId,
                 Usersell_Id = c.UsersellId,
-                TypeRealState = c.TypeNavigation.Type
-            }).ToList();
+                TypeRealState = c.TypeNavigation.Type,
+                Nameusersell=c.Usersell.Name,
+				Nameusersbuy=c.Userbuy.Name,
+                image = c.ImageRealestates.Where(x=>x.RealestateId==c.Id).Select(a => new
+                {
+					Id = a.Id,
+					urlImage = a.UrlImage// Thêm các trường cần thiết khác từ ImageRealestate
+				    
+			}).ToList(),
+			}).ToList();
         }
 
         public dynamic findById(int id)
