@@ -200,6 +200,22 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.ImageRealStateController",
+    "Method": "findByRealstateId",
+    "RelativePath": "image/findByRealstateId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.ImageRealStateController",
     "Method": "Select",
     "RelativePath": "image/select",
     "HttpMethod": "POST",
@@ -269,6 +285,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "FindById",
+    "RelativePath": "realstate/findById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

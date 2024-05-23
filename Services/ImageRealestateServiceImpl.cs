@@ -70,9 +70,22 @@ namespace BatDongSan.Services
         }
 
 
-        public dynamic findById(int id)
+        public dynamic findByRealstateId(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return db.ImageRealestates.Where(p => p.RealestateId == id).Select(c => new
+                {
+                    Id = c.Id,
+                    RealestateId = c.RealestateId,
+                    UrlImage = c.UrlImage
+                }).ToList();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return false;
+            }
         }
 
         public bool update(ImageRealestate imageRealestate)
