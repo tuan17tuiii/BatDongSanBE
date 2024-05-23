@@ -33,15 +33,12 @@ namespace BatDongSan.Controllers
         [HttpPost("select")]
         public IActionResult Select(IFormFile[] files, int id)//nhan tung gia tri rieng le
         {
-            if (files.Length > 4)
-            {
-                return BadRequest();
-            }
+            
             try
             {
                 var fileNames = new List<string>();
                 foreach (var file in files)
-                {
+                {   
                     if (!IsImage(file))
                     {
                         return BadRequest(new { message = "Tệp không phải là một hình ảnh hợp lệ." });
@@ -67,33 +64,31 @@ namespace BatDongSan.Controllers
         }
         [Produces("application/json")]
         [HttpPost("uploads")]
-        public IActionResult Uploads(IFormFile[] files , int id , List<string> fileNames)
+        public IActionResult Uploads(IFormFile[] files, int id)//nhan tung gia tri rieng le
         {
             try
             {
+                Debug.WriteLine(id);
+                var fileNames = new List<string>();
 
-               
-                foreach (var fileName in fileNames)
-                {
-                    if (fileName == "null")
-                    {
-                        Debug.WriteLine("fileName: " + fileName);
-                        var imageRealState = new ImageRealestate();
-                        imageRealState.RealestateId = id;
-                        imageRealState.UrlImage = "no-image1.PNG";
-                        Create(imageRealState);
-                    }
-                    else
-                    {
-                        Debug.WriteLine("fileName: " + fileName);
-                        var imageRealState = new ImageRealestate();
-                        imageRealState.RealestateId = id;
-                        var imagePath = fileName.Substring(fileName.IndexOf("images/") + "images/".Length);
-                        imageRealState.UrlImage = imagePath;
-                        Create(imageRealState);
-                    }
-                        
+                foreach (var file in files)
+                {   Debug.WriteLine(file.FileName);
+                    Debug.WriteLine(file);
+                    var imageRealState = new ImageRealestate();
                     
+                    var fileName = FileHelpers.GenerateFileName(file.FileName);
+
+                    imageRealState.UrlImage = fileName;
+                    imageRealState.RealestateId = id;
+
+                    Create(imageRealState);
+
+                    var path = Path.Combine(webHostEnvironment.WebRootPath, "images", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+                    fileNames.Add(configuration["ImageUrl"] + fileName);
                 }
                 return Ok(new
                 {
@@ -101,9 +96,10 @@ namespace BatDongSan.Controllers
                 });
 
             }
-            catch
+            catch ( Exception ex)
             {
-                return BadRequest();
+                Debug.WriteLine(ex.Message);
+                return BadRequest();   
             }
         }
         [Consumes("application/json")]
