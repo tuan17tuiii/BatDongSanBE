@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 ﻿<Project>
   <Import Project="..\build\BatDongSan.props" />
+=======
+﻿<Project>
+  <Import Project="..\build\BatDongSan.props" />
+>>>>>>> 3d75c8f84df6750003fad2ea19917c4361852fc1
 </Project>
