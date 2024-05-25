@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BatDongSanBE\\BatDongSan.csproj": {}
+    "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\BatDongSan.csproj": {}
   },
   "projects": {
-    "D:\\BatDongSanBE\\BatDongSan.csproj": {
+    "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\BatDongSan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BatDongSanBE\\BatDongSan.csproj",
+        "projectUniqueName": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\BatDongSan.csproj",
         "projectName": "BatDongSan",
-        "projectPath": "D:\\BatDongSanBE\\BatDongSan.csproj",
-        "packagesPath": "C:\\Users\\QuocHi\\.nuget\\packages\\",
-        "outputPath": "D:\\BatDongSanBE\\obj\\",
+        "projectPath": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\BatDongSan.csproj",
+        "packagesPath": "C:\\Users\\QUOC DAT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\QuocHi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\QUOC DAT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -105,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

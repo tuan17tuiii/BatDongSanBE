@@ -92,6 +92,25 @@ namespace BatDongSan.Controllers
 			}
 		}
 
+		[Consumes("application/json")]
+		[Produces("application/json")]
+		[HttpPost("loginUser")]
+		public IActionResult loginUser([FromBody] User user)
+		{
+			try
+			{
+				return Ok(new
+				{
+					Result = userService.LoginUser(user.Username, user.Password)
+				});
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
 		[Produces("application/json")]
 		[HttpGet("findByUsername/{username}")]
 		public IActionResult findByUsername(string username)

@@ -172,6 +172,16 @@ namespace BatDongSan.Services
 			return false;
 		}
 
+		public bool LoginUser(string username, string password)
+		{
+			var account = db.Users.SingleOrDefault(c => c.Username == username && c.Status == true && c.RoleId == 2);
+			if (account != null)
+			{
+				return BCrypt.Net.BCrypt.Verify(password, account.Password);
+			}
+			return false;
+		}
+
 		public dynamic findById(int id)
 		{
 			return db.Users.Where(c => c.Id == id).Select(c => new
