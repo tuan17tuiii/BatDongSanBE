@@ -13,7 +13,7 @@ public partial class Advertisement
 
     public string? Describe { get; set; }
 
-    public DateTime? Time { get; set; }
+    public DateOnly? Time { get; set; }
 
     public bool? Status { get; set; }
 
