@@ -348,6 +348,27 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "FindByCityRegion",
+    "RelativePath": "realstate/findByCityRegion/{city}/{region}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "region",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
     "Method": "FindById",
     "RelativePath": "realstate/findById/{id}",
     "HttpMethod": "GET",

@@ -1,6 +1,7 @@
 ﻿using BatDongSan.Models;
 using BatDongSan.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace BatDongSan.Controllers
 {
@@ -24,6 +25,7 @@ namespace BatDongSan.Controllers
 			}
 			catch
 			{
+				
 				return BadRequest();
 			}
 		}
