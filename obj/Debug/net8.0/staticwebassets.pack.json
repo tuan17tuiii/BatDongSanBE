@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "Files": [
     {
@@ -8,6 +7,10 @@
     {
       "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\02579ea867474bf183ef31f73cf90509.jpg",
       "PackagePath": "staticwebassets\\images\\02579ea867474bf183ef31f73cf90509.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\02d4dbb3d5c1493f9e7577c9608f785d.png",
+      "PackagePath": "staticwebassets\\images\\02d4dbb3d5c1493f9e7577c9608f785d.png"
     },
     {
       "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\0744c25ce8a44aaf89133ee8ec67ee37.jpg",
@@ -28,6 +31,10 @@
     {
       "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\11fbacec218442b9ba590eed6669d29f.jpg",
       "PackagePath": "staticwebassets\\images\\11fbacec218442b9ba590eed6669d29f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\1650cf3f04e542c8a541fd975f308b23.png",
+      "PackagePath": "staticwebassets\\images\\1650cf3f04e542c8a541fd975f308b23.png"
     },
     {
       "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\1734c0ecaa2c4d2bb578c4f0717c357d.jpg",
@@ -66,8 +73,16 @@
       "PackagePath": "staticwebassets\\images\\2f768e8d78ba4953aef7164754757949.jpg"
     },
     {
+      "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3739f6fc34884131a8ce8ffad88894f8.png",
+      "PackagePath": "staticwebassets\\images\\3739f6fc34884131a8ce8ffad88894f8.png"
+    },
+    {
       "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3775c7a84ade40aa9984798997ec84dd.jpg",
       "PackagePath": "staticwebassets\\images\\3775c7a84ade40aa9984798997ec84dd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\379748d473dc493b8a50e2664b945a1d.png",
+      "PackagePath": "staticwebassets\\images\\379748d473dc493b8a50e2664b945a1d.png"
     },
     {
       "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\38a07e131f774e65902766b99fff98bc.jpg",
@@ -124,6 +139,10 @@
     {
       "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\500f6beeba4842528ed0dc2801aadc49.jpg",
       "PackagePath": "staticwebassets\\images\\500f6beeba4842528ed0dc2801aadc49.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\5060746ff5ea450d97c99f2829168e8c.png",
+      "PackagePath": "staticwebassets\\images\\5060746ff5ea450d97c99f2829168e8c.png"
     },
     {
       "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\54d5c26135ee4f97991d4c458b4e84bb.jpg",
@@ -318,6 +337,10 @@
       "PackagePath": "staticwebassets\\images\\d133fdfb14ef4e7cb2602af69674645b.jpg"
     },
     {
+      "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d1fd447584f24f3a89abebc36d03dd8d.png",
+      "PackagePath": "staticwebassets\\images\\d1fd447584f24f3a89abebc36d03dd8d.png"
+    },
+    {
       "Id": "C:\\Users\\tn018\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d3f3a19110544e4d9794bba94040f848.jpg",
       "PackagePath": "staticwebassets\\images\\d3f3a19110544e4d9794bba94040f848.jpg"
     },
@@ -399,406 +422,4 @@
     }
   ],
   "ElementsToRemove": []
-=======
-{
-  "Files": [
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\024026c2d18c4d8a8dcb4d53f5705044.jpg",
-      "PackagePath": "staticwebassets\\images\\024026c2d18c4d8a8dcb4d53f5705044.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\02579ea867474bf183ef31f73cf90509.jpg",
-      "PackagePath": "staticwebassets\\images\\02579ea867474bf183ef31f73cf90509.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\0744c25ce8a44aaf89133ee8ec67ee37.jpg",
-      "PackagePath": "staticwebassets\\images\\0744c25ce8a44aaf89133ee8ec67ee37.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\0ae0209966df454e8dbc2f752079d988.jpg",
-      "PackagePath": "staticwebassets\\images\\0ae0209966df454e8dbc2f752079d988.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\0ba531f140374da28afba844f4317a68.jpg",
-      "PackagePath": "staticwebassets\\images\\0ba531f140374da28afba844f4317a68.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\101ebeaf203e4a34a5fadd074f2b0bad.jpg",
-      "PackagePath": "staticwebassets\\images\\101ebeaf203e4a34a5fadd074f2b0bad.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\11fbacec218442b9ba590eed6669d29f.jpg",
-      "PackagePath": "staticwebassets\\images\\11fbacec218442b9ba590eed6669d29f.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\1734c0ecaa2c4d2bb578c4f0717c357d.jpg",
-      "PackagePath": "staticwebassets\\images\\1734c0ecaa2c4d2bb578c4f0717c357d.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\1ddc2c5fe693490fbff87fe5fdbaac97.jpg",
-      "PackagePath": "staticwebassets\\images\\1ddc2c5fe693490fbff87fe5fdbaac97.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\209b3c82b3a74d30a59a3618a7eee09a.jpg",
-      "PackagePath": "staticwebassets\\images\\209b3c82b3a74d30a59a3618a7eee09a.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\20af3984855244f697e7c739b12e9ccd.jpg",
-      "PackagePath": "staticwebassets\\images\\20af3984855244f697e7c739b12e9ccd.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\217b645150804c6798c0e1f7cc31cfc1.jpg",
-      "PackagePath": "staticwebassets\\images\\217b645150804c6798c0e1f7cc31cfc1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\2771f960cba44042b98a5c40b4f27d34.jpg",
-      "PackagePath": "staticwebassets\\images\\2771f960cba44042b98a5c40b4f27d34.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\2b3883b8cca34fd6a8e5db9d9e1812be.jpg",
-      "PackagePath": "staticwebassets\\images\\2b3883b8cca34fd6a8e5db9d9e1812be.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\2dacaa0d797f4024be88b2f9921117c0.jpg",
-      "PackagePath": "staticwebassets\\images\\2dacaa0d797f4024be88b2f9921117c0.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\2f768e8d78ba4953aef7164754757949.jpg",
-      "PackagePath": "staticwebassets\\images\\2f768e8d78ba4953aef7164754757949.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3775c7a84ade40aa9984798997ec84dd.jpg",
-      "PackagePath": "staticwebassets\\images\\3775c7a84ade40aa9984798997ec84dd.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\38a07e131f774e65902766b99fff98bc.jpg",
-      "PackagePath": "staticwebassets\\images\\38a07e131f774e65902766b99fff98bc.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\38c9bbca36004b3c81f519d1a8b7133d.jpg",
-      "PackagePath": "staticwebassets\\images\\38c9bbca36004b3c81f519d1a8b7133d.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\395e44bfbcd54e2dad011acfe3a7a176.jpg",
-      "PackagePath": "staticwebassets\\images\\395e44bfbcd54e2dad011acfe3a7a176.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3dcb34db32bf46099b0fae2b77d55559.jpg",
-      "PackagePath": "staticwebassets\\images\\3dcb34db32bf46099b0fae2b77d55559.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\404219e725784e1b8affd9b74f1b4509.jpg",
-      "PackagePath": "staticwebassets\\images\\404219e725784e1b8affd9b74f1b4509.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\41d6300ea8c04cdcae32a6807d167170.jpg",
-      "PackagePath": "staticwebassets\\images\\41d6300ea8c04cdcae32a6807d167170.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\462ca5529ca846608912599480a61371.jpg",
-      "PackagePath": "staticwebassets\\images\\462ca5529ca846608912599480a61371.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\473768fda5f64df3b57a6afeac50cacd.jpg",
-      "PackagePath": "staticwebassets\\images\\473768fda5f64df3b57a6afeac50cacd.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\474707898da64fec9359388c407d3db5.jpg",
-      "PackagePath": "staticwebassets\\images\\474707898da64fec9359388c407d3db5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\476c24b908814cf089014f4b5f46dfc2.jpg",
-      "PackagePath": "staticwebassets\\images\\476c24b908814cf089014f4b5f46dfc2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\494b1f5a8c97420c9cc9767c3d5596bf.jpg",
-      "PackagePath": "staticwebassets\\images\\494b1f5a8c97420c9cc9767c3d5596bf.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\4a5ea08d19194877bca8489b0a48475c.jpg",
-      "PackagePath": "staticwebassets\\images\\4a5ea08d19194877bca8489b0a48475c.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\4c03e8208fb54238b0b4bebc11bea333.jpg",
-      "PackagePath": "staticwebassets\\images\\4c03e8208fb54238b0b4bebc11bea333.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\500f6beeba4842528ed0dc2801aadc49.jpg",
-      "PackagePath": "staticwebassets\\images\\500f6beeba4842528ed0dc2801aadc49.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\54d5c26135ee4f97991d4c458b4e84bb.jpg",
-      "PackagePath": "staticwebassets\\images\\54d5c26135ee4f97991d4c458b4e84bb.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\5d49e2e416fc475a84f568d36e9141b1.jpg",
-      "PackagePath": "staticwebassets\\images\\5d49e2e416fc475a84f568d36e9141b1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\5f1ef4096e424f4e91ad12d74bce8ca1.jpg",
-      "PackagePath": "staticwebassets\\images\\5f1ef4096e424f4e91ad12d74bce8ca1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\601da9bf7bfa44a2bb78e39e4837ceef.jpg",
-      "PackagePath": "staticwebassets\\images\\601da9bf7bfa44a2bb78e39e4837ceef.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\61849842f3e24eee833c910514bb1493.jpg",
-      "PackagePath": "staticwebassets\\images\\61849842f3e24eee833c910514bb1493.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\648ebc9a7d2b4786bfe0a01828535fba.jpg",
-      "PackagePath": "staticwebassets\\images\\648ebc9a7d2b4786bfe0a01828535fba.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\67baf0d80fb245a68e265b3a303bec44.jpg",
-      "PackagePath": "staticwebassets\\images\\67baf0d80fb245a68e265b3a303bec44.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\68966b86252344aeb4f69fe5fc1bf92f.jpg",
-      "PackagePath": "staticwebassets\\images\\68966b86252344aeb4f69fe5fc1bf92f.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\692979ece4d846bf925b9be838ce602a.jpg",
-      "PackagePath": "staticwebassets\\images\\692979ece4d846bf925b9be838ce602a.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\6b1ccfe6e85048918f0125441484a704.jpg",
-      "PackagePath": "staticwebassets\\images\\6b1ccfe6e85048918f0125441484a704.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\6e6ac23930dd45c2b2515cd2808ada5b.jpg",
-      "PackagePath": "staticwebassets\\images\\6e6ac23930dd45c2b2515cd2808ada5b.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\71156b19acb24403ac1ce40a1e015e46.jpg",
-      "PackagePath": "staticwebassets\\images\\71156b19acb24403ac1ce40a1e015e46.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\73efe71372944d7a9e5cf45eb643070d.jpg",
-      "PackagePath": "staticwebassets\\images\\73efe71372944d7a9e5cf45eb643070d.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\74ffacc7f1e144ad97f602310597a998.jpg",
-      "PackagePath": "staticwebassets\\images\\74ffacc7f1e144ad97f602310597a998.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\77e3aff21d9f4cad996ff59385750943.jpg",
-      "PackagePath": "staticwebassets\\images\\77e3aff21d9f4cad996ff59385750943.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\7ba9444150fb4b56a7daad65e043a5e4.jpg",
-      "PackagePath": "staticwebassets\\images\\7ba9444150fb4b56a7daad65e043a5e4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\7f6c2f90080c4024a9c08e48231e3f4a.jpg",
-      "PackagePath": "staticwebassets\\images\\7f6c2f90080c4024a9c08e48231e3f4a.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\8affdd92b6744eb68c3ddebf291150db.jpg",
-      "PackagePath": "staticwebassets\\images\\8affdd92b6744eb68c3ddebf291150db.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\90ba80634bfa48ad914090818767954c.jpg",
-      "PackagePath": "staticwebassets\\images\\90ba80634bfa48ad914090818767954c.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\9135f9ee316e447ba599a2738b53c8f0.jpg",
-      "PackagePath": "staticwebassets\\images\\9135f9ee316e447ba599a2738b53c8f0.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\913fdbf446824bba8209c8fe0723d254.jpg",
-      "PackagePath": "staticwebassets\\images\\913fdbf446824bba8209c8fe0723d254.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\91d8dbfae94b4466b4a20154aa9e37bf.jpg",
-      "PackagePath": "staticwebassets\\images\\91d8dbfae94b4466b4a20154aa9e37bf.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\98a7553778c04d5ab3e358e6dc297ef9.jpg",
-      "PackagePath": "staticwebassets\\images\\98a7553778c04d5ab3e358e6dc297ef9.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\99d2a55a55a04ae8861508d7ff984d5d.jpg",
-      "PackagePath": "staticwebassets\\images\\99d2a55a55a04ae8861508d7ff984d5d.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\9a3684027200417387b687950c9a7d74.jpg",
-      "PackagePath": "staticwebassets\\images\\9a3684027200417387b687950c9a7d74.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\9f1bed7e09c44027a85002bbd04a239f.jpg",
-      "PackagePath": "staticwebassets\\images\\9f1bed7e09c44027a85002bbd04a239f.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a322126bbe0541cd8ffc12c6f5ac91d8.jpg",
-      "PackagePath": "staticwebassets\\images\\a322126bbe0541cd8ffc12c6f5ac91d8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a3e0c675d6964d15964af4e3595abc2d.jpg",
-      "PackagePath": "staticwebassets\\images\\a3e0c675d6964d15964af4e3595abc2d.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a49ef00d598e40d0885b2d49dca964ab.jpg",
-      "PackagePath": "staticwebassets\\images\\a49ef00d598e40d0885b2d49dca964ab.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a5073e61bc0b4957b1eaafed418399e0.jpg",
-      "PackagePath": "staticwebassets\\images\\a5073e61bc0b4957b1eaafed418399e0.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a8c7f83c9cf746b4bb0e532b64650765.jpg",
-      "PackagePath": "staticwebassets\\images\\a8c7f83c9cf746b4bb0e532b64650765.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ac190abcefc24b1dbb1c535730926d1a.jpg",
-      "PackagePath": "staticwebassets\\images\\ac190abcefc24b1dbb1c535730926d1a.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ad13ad21629049e384f0c57584bab300.jpg",
-      "PackagePath": "staticwebassets\\images\\ad13ad21629049e384f0c57584bab300.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\adf3eeb3f2894224aefb33113e61334b.jpg",
-      "PackagePath": "staticwebassets\\images\\adf3eeb3f2894224aefb33113e61334b.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ae5ff2eb4f974985bddbc48a86a580df.jpg",
-      "PackagePath": "staticwebassets\\images\\ae5ff2eb4f974985bddbc48a86a580df.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\aebdebc5459e43dbb8394071605bdd90.jpg",
-      "PackagePath": "staticwebassets\\images\\aebdebc5459e43dbb8394071605bdd90.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\b011db3282ea4e2f9f8fd35928d5a6d5.jpg",
-      "PackagePath": "staticwebassets\\images\\b011db3282ea4e2f9f8fd35928d5a6d5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\b0bc851381c5469ea00aa685a78437ed.jpg",
-      "PackagePath": "staticwebassets\\images\\b0bc851381c5469ea00aa685a78437ed.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\b474fd6a98354ca9bd6a81afb38fcfef.jpg",
-      "PackagePath": "staticwebassets\\images\\b474fd6a98354ca9bd6a81afb38fcfef.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\b8ea3b4ee77d4f0ca9df7015ebffc4a3.jpg",
-      "PackagePath": "staticwebassets\\images\\b8ea3b4ee77d4f0ca9df7015ebffc4a3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ba1e7e499ae94df3b13c92f1635fe753.jpg",
-      "PackagePath": "staticwebassets\\images\\ba1e7e499ae94df3b13c92f1635fe753.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\bb743c0c54eb48d88316d45219358c60.jpg",
-      "PackagePath": "staticwebassets\\images\\bb743c0c54eb48d88316d45219358c60.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\c086994ec54d45acb3694005203cdfe3.jpg",
-      "PackagePath": "staticwebassets\\images\\c086994ec54d45acb3694005203cdfe3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\c719f1e8ef764c84b860d9b86459b3fe.jpg",
-      "PackagePath": "staticwebassets\\images\\c719f1e8ef764c84b860d9b86459b3fe.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\cd9de7d4693c4b8484c98d9d4b69381f.jpg",
-      "PackagePath": "staticwebassets\\images\\cd9de7d4693c4b8484c98d9d4b69381f.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ce5bf50741e240de9e3b21a7fa0ceec8.jpg",
-      "PackagePath": "staticwebassets\\images\\ce5bf50741e240de9e3b21a7fa0ceec8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ceaf8d39565145739afc9c79dfd93701.jpg",
-      "PackagePath": "staticwebassets\\images\\ceaf8d39565145739afc9c79dfd93701.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d133fdfb14ef4e7cb2602af69674645b.jpg",
-      "PackagePath": "staticwebassets\\images\\d133fdfb14ef4e7cb2602af69674645b.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d3f3a19110544e4d9794bba94040f848.jpg",
-      "PackagePath": "staticwebassets\\images\\d3f3a19110544e4d9794bba94040f848.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d7b568e880624168aa156c8f2454029d.jpg",
-      "PackagePath": "staticwebassets\\images\\d7b568e880624168aa156c8f2454029d.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d9c7d8a5c7dd45dda00dcf649b860468.jpg",
-      "PackagePath": "staticwebassets\\images\\d9c7d8a5c7dd45dda00dcf649b860468.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\de865765f25e49068c029cd408213e2d.jpg",
-      "PackagePath": "staticwebassets\\images\\de865765f25e49068c029cd408213e2d.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\de8c5c3a8e8f4385bbaf9ec851f8093e.jpg",
-      "PackagePath": "staticwebassets\\images\\de8c5c3a8e8f4385bbaf9ec851f8093e.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\e07018099c074b08857d302a8a03bbcb.jpg",
-      "PackagePath": "staticwebassets\\images\\e07018099c074b08857d302a8a03bbcb.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\e08ca4b7ba2f46349ced53b047a9c940.jpg",
-      "PackagePath": "staticwebassets\\images\\e08ca4b7ba2f46349ced53b047a9c940.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\e3193f2977414a818e4c1a708c5c376b.jpg",
-      "PackagePath": "staticwebassets\\images\\e3193f2977414a818e4c1a708c5c376b.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\e5f321afae2946e4a88812528e524af2.jpg",
-      "PackagePath": "staticwebassets\\images\\e5f321afae2946e4a88812528e524af2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\e9af94d4696d4e9ca344bda05dd79324.jpg",
-      "PackagePath": "staticwebassets\\images\\e9af94d4696d4e9ca344bda05dd79324.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ef1b377f321a4460a2879b8c6e1c7de6.jpg",
-      "PackagePath": "staticwebassets\\images\\ef1b377f321a4460a2879b8c6e1c7de6.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f6c9ba04232549d392b817e13542fd25.jpg",
-      "PackagePath": "staticwebassets\\images\\f6c9ba04232549d392b817e13542fd25.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f9888066af9d4774b9b0eeddf939a368.jpg",
-      "PackagePath": "staticwebassets\\images\\f9888066af9d4774b9b0eeddf939a368.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\fdd04c187882410e99a30be76520e633.jpg",
-      "PackagePath": "staticwebassets\\images\\fdd04c187882410e99a30be76520e633.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\fe07ff3e48434bf4a907b5ffe3d044f6.jpg",
-      "PackagePath": "staticwebassets\\images\\fe07ff3e48434bf4a907b5ffe3d044f6.jpg"
-    },
-    {
-      "Id": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\fefb8ea2b4e04100914cdd292b6e5702.jpg",
-      "PackagePath": "staticwebassets\\images\\fefb8ea2b4e04100914cdd292b6e5702.jpg"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BatDongSan.Microsoft.AspNetCore.StaticWebAssets.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BatDongSan.props",
-      "PackagePath": "build\\BatDongSan.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BatDongSan.props",
-      "PackagePath": "buildMultiTargeting\\BatDongSan.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BatDongSan.props",
-      "PackagePath": "buildTransitive\\BatDongSan.props"
-    }
-  ],
-  "ElementsToRemove": []
->>>>>>> 3d75c8f84df6750003fad2ea19917c4361852fc1
 }
