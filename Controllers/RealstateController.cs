@@ -70,13 +70,11 @@ namespace BatDongSan.Controllers
             try
             {
               
-                Debug.WriteLine(realestate.Title);
-                Debug.WriteLine(realestate.Price);
-                Debug.WriteLine("Describe: "+realestate.Describe);
-                Debug.WriteLine("Region: "+ realestate.Region);
-                Debug.WriteLine("Created: " + realestate.CreatedAt);
+                
                 int productId = realestateService.create(realestate); // Tạo sản phẩm và lấy ID của sản phẩm
-                Debug.WriteLine("Created: "+ realestate.CreatedAt);
+                Debug.WriteLine("Bedrooms: " + realestate.Bedrooms);
+
+                Debug.WriteLine("Bathrooms: " + realestate.Bathrooms);
                 if (productId != -1)
                 {
                     // Nếu thành công, trả về kết quả thành công và ID của sản phẩm
