@@ -1,6 +1,27 @@
 [
   {
     "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "ChangePass",
+    "RelativePath": "account/ChangePass/{password}/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
     "Method": "Delete",
     "RelativePath": "account/Delete/{id}",
     "HttpMethod": "DELETE",
@@ -10,6 +31,27 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "Exists",
+    "RelativePath": "account/Exists/{username}/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -104,6 +146,27 @@
       {
         "Name": "user",
         "Type": "BatDongSan.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "PasswordVerify",
+    "RelativePath": "account/PasswordVerify/{userpass}/{password}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userpass",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

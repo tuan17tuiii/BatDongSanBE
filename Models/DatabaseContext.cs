@@ -21,6 +21,8 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<ImageRealestate> ImageRealestates { get; set; }
 
+    public virtual DbSet<News> News { get; set; }
+
     public virtual DbSet<Realestate> Realestates { get; set; }
 
     public virtual DbSet<Role> Roles { get; set; }
@@ -31,8 +33,7 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    
-
+   
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Advertisement>(entity =>
@@ -89,6 +90,27 @@ public partial class DatabaseContext : DbContext
                 .HasConstraintName("FK_image_batdongsan_batdongsan");
         });
 
+        modelBuilder.Entity<News>(entity =>
+        {
+            entity.ToTable("news");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Content)
+                .HasMaxLength(250)
+                .HasColumnName("content");
+            entity.Property(e => e.Images)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("images");
+            entity.Property(e => e.Tag)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("tag");
+            entity.Property(e => e.Title)
+                .HasMaxLength(250)
+                .HasColumnName("title");
+        });
+
         modelBuilder.Entity<Realestate>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK_batdongsan");
@@ -104,7 +126,7 @@ public partial class DatabaseContext : DbContext
                 .HasColumnName("city");
             entity.Property(e => e.CreatedAt).HasColumnName("created_at");
             entity.Property(e => e.Describe)
-                .HasMaxLength(250)
+                .HasMaxLength(1000)
                 .IsUnicode(false)
                 .HasColumnName("describe");
             entity.Property(e => e.Price).HasColumnName("price");
@@ -119,6 +141,10 @@ public partial class DatabaseContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("title");
+            entity.Property(e => e.TransactionType)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("transaction_type");
             entity.Property(e => e.Type).HasColumnName("type");
             entity.Property(e => e.UserbuyId).HasColumnName("userbuy_id");
             entity.Property(e => e.UsersellId).HasColumnName("usersell_id");

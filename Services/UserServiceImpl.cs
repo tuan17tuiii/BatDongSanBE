@@ -198,5 +198,37 @@ namespace BatDongSan.Services
 				email = c.Email,
 			}).FirstOrDefault();
 		}
+
+		public dynamic PasswordVerify(string password, string userpass)
+		{
+			return BCrypt.Net.BCrypt.Verify(password, userpass);
+		}
+
+		public bool ChangePass(string password, string username)
+		{
+			var user = db.Users.SingleOrDefault(u => u.Username == username);
+			if (user != null)
+			{
+				user.Password = BCrypt.Net.BCrypt.HashString(password);
+				return db.SaveChanges() > 0;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		public bool AccountExists(string username, string email)
+		{
+			var user = db.Users.SingleOrDefault(u => u.Username == username || u.Email == email);
+			if (user != null)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
 	}
 }

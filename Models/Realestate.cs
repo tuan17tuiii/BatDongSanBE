@@ -23,7 +23,7 @@ public partial class Realestate
 
     public bool? Status { get; set; }
 
-    public DateTime CreatedAt { get; set; }
+    public DateOnly? CreatedAt { get; set; }
 
     public string? Region { get; set; }
 
@@ -34,6 +34,8 @@ public partial class Realestate
     public int? UserbuyId { get; set; }
 
     public int? UsersellId { get; set; }
+
+    public string? TransactionType { get; set; }
 
     public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 
