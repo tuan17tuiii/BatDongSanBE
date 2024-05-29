@@ -13,7 +13,7 @@ public partial class Comment
 
     public string? Content { get; set; }
 
-    public DateOnly? CreatedAt { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
     public virtual User? User { get; set; }
 }

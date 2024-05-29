@@ -13,7 +13,7 @@ public partial class Transaction
 
     public string? TransactionType { get; set; }
 
-    public DateOnly? TransactionDate { get; set; }
+    public DateTime? TransactionDate { get; set; }
 
     public double? Amount { get; set; }
 
