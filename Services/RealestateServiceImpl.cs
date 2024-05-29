@@ -68,6 +68,29 @@ namespace BatDongSan.Services
 			}).ToList();
         }
 
+        public dynamic findByCityRegion(string city, string region)
+        {
+            return db.Realestates.Where(p => p.City == city && p.Region == region).Select(c => new
+            {
+                Id = c.Id,
+                Title = c.Title,
+                Describe = c.Describe,
+                Price = c.Price,
+                Type = c.Type,
+                Acreage = c.Acreage,
+                Bedrooms = c.Bedrooms,
+                Bathrooms = c.Bathrooms,
+                Status = c.Status,
+                CreatedAt = c.CreatedAt,
+                City = c.City,
+                Region = c.Region,
+                Street = c.Street,
+                Userbuy_Id = c.UserbuyId,
+                Usersell_Id = c.UsersellId,
+                TypeRealState = c.TypeNavigation.Type
+            }).ToList();
+        }
+
         public dynamic findById(int id)
         {
             return db.Realestates.Where(p => p.Id == id).OrderByDescending(c => c.Id).Select(c => new

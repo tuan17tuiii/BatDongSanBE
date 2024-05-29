@@ -48,6 +48,20 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
+        [Produces("application/json")]
+        [HttpGet("findByCityRegion/{city}/{region}")]
+        public IActionResult FindByCityRegion(string city , string region)
+        {
+            try
+            {
+                return Ok(realestateService.findByCityRegion(city, region));
+
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
         [Consumes("application/json")]
         [Produces("application/json")]
         [HttpPost("create")]
@@ -55,8 +69,14 @@ namespace BatDongSan.Controllers
         {
             try
             {
+              
+                Debug.WriteLine(realestate.Title);
+                Debug.WriteLine(realestate.Price);
+                Debug.WriteLine("Describe: "+realestate.Describe);
+                Debug.WriteLine("Region: "+ realestate.Region);
+                Debug.WriteLine("Created: " + realestate.CreatedAt);
                 int productId = realestateService.create(realestate); // Tạo sản phẩm và lấy ID của sản phẩm
-
+                Debug.WriteLine("Created: "+ realestate.CreatedAt);
                 if (productId != -1)
                 {
                     // Nếu thành công, trả về kết quả thành công và ID của sản phẩm
