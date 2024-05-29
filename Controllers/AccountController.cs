@@ -105,9 +105,9 @@ namespace BatDongSan.Controllers
 				});
 
 			}
-			catch
+			catch(Exception e)
 			{
-				return BadRequest();
+				return BadRequest(e.InnerException);
 			}
 		}
 
@@ -182,6 +182,49 @@ namespace BatDongSan.Controllers
 			catch (Exception ex)
 			{
 				return BadRequest();
+			}
+		}
+
+
+		[Produces("application/json")]
+		[HttpGet("PasswordVerify/{userpass}/{password}")]
+		public IActionResult PasswordVerify(string userpass, string password)
+		{
+			try
+			{
+				return Ok(userService.PasswordVerify(password, userpass));
+			}
+			catch (Exception ex)
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpGet("ChangePass/{password}/{username}")]
+		public IActionResult ChangePass(string password, string username)
+		{
+			try
+			{
+				return Ok(userService.ChangePass(password, username));
+			}
+			catch (Exception ex)
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpGet("Exists/{username}/{email}")]
+		public IActionResult Exists(string username, string email)
+		{
+			try
+			{
+				return Ok(userService.AccountExists(username, email));
+			}
+			catch (Exception ex)
+			{
+				return BadRequest("loi =>>>>>>>>>>>>>>>>>" + ex.Message);
 			}
 		}
 	}
