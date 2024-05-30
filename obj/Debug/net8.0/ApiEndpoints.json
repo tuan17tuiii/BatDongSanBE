@@ -447,6 +447,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "FindByUserSellFalse",
+    "RelativePath": "realstate/findByUserSellFalse/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "FindByUserSell",
+    "RelativePath": "realstate/findByUserSellTrue/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BatDongSan.Controllers.RoleController",
     "Method": "Create",
     "RelativePath": "role/create",
