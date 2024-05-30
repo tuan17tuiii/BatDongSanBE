@@ -1,4 +1,5 @@
 ﻿using BatDongSan.Models;
+using System.Diagnostics;
 
 namespace BatDongSan.Services
 {
@@ -18,12 +19,12 @@ namespace BatDongSan.Services
                 return realestate.Id;
 
             }
-            catch
+            catch(Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return -1;
             }
         }
-
         public bool delete(int id)
         {
             try
@@ -59,6 +60,7 @@ namespace BatDongSan.Services
                 TypeRealState = c.TypeNavigation.Type,
                 Nameusersell=c.Usersell.Name,
 				Nameusersbuy=c.Userbuy.Name,
+                transaction_type = c.TransactionType , 
                 image = c.ImageRealestates.Where(x=>x.RealestateId==c.Id).Select(a => new
                 {
 					Id = a.Id,
@@ -114,6 +116,52 @@ namespace BatDongSan.Services
             }).SingleOrDefault();
         }
 
+        public dynamic findByUserSellFalse(int id)
+        {
+            return db.Realestates.Where(p => p.UsersellId == id && p.Status == false).Select(c => new
+            {
+                Id = c.Id,
+                Title = c.Title,
+                Describe = c.Describe,
+                Price = c.Price,
+                Type = c.Type,
+                Acreage = c.Acreage,
+                Bedrooms = c.Bedrooms,
+                Bathrooms = c.Bathrooms,
+                Status = c.Status,
+                CreatedAt = c.CreatedAt,
+                City = c.City,
+                Region = c.Region,
+                Street = c.Street,
+                Userbuy_Id = c.UserbuyId,
+                Usersell_Id = c.UsersellId,
+                TypeRealState = c.TypeNavigation.Type
+            }).ToList();
+        }
+
+        public dynamic findByUserSellTrue(int id)
+        {
+            return db.Realestates.Where(p => p.UsersellId == id && p.Status == true ).Select(c => new
+            {
+                Id = c.Id,
+                Title = c.Title,
+                Describe = c.Describe,
+                Price = c.Price,
+                Type = c.Type,
+                Acreage = c.Acreage,
+                Bedrooms = c.Bedrooms,
+                Bathrooms = c.Bathrooms,
+                Status = c.Status,
+                CreatedAt = c.CreatedAt,
+                City = c.City,
+                Region = c.Region,
+                Street = c.Street,
+                Userbuy_Id = c.UserbuyId,
+                Usersell_Id = c.UsersellId,
+                TypeRealState = c.TypeNavigation.Type
+            }).ToList();
+        }
+
         public bool update(Realestate realestate)
         {
             try
@@ -126,5 +174,7 @@ namespace BatDongSan.Services
                 return false;
             }
         }
+
+        
     }
 }
