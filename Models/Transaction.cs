@@ -11,8 +11,6 @@ public partial class Transaction
 
     public int? SellerId { get; set; }
 
-    public string? TransactionType { get; set; }
-
     public DateTime? TransactionDate { get; set; }
 
     public double? Amount { get; set; }

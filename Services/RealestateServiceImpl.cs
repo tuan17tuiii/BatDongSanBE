@@ -54,11 +54,9 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
-                Userbuy_Id = c.UserbuyId,
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type,
                 Nameusersell=c.Usersell.Name,
-				Nameusersbuy=c.Userbuy.Name,
                 image = c.ImageRealestates.Where(x=>x.RealestateId==c.Id).Select(a => new
                 {
 					Id = a.Id,
@@ -85,7 +83,6 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
-                Userbuy_Id = c.UserbuyId,
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type
             }).ToList();
@@ -108,7 +105,6 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
-                Userbuy_Id = c.UserbuyId,
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type
             }).SingleOrDefault();
