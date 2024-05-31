@@ -42,7 +42,6 @@ namespace BatDongSan.Services
                 Id = c.Id,
                 BuyerId = c.BuyerId,
                 SellerId = c.SellerId,
-                TransactionType = c.TransactionType,
                 TransactionDate = c.TransactionDate,
                 Amount = c.Amount,
                 RealestateId =c.RealestateId,

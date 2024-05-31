@@ -11,9 +11,9 @@ public partial class ImageRealestate
 
     public string UrlImage { get; set; } = null!;
 
-    public int? Newid { get; set; }
+    public int? Newsid { get; set; }
 
-    public virtual News? New { get; set; }
+    public virtual News? News { get; set; }
 
     public virtual Realestate? Realestate { get; set; }
 }

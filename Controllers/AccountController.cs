@@ -25,7 +25,6 @@ namespace BatDongSan.Controllers
 			}
 			catch(Exception e)
 			{
-				Debug.WriteLine(e.Message);
 				return BadRequest();
 			}
 		}
@@ -78,38 +77,20 @@ namespace BatDongSan.Controllers
 
 		[Consumes("application/json")]
 		[Produces("application/json")]
-		[HttpPost("loginAdmin")]
-		public IActionResult loginAdmin([FromBody] User user)
-		{
-			try
-			{
-				return Ok(new{ 
-					Result = userService.LoginAdmin(user.Username, user.Password) 
-				});
-
-			}
-			catch
-			{
-				return BadRequest();
-			}
-		}
-
-		[Consumes("application/json")]
-		[Produces("application/json")]
-		[HttpPost("loginUser")]
-		public IActionResult loginUser([FromBody] User user)
+		[HttpPost("login")]
+		public IActionResult login([FromBody] User user)
 		{
 			try
 			{
 				return Ok(new
 				{
-					Result = userService.LoginUser(user.Username, user.Password)
+					Result = userService.Login(user.Username, user.Password)
 				});
 
 			}
-			catch
+			catch(Exception e)
 			{
-				return BadRequest();
+				return BadRequest(e.InnerException);
 			}
 		}
 
@@ -184,6 +165,49 @@ namespace BatDongSan.Controllers
 			catch (Exception ex)
 			{
 				return BadRequest();
+			}
+		}
+
+
+		[Produces("application/json")]
+		[HttpGet("PasswordVerify/{password}/{username}")]
+		public IActionResult PasswordVerify(string password, string username)
+		{
+			try
+			{
+				return Ok(userService.PasswordVerify(password, username));
+			}
+			catch (Exception ex)
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpGet("ChangePass/{password}/{username}")]
+		public IActionResult ChangePass(string password, string username)
+		{
+			try
+			{
+				return Ok(userService.ChangePass(password, username));
+			}
+			catch (Exception ex)
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpGet("Exists/{username}/{email}")]
+		public IActionResult Exists(string username, string email)
+		{
+			try
+			{
+				return Ok(userService.AccountExists(username, email));
+			}
+			catch (Exception ex)
+			{
+				return BadRequest("loi =>>>>>>>>>>>>>>>>>" + ex.Message);
 			}
 		}
 	}

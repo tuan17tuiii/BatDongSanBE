@@ -21,10 +21,11 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<ImageRealestate> ImageRealestates { get; set; }
 
+    public virtual DbSet<News> News { get; set; }
+
     public virtual DbSet<Realestate> Realestates { get; set; }
 
     public virtual DbSet<Role> Roles { get; set; }
-	public virtual DbSet<News> News { get; set; }
 
 	public virtual DbSet<Transaction> Transactions { get; set; }
 
@@ -34,6 +35,8 @@ public partial class DatabaseContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.UseCollation("Latin1_General_CI_AS");
+
         modelBuilder.Entity<Advertisement>(entity =>
         {
             entity.ToTable("advertisement");
@@ -88,6 +91,23 @@ public partial class DatabaseContext : DbContext
                 .HasConstraintName("FK_image_batdongsan_batdongsan");
         });
 
+        modelBuilder.Entity<News>(entity =>
+        {
+            entity.ToTable("news");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Content)
+                .HasMaxLength(250)
+                .HasColumnName("content");
+            entity.Property(e => e.Tag)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("tag");
+            entity.Property(e => e.Title)
+                .HasMaxLength(250)
+                .HasColumnName("title");
+        });
+
         modelBuilder.Entity<Realestate>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK_batdongsan");
@@ -103,13 +123,14 @@ public partial class DatabaseContext : DbContext
                 .HasColumnName("city");
             entity.Property(e => e.CreatedAt).HasColumnName("created_at");
             entity.Property(e => e.Describe)
-                .HasMaxLength(250)
+                .HasMaxLength(1000)
                 .IsUnicode(false)
                 .HasColumnName("describe");
             entity.Property(e => e.Price).HasColumnName("price");
             entity.Property(e => e.Region)
                 .HasMaxLength(250)
                 .HasColumnName("region");
+            entity.Property(e => e.Sold).HasColumnName("sold");
             entity.Property(e => e.Status).HasColumnName("status");
             entity.Property(e => e.Street)
                 .HasMaxLength(250)
@@ -118,19 +139,18 @@ public partial class DatabaseContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("title");
+            entity.Property(e => e.TransactionType)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("transaction_type");
             entity.Property(e => e.Type).HasColumnName("type");
-            entity.Property(e => e.UserbuyId).HasColumnName("userbuy_id");
             entity.Property(e => e.UsersellId).HasColumnName("usersell_id");
 
             entity.HasOne(d => d.TypeNavigation).WithMany(p => p.Realestates)
                 .HasForeignKey(d => d.Type)
                 .HasConstraintName("FK_batdongsan_type_batdongsan");
 
-            entity.HasOne(d => d.Userbuy).WithMany(p => p.RealestateUserbuys)
-                .HasForeignKey(d => d.UserbuyId)
-                .HasConstraintName("FK_batdongsan_user1");
-
-            entity.HasOne(d => d.Usersell).WithMany(p => p.RealestateUsersells)
+            entity.HasOne(d => d.Usersell).WithMany(p => p.Realestates)
                 .HasForeignKey(d => d.UsersellId)
                 .HasConstraintName("FK_batdongsan_user2");
         });
@@ -162,10 +182,6 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.RealestateId).HasColumnName("realestate_id");
             entity.Property(e => e.SellerId).HasColumnName("seller_id");
             entity.Property(e => e.TransactionDate).HasColumnName("transaction_date");
-            entity.Property(e => e.TransactionType)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("transaction_type");
 
             entity.HasOne(d => d.Buyer).WithMany(p => p.TransactionBuyers)
                 .HasForeignKey(d => d.BuyerId)

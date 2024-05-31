@@ -162,19 +162,10 @@ namespace BatDongSan.Services
             }
         }
 
-		public bool LoginAdmin(string username, string password)
-		{
-			var account = db.Users.SingleOrDefault(c => c.Username == username && c.Status == true && c.RoleId == 1);
-			if (account != null)
-			{
-				return BCrypt.Net.BCrypt.Verify(password, account.Password);
-			}
-			return false;
-		}
 
-		public bool LoginUser(string username, string password)
+		public bool Login(string username, string password)
 		{
-			var account = db.Users.SingleOrDefault(c => c.Username == username && c.Status == true && c.RoleId == 2);
+			var account = db.Users.SingleOrDefault(c => c.Username == username && c.Status == true);
 			if (account != null)
 			{
 				return BCrypt.Net.BCrypt.Verify(password, account.Password);
@@ -197,6 +188,43 @@ namespace BatDongSan.Services
 				securityCode = c.SecurityCode,
 				email = c.Email,
 			}).FirstOrDefault();
+		}
+
+		public dynamic PasswordVerify(string password, string username)
+		{
+			var account = db.Users.SingleOrDefault(c => c.Username == username);
+			if (account != null)
+			{
+				return BCrypt.Net.BCrypt.Verify(password, account.Password);
+			}
+			return false;
+		}
+
+		public bool ChangePass(string password, string username)
+		{
+			var user = db.Users.SingleOrDefault(u => u.Username == username);
+			if (user != null)
+			{
+				user.Password = BCrypt.Net.BCrypt.HashString(password);
+				return db.SaveChanges() > 0;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		public bool AccountExists(string username, string email)
+		{
+			var user = db.Users.SingleOrDefault(u => u.Username == username || u.Email == email);
+			if (user != null)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
 		}
 	}
 }

@@ -23,7 +23,7 @@ public partial class Realestate
 
     public bool? Status { get; set; }
 
-    public DateOnly? CreatedAt { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
     public string? Region { get; set; }
 

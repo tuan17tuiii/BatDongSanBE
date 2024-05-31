@@ -82,13 +82,13 @@ namespace BatDongSan.Controllers
                     if (id > 0)
                     {
                         imageRealState.RealestateId = id;
-                        imageRealState.Newsid = 0;
+                        imageRealState.Newsid = null;
 
 					}
                     else
                     {
                         imageRealState.Newsid = -id;
-						imageRealState.RealestateId = 0;
+						imageRealState.RealestateId = null;
 
 					}
 

@@ -48,15 +48,70 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
+        [Produces("application/json")]
+        [HttpGet("findByUserSellTrue/{id}")]
+        public IActionResult FindByUserSell(int id)
+        {
+            try
+            {
+                return Ok(realestateService.findByUserSellTrue(id));
+
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
+        [Produces("application/json")]
+        [HttpGet("findByUserSellFalse/{id}")]
+        public IActionResult FindByUserSellFalse(int id)
+        {
+            try
+            {
+                return Ok(realestateService.findByUserSellFalse(id));
+
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
+        [Produces("application/json")]
+        [HttpGet("findByCityRegion/{city}/{region}")]
+        public IActionResult FindByCityRegion(string city , string region)
+        {
+            try
+            {
+                return Ok(realestateService.findByCityRegion(city, region));
+
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
         [Consumes("application/json")]
         [Produces("application/json")]
         [HttpPost("create")]
         public IActionResult Create([FromBody] Realestate realestate)
         {
             try
-            {
+            {   
+                Debug.WriteLine(realestate.Title);
+                Debug.WriteLine(realestate.Describe);
+                Debug.WriteLine(realestate.Bathrooms);
+                Debug.WriteLine(realestate.Bedrooms);
+                Debug.WriteLine(realestate.Price);
+                Debug.WriteLine(realestate.Type);
+                Debug.WriteLine(realestate.Acreage);
+                Debug.WriteLine(realestate.Status);
+                Debug.WriteLine(realestate.CreatedAt);
+                Debug.WriteLine(realestate.City);
+                Debug.WriteLine(realestate.Region);
+                Debug.WriteLine(realestate.Street);
+                Debug.WriteLine(realestate.TransactionType);
                 int productId = realestateService.create(realestate); // Tạo sản phẩm và lấy ID của sản phẩm
-
+                Debug.WriteLine(productId);
                 if (productId != -1)
                 {
                     // Nếu thành công, trả về kết quả thành công và ID của sản phẩm
@@ -77,6 +132,7 @@ namespace BatDongSan.Controllers
             }
             catch
             {
+                
                 return BadRequest();
             }
         }

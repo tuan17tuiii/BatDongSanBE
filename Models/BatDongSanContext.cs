@@ -32,8 +32,6 @@ public partial class BatDongSanContext : DbContext
     public virtual DbSet<TypeRealestate> TypeRealestates { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
-
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.UseCollation("Latin1_General_CI_AS");
@@ -81,15 +79,15 @@ public partial class BatDongSanContext : DbContext
             entity.ToTable("image_realestate");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Newid).HasColumnName("newid");
+            entity.Property(e => e.Newsid).HasColumnName("newsid");
             entity.Property(e => e.RealestateId).HasColumnName("realestate_id");
             entity.Property(e => e.UrlImage)
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("url_image");
 
-            entity.HasOne(d => d.New).WithMany(p => p.ImageRealestates)
-                .HasForeignKey(d => d.Newid)
+            entity.HasOne(d => d.News).WithMany(p => p.ImageRealestates)
+                .HasForeignKey(d => d.Newsid)
                 .HasConstraintName("FK_image_realestate_news");
 
             entity.HasOne(d => d.Realestate).WithMany(p => p.ImageRealestates)
