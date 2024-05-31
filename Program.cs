@@ -28,6 +28,7 @@ builder.Services.AddScoped<ImageRealestateService, ImageRealestateServiceImpl>()
 builder.Services.AddScoped<RealestateService, RealestateServiceImpl>();
 builder.Services.AddScoped<TypeRealestateService, TypeRealestateServiceImpl>();
 builder.Services.AddScoped<UserService, UserServiceImpl>();
+builder.Services.AddScoped<TransactionService, TransactionServiceImpl>();
 
 
 

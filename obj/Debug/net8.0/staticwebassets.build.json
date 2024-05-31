@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0iSST/ShhxYUyVFwU5LAFyfTyuhCsf8GlpcUZB5lbys=",
+  "Hash": "cmtWA34VNRZt6ewiDStEBpLBQ0MTSi23z9st44B2VwY=",
   "Source": "BatDongSan",
   "BasePath": "_content/BatDongSan",
   "Mode": "Default",
@@ -1079,6 +1079,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\20af3984855244f697e7c739b12e9ccd.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\21039994f5e941fe8a1adaf658cb7044.png",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/21039994f5e941fe8a1adaf658cb7044.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\21039994f5e941fe8a1adaf658cb7044.png"
     },
     {
       "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\211117fdcbe94fddbeaea06f07097b7c.jpg",
@@ -3758,6 +3777,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\6fe94c6ee5414ebfae97abbf37599bc6.png"
+    },
+    {
+      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\6ffa0991a93e4187afba530b42dbefbb.png",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/6ffa0991a93e4187afba530b42dbefbb.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6ffa0991a93e4187afba530b42dbefbb.png"
     },
     {
       "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\71156b19acb24403ac1ce40a1e015e46.jpg",
