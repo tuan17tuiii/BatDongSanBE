@@ -25,27 +25,16 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<Realestate> Realestates { get; set; }
 
-<<<<<<< HEAD
+
     public virtual DbSet<Role> Roles { get; set; }
 
-=======
-    public virtual DbSet<Role> Roles { get; set; }
 
->>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
 	public virtual DbSet<Transaction> Transactions { get; set; }
 
     public virtual DbSet<TypeRealestate> TypeRealestates { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    
-=======
->>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
-=======
->>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.UseCollation("Latin1_General_CI_AS");
@@ -177,7 +166,7 @@ public partial class DatabaseContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("name");
-<<<<<<< HEAD
+
         });
 		modelBuilder.Entity<News>(entity =>
 		{
@@ -186,16 +175,7 @@ public partial class DatabaseContext : DbContext
 			entity.Property(e => e.Id).HasColumnName("id");
 		});
 
-=======
-        });
-		modelBuilder.Entity<News>(entity =>
-		{
-			entity.ToTable("news");
 
-			entity.Property(e => e.Id).HasColumnName("id");
-		});
-
->>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
 		modelBuilder.Entity<Transaction>(entity =>
         {
             entity.ToTable("transaction");
