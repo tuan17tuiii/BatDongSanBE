@@ -253,8 +253,8 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.AdvertisementController",
-    "Method": "findByID",
-    "RelativePath": "advertisement/findByID/{id}",
+    "Method": "findById",
+    "RelativePath": "advertisement/findById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

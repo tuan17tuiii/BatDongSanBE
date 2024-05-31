@@ -54,14 +54,11 @@ namespace BatDongSan.Services
                 CreatedAt = c.CreatedAt, 
                 City = c.City,
                 Region = c.Region,
-
-
                 Street = c.Street,	
-                transaction_type = c.TransactionType ,
+                transactionType = c.TransactionType ,
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type,
                 Nameusersell=c.Usersell.Name,
-
                 image = c.ImageRealestates.Where(x=>x.RealestateId==c.Id).Select(a => new
                 {
 					Id = a.Id,

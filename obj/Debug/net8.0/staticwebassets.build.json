@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cwm4PRlnk/NZQ4AS2Y2OIAhgUCCcpxbFkUA3fbpTw+Y=",
+  "Hash": "4uhPZI+zjH8kJg6YZ/YUJ8ImGhV5hg+sqBcnp+DGGdc=",
   "Source": "BatDongSan",
   "BasePath": "_content/BatDongSan",
   "Mode": "Default",
@@ -395,6 +395,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\093a8d86e4ae4e2781bfeffa509001f4.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\0981538f90ae4713a3952ec0b529e053.png",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/0981538f90ae4713a3952ec0b529e053.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0981538f90ae4713a3952ec0b529e053.png"
     },
     {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\09e8438c0c764e4a823f7ced6109fa7b.jpg",
@@ -4406,6 +4425,25 @@
       "OriginalItemSpec": "wwwroot\\images\\648ebc9a7d2b4786bfe0a01828535fba.jpg"
     },
     {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\64c612193daa44f2a23fc03c2601c180.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/64c612193daa44f2a23fc03c2601c180.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\64c612193daa44f2a23fc03c2601c180.jpg"
+    },
+    {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\65340f2d71484f10a2240a5c7f089343.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -7957,6 +7995,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\c3e046d5952240ee970bf87150e925a0.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\c3e18b09c2a940f78df5762709151a54.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/c3e18b09c2a940f78df5762709151a54.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c3e18b09c2a940f78df5762709151a54.jpg"
     },
     {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\c3e87138dc7a4479bcd454118ca28cc2.png",
