@@ -13,7 +13,7 @@ namespace BatDongSan.Controllers
 		}
 
 		[Produces("application/json")]
-		[Route("FindAll")]
+		[HttpGet("FindAll")]
 		public IActionResult FindAll()
 		{
 			try
@@ -24,6 +24,36 @@ namespace BatDongSan.Controllers
 			catch
 			{
 
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpGet("findByDates/{from}/{to}")]
+		public IActionResult FindByDates(string from, string to)
+		{
+			try
+			{
+				return Ok(transactionService.dateRange(from, to));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpGet("today/{date}")]
+		public IActionResult Today(string date)
+		{
+			try
+			{
+				return Ok(transactionService.Today(date));
+
+			}
+			catch
+			{
 				return BadRequest();
 			}
 		}
