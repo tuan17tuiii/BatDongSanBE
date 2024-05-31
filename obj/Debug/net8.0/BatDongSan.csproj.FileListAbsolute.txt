@@ -255,3 +255,14 @@ D:\BatDongSanBE\obj\Debug\net8.0\refint\BatDongSan.dll
 D:\BatDongSanBE\obj\Debug\net8.0\BatDongSan.pdb
 D:\BatDongSanBE\obj\Debug\net8.0\BatDongSan.genruntimeconfig.cache
 D:\BatDongSanBE\obj\Debug\net8.0\ref\BatDongSan.dll
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\obj\Debug\net8.0\BatDongSan.csproj.AssemblyReference.cache
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\obj\Debug\net8.0\BatDongSan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\obj\Debug\net8.0\BatDongSan.AssemblyInfoInputs.cache
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\obj\Debug\net8.0\BatDongSan.AssemblyInfo.cs
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\obj\Debug\net8.0\BatDongSan.csproj.CoreCompileInputs.cache
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\obj\Debug\net8.0\BatDongSan.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\obj\Debug\net8.0\BatDongSan.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\obj\Debug\net8.0\BatDongSan.sourcelink.json
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\obj\Debug\net8.0\BatDongSan.dll
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\obj\Debug\net8.0\refint\BatDongSan.dll
+C:\Users\QUOC DAT\source\repos\tuan17tuiii\BatDongSanBE\obj\Debug\net8.0\BatDongSan.pdb

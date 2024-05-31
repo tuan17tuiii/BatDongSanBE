@@ -13,7 +13,7 @@ public partial class Advertisement
 
     public int? Quantitydate { get; set; }
 
-    public DateOnly? Time { get; set; }
+    public DateTime? Time { get; set; }
 
     public bool? Status { get; set; }
 
