@@ -1,4 +1,3 @@
-
 ﻿using System;
 using System.Collections.Generic;
 
@@ -24,4 +23,3 @@ public partial class Transaction
 
     public virtual User? Seller { get; set; }
 }
-

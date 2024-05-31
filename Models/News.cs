@@ -1,4 +1,3 @@
-
 ﻿using System;
 using System.Collections.Generic;
 
@@ -16,4 +15,3 @@ public partial class News
 
     public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 }
-

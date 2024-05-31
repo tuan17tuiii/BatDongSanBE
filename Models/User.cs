@@ -25,6 +25,8 @@ public partial class User
 
     public string? SecurityCode { get; set; }
 
+    public string? Avatar { get; set; }
+
     public virtual Advertisement? Advertisement { get; set; }
 
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();

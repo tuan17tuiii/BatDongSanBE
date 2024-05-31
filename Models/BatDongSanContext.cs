@@ -46,10 +46,7 @@ public partial class BatDongSanContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("advertisement_name");
-            entity.Property(e => e.Describe)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("describe");
+            
             entity.Property(e => e.Price).HasColumnName("price");
             entity.Property(e => e.Status).HasColumnName("status");
             entity.Property(e => e.Time).HasColumnName("time");

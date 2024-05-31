@@ -1,4 +1,3 @@
-
 ﻿using System;
 using System.Collections.Generic;
 
@@ -10,7 +9,7 @@ public partial class ImageRealestate
 
     public int? RealestateId { get; set; }
 
-    public string UrlImage { get; set; } = null!;
+    public string? UrlImage { get; set; }
 
     public int? Newsid { get; set; }
 
@@ -18,4 +17,3 @@ public partial class ImageRealestate
 
     public virtual Realestate? Realestate { get; set; }
 }
-
