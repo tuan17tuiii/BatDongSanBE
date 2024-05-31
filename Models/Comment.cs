@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 
@@ -17,3 +18,24 @@ public partial class Comment
 
     public virtual User? User { get; set; }
 }
+=======
+﻿using System;
+using System.Collections.Generic;
+
+namespace BatDongSan.Models;
+
+public partial class Comment
+{
+    public int Id { get; set; }
+
+    public int? UserId { get; set; }
+
+    public int? BatdongsanId { get; set; }
+
+    public string? Content { get; set; }
+
+    public DateOnly? CreatedAt { get; set; }
+
+    public virtual User? User { get; set; }
+}
+>>>>>>> 4a1c9cffabd6c42272d71d3c52d10cdbcba1bc0b
