@@ -1,3 +1,4 @@
+
 using BatDongSan.Converters;
 using BatDongSan.Models;
 using BatDongSan.Services;
@@ -29,6 +30,7 @@ builder.Services.AddScoped<RealestateService, RealestateServiceImpl>();
 builder.Services.AddScoped<TypeRealestateService, TypeRealestateServiceImpl>();
 builder.Services.AddScoped<UserService, UserServiceImpl>();
 builder.Services.AddScoped<TransactionService, TransactionServiceImpl>();
+builder.Services.AddScoped<NewsService, NewsServiceImpl>();
 
 
 

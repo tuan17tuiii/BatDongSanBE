@@ -13,5 +13,5 @@ public partial class News
 
     public string? Tag { get; set; }
 
-    public string? Images { get; set; }
+    public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 }

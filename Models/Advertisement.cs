@@ -9,13 +9,15 @@ public partial class Advertisement
 
     public string? AdvertisementName { get; set; }
 
-    public double? Price { get; set; }
+    public int? Price { get; set; }
 
-    public string? Describe { get; set; }
+    public int? Quantitydate { get; set; }
 
-    public DateTime? Time { get; set; }
+    public DateOnly? Time { get; set; }
 
     public bool? Status { get; set; }
+
+    public int? Quantitynews { get; set; }
 
     public virtual ICollection<User> Users { get; set; } = new List<User>();
 }

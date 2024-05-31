@@ -33,10 +33,9 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.UseCollation("Latin1_General_CI_AS");
-
         modelBuilder.Entity<Advertisement>(entity =>
         {
             entity.ToTable("advertisement");
@@ -46,11 +45,9 @@ public partial class DatabaseContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("advertisement_name");
-            entity.Property(e => e.Describe)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("describe");
             entity.Property(e => e.Price).HasColumnName("price");
+            entity.Property(e => e.Quantitydate).HasColumnName("quantitydate");
+            entity.Property(e => e.Quantitynews).HasColumnName("quantitynews");
             entity.Property(e => e.Status).HasColumnName("status");
             entity.Property(e => e.Time).HasColumnName("time");
         });
@@ -80,11 +77,16 @@ public partial class DatabaseContext : DbContext
             entity.ToTable("image_realestate");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Newsid).HasColumnName("newsid");
             entity.Property(e => e.RealestateId).HasColumnName("realestate_id");
             entity.Property(e => e.UrlImage)
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("url_image");
+
+            entity.HasOne(d => d.News).WithMany(p => p.ImageRealestates)
+                .HasForeignKey(d => d.Newsid)
+                .HasConstraintName("FK_image_realestate_news");
 
             entity.HasOne(d => d.Realestate).WithMany(p => p.ImageRealestates)
                 .HasForeignKey(d => d.RealestateId)
@@ -97,12 +99,8 @@ public partial class DatabaseContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Content)
-                .HasMaxLength(250)
+                .HasColumnType("text")
                 .HasColumnName("content");
-            entity.Property(e => e.Images)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("images");
             entity.Property(e => e.Tag)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -214,6 +212,10 @@ public partial class DatabaseContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.AdvertisementId).HasColumnName("advertisement_id");
+            entity.Property(e => e.Avatar)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("avatar");
             entity.Property(e => e.Email)
                 .HasMaxLength(250)
                 .IsUnicode(false)

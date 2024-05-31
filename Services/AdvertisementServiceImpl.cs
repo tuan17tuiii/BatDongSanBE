@@ -43,7 +43,8 @@ namespace BatDongSan.Services
                 Id = c.Id,
                 AdvertisementName = c.AdvertisementName,
                 Price = c.Price,
-                Describe = c.Describe,
+                QuantityDates = c.Quantitydate,
+                QuantityNews = c.Quantitynews,
                 Time  = c.Time,
                 Status = c.Status,
             }).ToList();
@@ -56,8 +57,9 @@ namespace BatDongSan.Services
 				Id = c.Id,
 				AdvertisementName = c.AdvertisementName,
 				Price = c.Price,
-				Describe = c.Describe,
-				Time = c.Time,
+                QuantityDates = c.Quantitydate,
+                QuantityNews = c.Quantitynews,
+                Time = c.Time,
 				Status = c.Status,
 			}).SingleOrDefault();
 		}

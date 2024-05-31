@@ -28,8 +28,8 @@ namespace BatDongSan.Controllers
         }
 
 		[Produces("application/json")]
-		[HttpGet("findByID/{id}")]
-		public IActionResult findByID(int id)
+		[HttpGet("findById/{id}")]
+		public IActionResult findById(int id)
 		{
 			try
 			{
