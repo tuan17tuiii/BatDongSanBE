@@ -1,6 +1,7 @@
 ﻿using BatDongSan.Models;
 using BatDongSan.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace BatDongSan.Controllers
 {
@@ -22,8 +23,9 @@ namespace BatDongSan.Controllers
 				return Ok(userService.findAll());
 
 			}
-			catch
+			catch(Exception e)
 			{
+				Debug.WriteLine(e.Message);
 				return BadRequest();
 			}
 		}

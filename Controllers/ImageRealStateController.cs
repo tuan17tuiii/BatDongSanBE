@@ -72,16 +72,31 @@ namespace BatDongSan.Controllers
                 var fileNames = new List<string>();
 
                 foreach (var file in files)
-                {   Debug.WriteLine(file.FileName);
+                { Debug.WriteLine(file.FileName);
                     Debug.WriteLine(file);
                     var imageRealState = new ImageRealestate();
-                    
+
                     var fileName = FileHelpers.GenerateFileName(file.FileName);
 
                     imageRealState.UrlImage = fileName;
-                    imageRealState.RealestateId = id;
+                    if (id > 0)
+                    {
+                        imageRealState.RealestateId = id;
+                        imageRealState.Newsid = 0;
 
-                    Create(imageRealState);
+					}
+                    else
+                    {
+                        imageRealState.Newsid = -id;
+						imageRealState.RealestateId = 0;
+
+					}
+
+                    Debug.WriteLine("fffffffff" + imageRealState.Id);
+					Debug.WriteLine("fffffffff" + imageRealState.RealestateId);
+					Debug.WriteLine("fffffffff" + imageRealState.Newsid);
+					Debug.WriteLine("fffffffff" + imageRealState.UrlImage);
+					Create(imageRealState);
 
                     var path = Path.Combine(webHostEnvironment.WebRootPath, "images", fileName);
                     using (var fileStream = new FileStream(path, FileMode.Create))
@@ -105,13 +120,17 @@ namespace BatDongSan.Controllers
         [Consumes("application/json")]
         [Produces("application/json")]
         [HttpPost("create")]
-        public IActionResult Create([FromBody] ImageRealestate imageRealestate)
+        public IActionResult Create([FromBody] ImageRealestate imageRealState)
         {
             try
-            {
-                return Ok(new
+			{
+				Debug.WriteLine("fffffffff" + imageRealState.Id);
+				Debug.WriteLine("fffffffff" + imageRealState.RealestateId);
+				Debug.WriteLine("fffffffff" + imageRealState.Newsid);
+				Debug.WriteLine("fffffffff" + imageRealState.UrlImage);
+				return Ok(new
                 {
-                    Result = imageRealestateService.create(imageRealestate)
+                    Result = imageRealestateService.create(imageRealState)
                 });
             }
             catch
