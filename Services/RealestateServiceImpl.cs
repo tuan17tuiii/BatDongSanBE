@@ -55,11 +55,11 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
-                Userbuy_Id = c.UserbuyId,
+                
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type,
                 Nameusersell=c.Usersell.Name,
-				Nameusersbuy=c.Userbuy.Name,
+				
                 transaction_type = c.TransactionType , 
                 image = c.ImageRealestates.Where(x=>x.RealestateId==c.Id).Select(a => new
                 {
@@ -87,7 +87,7 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
-                Userbuy_Id = c.UserbuyId,
+                
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type
             }).ToList();
@@ -110,7 +110,7 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
-                Userbuy_Id = c.UserbuyId,
+                
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type
             }).SingleOrDefault();
@@ -133,9 +133,15 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
-                Userbuy_Id = c.UserbuyId,
                 Usersell_Id = c.UsersellId,
-                TypeRealState = c.TypeNavigation.Type
+                TypeRealState = c.TypeNavigation.Type,
+
+                LastImage = c.ImageRealestates.OrderByDescending(img => img.Id).Select(img => new {
+                    img.Id,
+                    img.UrlImage, // Giả sử thuộc tính này tồn tại
+                    
+                }).FirstOrDefault()
+
             }).ToList();
         }
 
@@ -156,7 +162,11 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
-                Userbuy_Id = c.UserbuyId,
+                LastImage = c.ImageRealestates.OrderByDescending(img => img.Id).Select(img => new {
+                    img.Id,
+                    img.UrlImage, // Giả sử thuộc tính này tồn tại
+
+                }).FirstOrDefault(),
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type
             }).ToList();

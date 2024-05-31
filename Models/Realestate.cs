@@ -31,19 +31,17 @@ public partial class Realestate
 
     public string? Street { get; set; }
 
-    public int? UserbuyId { get; set; }
-
     public int? UsersellId { get; set; }
 
     public string? TransactionType { get; set; }
+
+    public bool? Sold { get; set; }
 
     public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 
     public virtual ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
 
     public virtual TypeRealestate? TypeNavigation { get; set; }
-
-    public virtual User? Userbuy { get; set; }
 
     public virtual User? Usersell { get; set; }
 }
