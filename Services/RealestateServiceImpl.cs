@@ -55,11 +55,19 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Street = c.Street,
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type,
                 Nameusersell=c.Usersell.Name,
                 transaction_type = c.TransactionType , 
+=======
+                Street = c.Street,	
+                transaction_type = c.TransactionType ,
+                Usersell_Id = c.UsersellId,
+                TypeRealState = c.TypeNavigation.Type,
+                Nameusersell=c.Usersell.Name,
+>>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
 =======
                 Street = c.Street,	
                 transaction_type = c.TransactionType ,
@@ -94,7 +102,10 @@ namespace BatDongSan.Services
                 Region = c.Region,
                 Street = c.Street,
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
 =======
 >>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
                 Usersell_Id = c.UsersellId,
@@ -171,7 +182,10 @@ namespace BatDongSan.Services
                 Region = c.Region,
                 Street = c.Street,
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
 =======
 >>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
                 LastImage = c.ImageRealestates.OrderByDescending(img => img.Id).Select(img => new {

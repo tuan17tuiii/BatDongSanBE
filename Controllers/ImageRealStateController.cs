@@ -74,6 +74,7 @@ namespace BatDongSan.Controllers
                 foreach (var file in files)
                 { Debug.WriteLine(file.FileName);
                     Debug.WriteLine(file);
+<<<<<<< HEAD
                     var imageRealState = new ImageRealestate();
 
                     var fileName = FileHelpers.GenerateFileName(file.FileName);
@@ -96,6 +97,30 @@ namespace BatDongSan.Controllers
 					Debug.WriteLine("fffffffff" + imageRealState.RealestateId);
 					Debug.WriteLine("fffffffff" + imageRealState.Newsid);
 					Debug.WriteLine("fffffffff" + imageRealState.UrlImage);
+=======
+                    var imageRealState = new ImageRealestate();
+
+                    var fileName = FileHelpers.GenerateFileName(file.FileName);
+
+                    imageRealState.UrlImage = fileName;
+                    if (id > 0)
+                    {
+                        imageRealState.RealestateId = id;
+                        imageRealState.Newsid = null;
+
+					}
+                    else
+                    {
+                        imageRealState.Newsid = -id;
+						imageRealState.RealestateId = null;
+
+					}
+
+                    Debug.WriteLine("fffffffff" + imageRealState.Id);
+					Debug.WriteLine("fffffffff" + imageRealState.RealestateId);
+					Debug.WriteLine("fffffffff" + imageRealState.Newsid);
+					Debug.WriteLine("fffffffff" + imageRealState.UrlImage);
+>>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
 					Create(imageRealState);
 
                     var path = Path.Combine(webHostEnvironment.WebRootPath, "images", fileName);
@@ -122,12 +147,21 @@ namespace BatDongSan.Controllers
         [HttpPost("create")]
         public IActionResult Create([FromBody] ImageRealestate imageRealState)
         {
+<<<<<<< HEAD
             try
 			{
 				Debug.WriteLine("fffffffff" + imageRealState.Id);
 				Debug.WriteLine("fffffffff" + imageRealState.RealestateId);
 				Debug.WriteLine("fffffffff" + imageRealState.Newsid);
 				Debug.WriteLine("fffffffff" + imageRealState.UrlImage);
+=======
+            try
+			{
+				Debug.WriteLine("fffffffff" + imageRealState.Id);
+				Debug.WriteLine("fffffffff" + imageRealState.RealestateId);
+				Debug.WriteLine("fffffffff" + imageRealState.Newsid);
+				Debug.WriteLine("fffffffff" + imageRealState.UrlImage);
+>>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
 				return Ok(new
                 {
                     Result = imageRealestateService.create(imageRealState)
