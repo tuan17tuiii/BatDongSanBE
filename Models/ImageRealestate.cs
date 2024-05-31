@@ -9,7 +9,11 @@ public partial class ImageRealestate
 
     public int? RealestateId { get; set; }
 
-    public string? UrlImage { get; set; }
+    public string UrlImage { get; set; } = null!;
+
+    public int? Newsid { get; set; }
+
+    public virtual News? News { get; set; }
 
     public virtual Realestate? Realestate { get; set; }
 }

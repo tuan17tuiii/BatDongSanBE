@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BatDongSan.Models;
 
-public partial class DatabaseContext : DbContext
+public partial class BatDongSanContext : DbContext
 {
-    public DatabaseContext()
+    public BatDongSanContext()
     {
     }
 
-    public DatabaseContext(DbContextOptions<DatabaseContext> options)
+    public BatDongSanContext(DbContextOptions<BatDongSanContext> options)
         : base(options)
     {
     }
@@ -27,17 +27,11 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<Role> Roles { get; set; }
 
-	public virtual DbSet<Transaction> Transactions { get; set; }
+    public virtual DbSet<Transaction> Transactions { get; set; }
 
     public virtual DbSet<TypeRealestate> TypeRealestates { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
-
-<<<<<<< HEAD
-
-    
-=======
->>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.UseCollation("Latin1_General_CI_AS");
@@ -85,11 +79,16 @@ public partial class DatabaseContext : DbContext
             entity.ToTable("image_realestate");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Newsid).HasColumnName("newsid");
             entity.Property(e => e.RealestateId).HasColumnName("realestate_id");
             entity.Property(e => e.UrlImage)
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("url_image");
+
+            entity.HasOne(d => d.News).WithMany(p => p.ImageRealestates)
+                .HasForeignKey(d => d.Newsid)
+                .HasConstraintName("FK_image_realestate_news");
 
             entity.HasOne(d => d.Realestate).WithMany(p => p.ImageRealestates)
                 .HasForeignKey(d => d.RealestateId)
@@ -102,7 +101,7 @@ public partial class DatabaseContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Content)
-                .HasMaxLength(250)
+                .HasColumnType("text")
                 .HasColumnName("content");
             entity.Property(e => e.Tag)
                 .HasMaxLength(250)
@@ -170,14 +169,8 @@ public partial class DatabaseContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("name");
         });
-		modelBuilder.Entity<News>(entity =>
-		{
-			entity.ToTable("news");
 
-			entity.Property(e => e.Id).HasColumnName("id");
-		});
-
-		modelBuilder.Entity<Transaction>(entity =>
+        modelBuilder.Entity<Transaction>(entity =>
         {
             entity.ToTable("transaction");
 

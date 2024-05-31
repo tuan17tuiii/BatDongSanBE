@@ -23,9 +23,8 @@ namespace BatDongSan.Controllers
 				return Ok(userService.findAll());
 
 			}
-			catch
+			catch(Exception e)
 			{
-				
 				return BadRequest();
 			}
 		}

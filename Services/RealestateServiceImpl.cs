@@ -54,11 +54,19 @@ namespace BatDongSan.Services
                 CreatedAt = c.CreatedAt, 
                 City = c.City,
                 Region = c.Region,
+<<<<<<< HEAD
                 Street = c.Street,
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type,
                 Nameusersell=c.Usersell.Name,
                 transaction_type = c.TransactionType , 
+=======
+                Street = c.Street,	
+                transaction_type = c.TransactionType ,
+                Usersell_Id = c.UsersellId,
+                TypeRealState = c.TypeNavigation.Type,
+                Nameusersell=c.Usersell.Name,
+>>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
                 image = c.ImageRealestates.Where(x=>x.RealestateId==c.Id).Select(a => new
                 {
 					Id = a.Id,
@@ -85,7 +93,10 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type
             }).ToList();
@@ -159,7 +170,10 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4800974bf50f7deef1b2e6627bc174e7390dae23
                 LastImage = c.ImageRealestates.OrderByDescending(img => img.Id).Select(img => new {
                     img.Id,
                     img.UrlImage, // Giả sử thuộc tính này tồn tại
