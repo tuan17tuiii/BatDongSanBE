@@ -11,11 +11,9 @@ public partial class Transaction
 
     public int? SellerId { get; set; }
 
-<<<<<<< HEAD
-    public DateOnly? TransactionDate { get; set; }
-=======
+
     public DateTime? TransactionDate { get; set; }
->>>>>>> 37d2c917c23e31316f7663b181e188cf5e153c10
+
 
     public double? Amount { get; set; }
 

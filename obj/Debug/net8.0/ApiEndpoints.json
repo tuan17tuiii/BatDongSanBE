@@ -121,24 +121,8 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.AccountController",
-    "Method": "loginAdmin",
-    "RelativePath": "account/loginAdmin",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "BatDongSan.Models.User",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BatDongSan.Controllers.AccountController",
-    "Method": "loginUser",
-    "RelativePath": "account/loginUser",
+    "Method": "login",
+    "RelativePath": "account/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -154,18 +138,18 @@
   {
     "ContainingType": "BatDongSan.Controllers.AccountController",
     "Method": "PasswordVerify",
-    "RelativePath": "account/PasswordVerify/{userpass}/{password}",
+    "RelativePath": "account/PasswordVerify/{password}/{username}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userpass",
+        "Name": "password",
         "Type": "System.String",
         "IsRequired": true
       },
       {
-        "Name": "password",
+        "Name": "username",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -518,6 +502,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.TransactionController",
+    "Method": "FindAll",
+    "RelativePath": "Transaction/FindAll",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
