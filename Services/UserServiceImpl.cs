@@ -162,19 +162,10 @@ namespace BatDongSan.Services
             }
         }
 
-		public bool LoginAdmin(string username, string password)
-		{
-			var account = db.Users.SingleOrDefault(c => c.Username == username && c.Status == true && c.RoleId == 1);
-			if (account != null)
-			{
-				return BCrypt.Net.BCrypt.Verify(password, account.Password);
-			}
-			return false;
-		}
 
-		public bool LoginUser(string username, string password)
+		public bool Login(string username, string password)
 		{
-			var account = db.Users.SingleOrDefault(c => c.Username == username && c.Status == true && c.RoleId == 2);
+			var account = db.Users.SingleOrDefault(c => c.Username == username && c.Status == true);
 			if (account != null)
 			{
 				return BCrypt.Net.BCrypt.Verify(password, account.Password);
@@ -199,9 +190,14 @@ namespace BatDongSan.Services
 			}).FirstOrDefault();
 		}
 
-		public dynamic PasswordVerify(string password, string userpass)
+		public dynamic PasswordVerify(string password, string username)
 		{
-			return BCrypt.Net.BCrypt.Verify(password, userpass);
+			var account = db.Users.SingleOrDefault(c => c.Username == username);
+			if (account != null)
+			{
+				return BCrypt.Net.BCrypt.Verify(password, account.Password);
+			}
+			return false;
 		}
 
 		public bool ChangePass(string password, string username)

@@ -78,32 +78,14 @@ namespace BatDongSan.Controllers
 
 		[Consumes("application/json")]
 		[Produces("application/json")]
-		[HttpPost("loginAdmin")]
-		public IActionResult loginAdmin([FromBody] User user)
-		{
-			try
-			{
-				return Ok(new{ 
-					Result = userService.LoginAdmin(user.Username, user.Password) 
-				});
-
-			}
-			catch
-			{
-				return BadRequest();
-			}
-		}
-
-		[Consumes("application/json")]
-		[Produces("application/json")]
-		[HttpPost("loginUser")]
-		public IActionResult loginUser([FromBody] User user)
+		[HttpPost("login")]
+		public IActionResult login([FromBody] User user)
 		{
 			try
 			{
 				return Ok(new
 				{
-					Result = userService.LoginUser(user.Username, user.Password)
+					Result = userService.Login(user.Username, user.Password)
 				});
 
 			}
@@ -189,12 +171,12 @@ namespace BatDongSan.Controllers
 
 
 		[Produces("application/json")]
-		[HttpGet("PasswordVerify/{userpass}/{password}")]
-		public IActionResult PasswordVerify(string userpass, string password)
+		[HttpGet("PasswordVerify/{password}/{username}")]
+		public IActionResult PasswordVerify(string password, string username)
 		{
 			try
 			{
-				return Ok(userService.PasswordVerify(password, userpass));
+				return Ok(userService.PasswordVerify(password, username));
 			}
 			catch (Exception ex)
 			{
