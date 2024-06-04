@@ -253,8 +253,8 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.AdvertisementController",
-    "Method": "findByID",
-    "RelativePath": "advertisement/findByID/{id}",
+    "Method": "findById",
+    "RelativePath": "advertisement/findById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -427,6 +427,16 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "MarkExpired",
+    "RelativePath": "realstate/expire",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
     "Method": "FindAll",
     "RelativePath": "realstate/findAll",
     "HttpMethod": "GET",
@@ -550,10 +560,47 @@
     "ContainingType": "BatDongSan.Controllers.TransactionController",
     "Method": "FindAll",
     "RelativePath": "Transaction/FindAll",
-    "HttpMethod": "",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.TransactionController",
+    "Method": "FindByDates",
+    "RelativePath": "Transaction/findByDates/{from}/{to}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "from",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "to",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.TransactionController",
+    "Method": "Today",
+    "RelativePath": "Transaction/today/{date}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

@@ -146,7 +146,13 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
                 email = c.Email,
-			}).FirstOrDefault();
+                Advertisement = new
+				{
+					Id = c.Advertisement.Id ,
+					Name = c.Advertisement.AdvertisementName,
+					QuantityDates = c.Advertisement.Quantitydate,
+				}
+            }).FirstOrDefault();
 		}
 
 		public bool update(User user)

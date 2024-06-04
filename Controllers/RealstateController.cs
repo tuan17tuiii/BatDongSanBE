@@ -137,6 +137,23 @@ namespace BatDongSan.Controllers
             }
         }
 
-
+        [HttpPost("expire")]
+        public IActionResult MarkExpired()
+        {
+            try
+            {
+                
+                realestateService.MarkExpired();
+                return Ok(new
+                {
+                    Result = "Success"
+                });
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
     }
+
 }
