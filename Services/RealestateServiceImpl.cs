@@ -133,7 +133,7 @@ namespace BatDongSan.Services
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type,
 
-                LastImage = c.ImageRealestates.OrderByDescending(img => img.Id).Select(img => new {
+                LastImage = c.ImageRealestates.Select(img => new {
                     img.Id,
                     img.UrlImage, // Giả sử thuộc tính này tồn tại
                     
@@ -160,7 +160,7 @@ namespace BatDongSan.Services
                 Region = c.Region,
                 Street = c.Street,
 
-                LastImage = c.ImageRealestates.OrderByDescending(img => img.Id).Select(img => new {
+                LastImage = c.ImageRealestates.Select(img => new {
                     img.Id,
                     img.UrlImage, // Giả sử thuộc tính này tồn tại
 
@@ -192,7 +192,26 @@ namespace BatDongSan.Services
                 return false;
             }
         }
-
-        
+        public dynamic totalById(int id)
+        {
+            return db.Realestates.Where(p => p.UsersellId == id).Select(c => new
+            {
+                Id = c.Id,
+                Title = c.Title,
+                Describe = c.Describe,
+                Price = c.Price,
+                Type = c.Type,
+                Acreage = c.Acreage,
+                Bedrooms = c.Bedrooms,
+                Bathrooms = c.Bathrooms,
+                Status = c.Status,
+                CreatedAt = c.CreatedAt,
+                City = c.City,
+                Region = c.Region,
+                Street = c.Street,
+                Usersell_Id = c.UsersellId,
+                TypeRealState = c.TypeNavigation.Type
+            }).ToList();
+        }
     }
 }

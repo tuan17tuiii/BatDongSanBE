@@ -146,12 +146,13 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
                 email = c.Email,
-                Advertisement = new
-				{
-					Id = c.Advertisement.Id ,
-					Name = c.Advertisement.AdvertisementName,
-					QuantityDates = c.Advertisement.Quantitydate,
-				}
+                Advertisement = c.Advertisement != null ? new
+                {
+                    Id = c.Advertisement.Id,
+                    Name = c.Advertisement.AdvertisementName,
+                    QuantityDates = c.Advertisement.Quantitydate,
+					QuantityNews = c.Advertisement.Quantitynews,
+                } : null
             }).FirstOrDefault();
 		}
 

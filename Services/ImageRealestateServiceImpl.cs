@@ -46,7 +46,7 @@ namespace BatDongSan.Services
                 // Thực hiện GroupBy và lấy ảnh đầu tiên từ mỗi nhóm
                 var groupedData = allImages
                                   .GroupBy(c => c.RealestateId)
-                                  .Select(g => g.LastOrDefault())
+                                  .Select(g => g.FirstOrDefault())
                                   .Where(c => c != null)
                                   .ToList();
 
