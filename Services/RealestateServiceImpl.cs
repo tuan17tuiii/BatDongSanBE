@@ -1,4 +1,5 @@
 ﻿using BatDongSan.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace BatDongSan.Services
@@ -40,7 +41,7 @@ namespace BatDongSan.Services
 
         public dynamic findAll()
         {
-            return db.Realestates.OrderByDescending(c => c.Id).Select(c => new
+            return db.Realestates.OrderByDescending(c => c.Id).Where(r=> r.Status == true && r.Expired == false && r.Sold == false).Select(c => new
             {
                 Id = c.Id,
                 Title = c.Title,
@@ -55,7 +56,7 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,	
-                transaction_type = c.TransactionType ,
+                transaction_Type = c.TransactionType ,
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type,
                 Nameusersell=c.Usersell.Name,
@@ -188,6 +189,7 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
+
                 LastImage = c.ImageRealestates.OrderByDescending(img => img.Id).Select(img => new {
                     img.Id,
                     img.UrlImage, // Giả sử thuộc tính này tồn tại
@@ -196,6 +198,16 @@ namespace BatDongSan.Services
                 Usersell_Id = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type
             }).ToList();
+        }
+
+        public void MarkExpired()
+        {
+            var itemsToExpire = db.Realestates.Where(r => DateTime.Now > r.CreatedEnd).ToList();
+            foreach (var item in itemsToExpire)
+            {
+                item.Expired = true;
+            }
+            db.SaveChanges();
         }
 
         public bool update(Realestate realestate)

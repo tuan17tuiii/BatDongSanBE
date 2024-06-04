@@ -1,4 +1,5 @@
 ﻿using BatDongSan.Models;
+using System.Globalization;
 
 namespace BatDongSan.Services
 {
@@ -22,7 +23,39 @@ namespace BatDongSan.Services
             }
         }
 
-        public bool delete(int id)
+		public dynamic dateRange(string from, string to)
+		{
+			var dateFrom = DateTime.ParseExact(from, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+
+			var dateTo = DateTime.ParseExact(to, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+
+            return db.Transactions.Where(p => p.TransactionDate >= dateFrom && p.TransactionDate <= dateTo).Select(c => new
+			{
+				Id = c.Id,
+				BuyerId = c.BuyerId,
+				SellerId = c.SellerId,
+				TransactionDate = c.TransactionDate,
+				Amount = c.Amount,
+				RealestateId = c.RealestateId,
+			}).ToList();
+		}
+
+		public dynamic Today(string date)
+		{
+			var today = DateTime.ParseExact(date, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+
+			return db.Transactions.Where(p => p.TransactionDate == today).Select(c => new
+			{
+				Id = c.Id,
+				BuyerId = c.BuyerId,
+				SellerId = c.SellerId,
+				TransactionDate = c.TransactionDate,
+				Amount = c.Amount,
+				RealestateId = c.RealestateId,
+			}).ToList().Take(4);
+		}
+
+		public bool delete(int id)
         {
             try
             {

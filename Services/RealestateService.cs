@@ -13,5 +13,7 @@ namespace BatDongSan.Services
         public int create(Realestate realestate);
         public bool update(Realestate realestate);
         public bool delete(int id);
+        public void MarkExpired();
+
     }
 }

@@ -96,6 +96,7 @@ namespace BatDongSan.Controllers
 					Debug.WriteLine("fffffffff" + imageRealState.RealestateId);
 					Debug.WriteLine("fffffffff" + imageRealState.Newsid);
 					Debug.WriteLine("fffffffff" + imageRealState.UrlImage);
+
 					Create(imageRealState);
 
                     var path = Path.Combine(webHostEnvironment.WebRootPath, "images", fileName);
@@ -122,12 +123,14 @@ namespace BatDongSan.Controllers
         [HttpPost("create")]
         public IActionResult Create([FromBody] ImageRealestate imageRealState)
         {
+
             try
 			{
 				Debug.WriteLine("fffffffff" + imageRealState.Id);
 				Debug.WriteLine("fffffffff" + imageRealState.RealestateId);
 				Debug.WriteLine("fffffffff" + imageRealState.Newsid);
 				Debug.WriteLine("fffffffff" + imageRealState.UrlImage);
+
 				return Ok(new
                 {
                     Result = imageRealestateService.create(imageRealState)
