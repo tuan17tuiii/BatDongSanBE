@@ -50,7 +50,7 @@ namespace BatDongSan.Controllers
         }
         [Produces("application/json")]
         [HttpGet("findByUserSellTrue/{id}")]
-        public IActionResult FindByUserSell(int id)
+        public IActionResult FindByUserSellTrue(int id)
         {
             try
             {
@@ -76,7 +76,21 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
-        [Produces("application/json")]
+		[Produces("application/json")]
+		[HttpGet("findByUserSell/{id}")]
+		public IActionResult FindByUserSell(int id)
+		{
+			try
+			{
+				return Ok(realestateService.findByUserSell(id));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+		[Produces("application/json")]
         [HttpGet("findByCityRegion/{city}/{region}")]
         public IActionResult FindByCityRegion(string city , string region)
         {

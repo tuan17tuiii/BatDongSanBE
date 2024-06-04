@@ -1,4 +1,3 @@
-
 ﻿using System;
 using System.Collections.Generic;
 
@@ -18,4 +17,3 @@ public partial class Comment
 
     public virtual User? User { get; set; }
 }
-

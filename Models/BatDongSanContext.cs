@@ -32,6 +32,7 @@ public partial class BatDongSanContext : DbContext
     public virtual DbSet<TypeRealestate> TypeRealestates { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.UseCollation("Latin1_General_CI_AS");

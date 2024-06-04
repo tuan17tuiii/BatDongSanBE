@@ -36,6 +36,20 @@ namespace BatDongSan.Controllers
 			}
 		}
 		[Produces("application/json")]
+		[HttpGet("findbynewsid/{id}")]
+		public IActionResult Findbynewsid(int id)
+		{
+			try
+			{
+				return Ok(NewsService.findById(id));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+		[Produces("application/json")]
 		[HttpGet("findById/{id}")]
 		public IActionResult FindById(int id)
 		{
@@ -49,6 +63,19 @@ namespace BatDongSan.Controllers
 
 			}
 			catch
+			{
+				return BadRequest();
+			}
+		}
+		[Produces("application/json")]
+		[HttpDelete("Delete/{id}")]
+		public IActionResult Delete(int id)
+		{
+			try
+			{
+				return Ok(NewsService.delete(id));
+			}
+			catch (Exception ex)
 			{
 				return BadRequest();
 			}
@@ -79,6 +106,7 @@ namespace BatDongSan.Controllers
 				return BadRequest();
 			}
 		}
+
 
 
 	}

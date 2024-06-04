@@ -55,15 +55,27 @@ namespace BatDongSan.Services
                 Content = c.Content,
                 Title=c.Title,
                 Tag=c.Tag,
-            }).ToList();
+				img = c.ImageRealestates.Select(x => new
+				{
+					Id = x.Id,
+					UrlImage = x.UrlImage
+				})
+			}).ToList();
         }
 
         public dynamic findById(int id)
         {
-            return db.Roles.Where(c => c.Id == id).Select(c => new
+            return db.News.Where(c => c.Id == id).Select(c => new
             {
                 Id = c.Id,
-                Name = c.Name,
+                Content = c.Content,
+                Tilte=c.Title,
+                Tag=c.Tag,
+                img = c.ImageRealestates.Select(x => new
+                {
+                    Id=x.Id,
+					UrlImage = x.UrlImage
+                })
             }).FirstOrDefault();//ko co firstordefault la tra ve list còn có là trả về đối tượng 
         }
 
