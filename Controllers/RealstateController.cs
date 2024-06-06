@@ -187,5 +187,20 @@ namespace BatDongSan.Controllers
 			}
 		}
 	}
+        [Produces("application/json")]
+        [HttpGet("totalById/{id}")]
+        public IActionResult toTalById(int id)
+        {
+            try
+            {
+                return Ok(realestateService.totalById(id));
+
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
+    }
 
 }
