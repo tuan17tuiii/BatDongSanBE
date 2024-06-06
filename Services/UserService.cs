@@ -14,6 +14,7 @@ namespace BatDongSan.Services
 		public bool Login(string username, string password);
 		public bool ChangePass(string password, string username);
 		public bool AccountExists(string username, string email);
+		public bool updatePhoto(int id, string photo);
 		public bool create(User user);
         public bool update(User user);
         public bool delete(int id);

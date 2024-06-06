@@ -65,7 +65,23 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
-        [Produces("application/json")]
+
+		[Produces("application/json")]
+		[HttpGet("findByType/{id}")]
+		public IActionResult findByType(int id)
+		{
+			try
+			{
+				return Ok(realestateService.findByType(id));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
         [HttpGet("findByUserSellTrue/{id}")]
         public IActionResult FindByUserSell(int id)
         {
@@ -179,6 +195,21 @@ namespace BatDongSan.Controllers
 			try
 			{
 				return Ok(realestateService.update(realestate));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpDelete("Delete/{id}")]
+		public IActionResult Delete(int id)
+		{
+			try
+			{
+				return Ok(realestateService.delete(id));
 
 			}
 			catch

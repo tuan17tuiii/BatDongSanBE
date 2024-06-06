@@ -3,7 +3,6 @@ using BatDongSan.Services;
 using DemoFramework_Core.Helpers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using System.Diagnostics;
 
 namespace BatDongSan.Controllers
@@ -148,26 +147,37 @@ namespace BatDongSan.Controllers
 
 		[Produces("application/json")]
 		[HttpPut("Update")]
-		public IActionResult Update([FromBody] string user, IFormFile file)
+		public IActionResult Update([FromBody] User user, IFormFile file)
 		{
 			try
 			{
-				var fileName = FileHelpers.GenerateFileName(file.FileName);
-				var path = Path.Combine(webHostEnvironment.WebRootPath, "images", fileName);
-				using (var fileStream = new FileStream(path, FileMode.Create))
-				{
-					file.CopyTo(fileStream);
-				}
-
-				var userUp = JsonConvert.DeserializeObject<User>(user);
-				userUp.Avatar = fileName;
-
-				return Ok(userService.update(userUp));
+				return Ok(userService.update(user));
 
 			}
 			catch
 			{
 				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpPost("Upload")]
+		public IActionResult UploadAvatar(int id, IFormFile file)
+		{
+			try
+			{
+				var fileName = FileHelpers.GenerateFileName(file.FileName);
+				var path = Path.Combine(webHostEnvironment.WebRootPath, "images", fileName);
+				using (var filestream = new FileStream(path, FileMode.Create))
+				{
+					file.CopyTo(filestream);
+				}
+
+				return Ok(userService.updatePhoto(id, fileName));
+			}
+			catch
+			{
+				return BadRequest(); // tra ve ma 400
 			}
 		}
 

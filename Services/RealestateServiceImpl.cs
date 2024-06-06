@@ -146,6 +146,28 @@ namespace BatDongSan.Services
 			}).SingleOrDefault();
 		}
 
+		public dynamic findByType(int id)
+		{
+			return db.Realestates.Where(p => p.Type == id).Select(c => new
+			{
+				Id = c.Id,
+				Title = c.Title,
+				Describe = c.Describe,
+				Price = c.Price,
+				Type = c.Type,
+				Acreage = c.Acreage,
+				Bedrooms = c.Bedrooms,
+				Bathrooms = c.Bathrooms,
+				Status = c.Status,
+				CreatedAt = c.CreatedAt,
+				City = c.City,
+				Region = c.Region,
+				Street = c.Street,
+				Usersell_Id = c.UsersellId,
+				TypeRealState = c.TypeNavigation.Type
+			}).SingleOrDefault();
+		}
+
 		public dynamic findByUserSellFalse(int id)
 		{
 			return db.Realestates.Where(p => p.UsersellId == id && p.Status == false).Select(c => new

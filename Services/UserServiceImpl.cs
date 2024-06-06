@@ -238,5 +238,19 @@ namespace BatDongSan.Services
 				return false;
 			}
 		}
+
+		public bool updatePhoto(int id, string photo)
+		{
+			try
+			{
+				var user = db.Users.Find(id);
+				user.Avatar = photo;
+				return db.SaveChanges() > 0;
+			}
+			catch
+			{
+				return false;
+			}
+		}
 	}
 }
