@@ -4,195 +4,230 @@ using System.Diagnostics;
 
 namespace BatDongSan.Services
 {
-    public class RealestateServiceImpl : RealestateService
-    {
-        private DatabaseContext db;
-        public RealestateServiceImpl(DatabaseContext _db)
-        {
-            db = _db;
-        }
-        public int create(Realestate realestate)
-        {
-            try
-            {
-                db.Realestates.Add(realestate);
-                db.SaveChanges();
-                return realestate.Id;
+	public class RealestateServiceImpl : RealestateService
+	{
+		private DatabaseContext db;
+		public RealestateServiceImpl(DatabaseContext _db)
+		{
+			db = _db;
+		}
+		public int create(Realestate realestate)
+		{
+			try
+			{
+				db.Realestates.Add(realestate);
+				db.SaveChanges();
+				return realestate.Id;
 
-            }
-            catch(Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-                return -1;
-            }
-        }
-        public bool delete(int id)
-        {
-            try
-            {
-                db.Realestates.Remove(db.Realestates.Find(id));
-                return db.SaveChanges() > 0;
-            }
-            catch
-            {
-                return false;
-            }
-        }
+			}
+			catch (Exception ex)
+			{
+				Debug.WriteLine(ex.Message);
+				return -1;
+			}
+		}
+		public bool delete(int id)
+		{
+			try
+			{
+				db.Realestates.Remove(db.Realestates.Find(id));
+				return db.SaveChanges() > 0;
+			}
+			catch
+			{
+				return false;
+			}
+		}
 
-        public dynamic findAll()
-        {
-            return db.Realestates.OrderByDescending(c => c.Id).Where(r=> r.Status == true && r.Expired == false && r.Sold == false).Select(c => new
-            {
-                Id = c.Id,
-                Title = c.Title,
-                Describe = c.Describe,
-                Price = c.Price,
-                Type = c.Type,
-                Acreage = c.Acreage,
-                Bedrooms = c.Bedrooms,
-                Bathrooms = c.Bathrooms ,
-                Status = c.Status,
-                CreatedAt = c.CreatedAt, 
-                City = c.City,
-                Region = c.Region,
-                Street = c.Street,	
-                transaction_Type = c.TransactionType ,
-                Usersell_Id = c.UsersellId,
-                TypeRealState = c.TypeNavigation.Type,
-                Nameusersell=c.Usersell.Name,
-                image = c.ImageRealestates.Where(x=>x.RealestateId==c.Id).Select(a => new
-                {
+		public dynamic findAll()
+		{
+			return db.Realestates.OrderByDescending(c => c.Id).Where(r => r.Status == true && r.Expired == false && r.Sold == false).Select(c => new
+			{
+				Id = c.Id,
+				Title = c.Title,
+				Describe = c.Describe,
+				Price = c.Price,
+				Type = c.Type,
+				Acreage = c.Acreage,
+				Bedrooms = c.Bedrooms,
+				Bathrooms = c.Bathrooms,
+				Status = c.Status,
+				CreatedAt = c.CreatedAt,
+				City = c.City,
+				Region = c.Region,
+				Street = c.Street,
+				transaction_Type = c.TransactionType,
+				Usersell_Id = c.UsersellId,
+				TypeRealState = c.TypeNavigation.Type,
+				Nameusersell = c.Usersell.Name,
+				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+				{
 					Id = a.Id,
 					urlImage = a.UrlImage// Thêm các trường cần thiết khác từ ImageRealestate
-				    
-			}).ToList(),
+
+				}).ToList(),
 			}).ToList();
-        }
+		}
 
-        public dynamic findByCityRegion(string city, string region)
-        {
-            return db.Realestates.Where(p => p.City == city && p.Region == region).Select(c => new
-            {
-                Id = c.Id,
-                Title = c.Title,
-                Describe = c.Describe,
-                Price = c.Price,
-                Type = c.Type,
-                Acreage = c.Acreage,
-                Bedrooms = c.Bedrooms,
-                Bathrooms = c.Bathrooms,
-                Status = c.Status,
-                CreatedAt = c.CreatedAt,
-                City = c.City,
-                Region = c.Region,
-                Street = c.Street,
-                Usersell_Id = c.UsersellId,
-                TypeRealState = c.TypeNavigation.Type
-            }).ToList();
-        }
+		public dynamic findAll2()
+		{
+			return db.Realestates.Select(c => new
+			{
+				Id = c.Id,
+				Title = c.Title,
+				Describe = c.Describe,
+				Price = c.Price,
+				Type = c.Type,
+				Acreage = c.Acreage,
+				Bedrooms = c.Bedrooms,
+				Bathrooms = c.Bathrooms,
+				Status = c.Status,
+				CreatedAt = c.CreatedAt,
+				City = c.City,
+				Region = c.Region,
+				Street = c.Street,
+				transaction_Type = c.TransactionType,
+				Usersell_Id = c.UsersellId,
+				sold = c.Sold,
+				expired = c.Expired,
+				created_end = c.CreatedEnd,
+				TypeRealState = c.TypeNavigation.Type,
+				Nameusersell = c.Usersell.Name,
+				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+				{
+					Id = a.Id,
+					urlImage = a.UrlImage// Thêm các trường cần thiết khác từ ImageRealestate
 
-        public dynamic findById(int id)
-        {
-            return db.Realestates.Where(p => p.Id == id).OrderByDescending(c => c.Id).Select(c => new
-            {
-                Id = c.Id,
-                Title = c.Title,
-                Describe = c.Describe,
-                Price = c.Price,
-                Type = c.Type,
-                Acreage = c.Acreage,
-                Bedrooms = c.Bedrooms,
-                Bathrooms = c.Bathrooms,
-                Status = c.Status,
-                CreatedAt = c.CreatedAt,
-                City = c.City,
-                Region = c.Region,
-                Street = c.Street,
-                Usersell_Id = c.UsersellId,
-                TypeRealState = c.TypeNavigation.Type
-            }).SingleOrDefault();
-        }
+				}).ToList(),
+			}).ToList();
+		}
 
-        public dynamic findByUserSellFalse(int id)
-        {
-            return db.Realestates.Where(p => p.UsersellId == id && p.Status == false).Select(c => new
-            {
-                Id = c.Id,
-                Title = c.Title,
-                Describe = c.Describe,
-                Price = c.Price,
-                Type = c.Type,
-                Acreage = c.Acreage,
-                Bedrooms = c.Bedrooms,
-                Bathrooms = c.Bathrooms,
-                Status = c.Status,
-                CreatedAt = c.CreatedAt,
-                City = c.City,
-                Region = c.Region,
-                Street = c.Street,
-                Usersell_Id = c.UsersellId,
-                TypeRealState = c.TypeNavigation.Type,
+		public dynamic findByCityRegion(string city, string region)
+		{
+			return db.Realestates.Where(p => p.City == city && p.Region == region).Select(c => new
+			{
+				Id = c.Id,
+				Title = c.Title,
+				Describe = c.Describe,
+				Price = c.Price,
+				Type = c.Type,
+				Acreage = c.Acreage,
+				Bedrooms = c.Bedrooms,
+				Bathrooms = c.Bathrooms,
+				Status = c.Status,
+				CreatedAt = c.CreatedAt,
+				City = c.City,
+				Region = c.Region,
+				Street = c.Street,
+				Usersell_Id = c.UsersellId,
+				TypeRealState = c.TypeNavigation.Type
+			}).ToList();
+		}
 
-                LastImage = c.ImageRealestates.OrderByDescending(img => img.Id).Select(img => new {
-                    img.Id,
-                    img.UrlImage, // Giả sử thuộc tính này tồn tại
-                    
-                }).FirstOrDefault()
+		public dynamic findById(int id)
+		{
+			return db.Realestates.Where(p => p.Id == id).OrderByDescending(c => c.Id).Select(c => new
+			{
+				Id = c.Id,
+				Title = c.Title,
+				Describe = c.Describe,
+				Price = c.Price,
+				Type = c.Type,
+				Acreage = c.Acreage,
+				Bedrooms = c.Bedrooms,
+				Bathrooms = c.Bathrooms,
+				Status = c.Status,
+				CreatedAt = c.CreatedAt,
+				City = c.City,
+				Region = c.Region,
+				Street = c.Street,
+				Usersell_Id = c.UsersellId,
+				TypeRealState = c.TypeNavigation.Type
+			}).SingleOrDefault();
+		}
 
-            }).ToList();
-        }
+		public dynamic findByUserSellFalse(int id)
+		{
+			return db.Realestates.Where(p => p.UsersellId == id && p.Status == false).Select(c => new
+			{
+				Id = c.Id,
+				Title = c.Title,
+				Describe = c.Describe,
+				Price = c.Price,
+				Type = c.Type,
+				Acreage = c.Acreage,
+				Bedrooms = c.Bedrooms,
+				Bathrooms = c.Bathrooms,
+				Status = c.Status,
+				CreatedAt = c.CreatedAt,
+				City = c.City,
+				Region = c.Region,
+				Street = c.Street,
+				Usersell_Id = c.UsersellId,
+				TypeRealState = c.TypeNavigation.Type,
 
-        public dynamic findByUserSellTrue(int id)
-        {
-            return db.Realestates.Where(p => p.UsersellId == id && p.Status == true ).Select(c => new
-            {
-                Id = c.Id,
-                Title = c.Title,
-                Describe = c.Describe,
-                Price = c.Price,
-                Type = c.Type,
-                Acreage = c.Acreage,
-                Bedrooms = c.Bedrooms,
-                Bathrooms = c.Bathrooms,
-                Status = c.Status,
-                CreatedAt = c.CreatedAt,
-                City = c.City,
-                Region = c.Region,
-                Street = c.Street,
+				LastImage = c.ImageRealestates.OrderByDescending(img => img.Id).Select(img => new
+				{
+					img.Id,
+					img.UrlImage, // Giả sử thuộc tính này tồn tại
 
-                LastImage = c.ImageRealestates.OrderByDescending(img => img.Id).Select(img => new {
-                    img.Id,
-                    img.UrlImage, // Giả sử thuộc tính này tồn tại
+				}).FirstOrDefault()
 
-                }).FirstOrDefault(),
-                Usersell_Id = c.UsersellId,
-                TypeRealState = c.TypeNavigation.Type
-            }).ToList();
-        }
+			}).ToList();
+		}
 
-        public void MarkExpired()
-        {
-            var itemsToExpire = db.Realestates.Where(r => DateTime.Now > r.CreatedEnd).ToList();
-            foreach (var item in itemsToExpire)
-            {
-                item.Expired = true;
-            }
-            db.SaveChanges();
-        }
+		public dynamic findByUserSellTrue(int id)
+		{
+			return db.Realestates.Where(p => p.UsersellId == id && p.Status == true).Select(c => new
+			{
+				Id = c.Id,
+				Title = c.Title,
+				Describe = c.Describe,
+				Price = c.Price,
+				Type = c.Type,
+				Acreage = c.Acreage,
+				Bedrooms = c.Bedrooms,
+				Bathrooms = c.Bathrooms,
+				Status = c.Status,
+				CreatedAt = c.CreatedAt,
+				City = c.City,
+				Region = c.Region,
+				Street = c.Street,
 
-        public bool update(Realestate realestate)
-        {
-            try
-            {
-                db.Entry(realestate).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-                return db.SaveChanges() > 0;
-            }
-            catch
-            {
-                return false;
-            }
-        }
+				LastImage = c.ImageRealestates.OrderByDescending(img => img.Id).Select(img => new
+				{
+					img.Id,
+					img.UrlImage, // Giả sử thuộc tính này tồn tại
 
-        
-    }
+				}).FirstOrDefault(),
+				Usersell_Id = c.UsersellId,
+				TypeRealState = c.TypeNavigation.Type
+			}).ToList();
+		}
+
+		public void MarkExpired()
+		{
+			var itemsToExpire = db.Realestates.Where(r => DateTime.Now > r.CreatedEnd).ToList();
+			foreach (var item in itemsToExpire)
+			{
+				item.Expired = true;
+			}
+			db.SaveChanges();
+		}
+
+		public bool update(Realestate realestate)
+		{
+			try
+			{
+				db.Entry(realestate).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+				return db.SaveChanges() > 0;
+			}
+			catch
+			{
+				return false;
+			}
+		}
+
+
+	}
 }

@@ -5,7 +5,8 @@ namespace BatDongSan.Services
     public interface RealestateService
     {
         public dynamic findAll();
-        public dynamic findById(int id);
+		public dynamic findAll2();
+		public dynamic findById(int id);
         public dynamic findByUserSellTrue(int id);
         public dynamic findByUserSellFalse(int id);
         public dynamic findByCityRegion(string city , string region);

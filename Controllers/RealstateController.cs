@@ -20,6 +20,7 @@ namespace BatDongSan.Controllers
             webHostEnvironment = _webHostEnvironment;
             configuration = _configuration;
         }
+
         [Produces("application/json")]
         [HttpGet("findAll")]
         public IActionResult FindAll()
@@ -34,7 +35,23 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
-        [Produces("application/json")]
+
+		[Produces("application/json")]
+		[HttpGet("findAll2")]
+		public IActionResult FindAll2()
+		{
+			try
+			{
+				return Ok(realestateService.findAll2());
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
         [HttpGet("findById/{id}")]
         public IActionResult FindById(int id)
         {
@@ -154,6 +171,21 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
-    }
+
+		[Produces("application/json")]
+		[HttpPut("Update")]
+		public IActionResult Update([FromBody] Realestate realestate)
+		{
+			try
+			{
+				return Ok(realestateService.update(realestate));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+	}
 
 }

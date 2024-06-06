@@ -26,6 +26,7 @@ namespace BatDongSan.Services
 				user.Status = false;
                 var SecurityCode = RandomHelper.GenerateScurityCode();
                 user.SecurityCode = SecurityCode;
+				user.Avatar = "NoImage.jpg";
 
 				var content = "Nhan vao <a href='http://localhost:4200/verify;securityCode=" + SecurityCode + ";username=" + user.Username + "' >day</a> de kich hoat tai khoan";
 				var mailHelper = new MailHelper(configuration);
@@ -61,19 +62,20 @@ namespace BatDongSan.Services
 
         public dynamic findAll()
         {
-            return db.Users.Select(c => new
-            {
-                Id = c.Id,
-                Username = c.Username,
-                Password = c.Password,
-                Name = c.Name,
-                Phone = c.Phone,
-                RoleId = c.RoleId,
-                AdvertisementId = c.AdvertisementId,
-                Status = c.Status,
-                securityCode = c.SecurityCode,
+			return db.Users.Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
 				email = c.Email,
-            }).ToList();
+				avatar = configuration["ImageUrl"] + c.Avatar
+			}).ToList();
         }
 		public dynamic findAllAdmin()
 		{
@@ -89,6 +91,7 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
+				avatar = configuration["ImageUrl"] + c.Avatar
 			}).ToList();
 		}
 
@@ -106,6 +109,7 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
+				avatar = configuration["ImageUrl"] + c.Avatar
 			}).ToList();
 		}
 
@@ -146,12 +150,13 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
                 email = c.Email,
-                Advertisement = new
+				avatar = configuration["ImageUrl"] + c.Avatar,
+				Advertisement = c.Advertisement != null ? new
 				{
 					Id = c.Advertisement.Id ,
 					Name = c.Advertisement.AdvertisementName,
 					QuantityDates = c.Advertisement.Quantitydate,
-				}
+				}: null
             }).FirstOrDefault();
 		}
 
@@ -193,6 +198,7 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
+				avatar = configuration["ImageUrl"] + c.Avatar
 			}).FirstOrDefault();
 		}
 
