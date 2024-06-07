@@ -1,5 +1,4 @@
-
-﻿using BatDongSan.Models;
+using BatDongSan.Models;
 
 namespace BatDongSan.Services
 {
@@ -56,6 +55,12 @@ namespace BatDongSan.Services
                 Content = c.Content,
                 Title=c.Title,
                 Tag=c.Tag,
+                img=c.ImageRealestates.Select(
+                    x => new
+                    {
+                        id=x.Id,
+                        urlImage=x.UrlImage
+                    }).ToList()
             }).ToList();
         }
 
@@ -84,4 +89,3 @@ namespace BatDongSan.Services
         }
     }
 }
-

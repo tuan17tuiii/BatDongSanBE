@@ -168,9 +168,10 @@ namespace BatDongSan.Services
 			}).SingleOrDefault();
 		}
 
-		public dynamic findByUserSellFalse(int id)
+		
+		public dynamic findByUserSell(int id)
 		{
-			return db.Realestates.Where(p => p.UsersellId == id && p.Status == false).Select(c => new
+			return db.Realestates.Where(p => p.UsersellId == id).Select(c => new
 			{
 				Id = c.Id,
 				Title = c.Title,
@@ -185,8 +186,38 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
+				transaction_type = c.TransactionType,
 				Usersell_Id = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
+				Nameusersell = c.Usersell.Name,
+				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+				{
+					Id = a.Id,
+					urlImage = a.UrlImage// Thêm các trường cần thiết khác từ ImageRealestate
+
+				}).ToList(),
+			}).ToList();
+		}
+
+		public dynamic findByUserSellFalse(int id)
+        {
+            return db.Realestates.Where(p => p.UsersellId == id && p.Status == false).Select(c => new
+            {
+                Id = c.Id,
+                Title = c.Title,
+                Describe = c.Describe,
+                Price = c.Price,
+                Type = c.Type,
+                Acreage = c.Acreage,
+                Bedrooms = c.Bedrooms,
+                Bathrooms = c.Bathrooms,
+                Status = c.Status,
+                CreatedAt = c.CreatedAt,
+                City = c.City,
+                Region = c.Region,
+                Street = c.Street,
+                Usersell_Id = c.UsersellId,
+                TypeRealState = c.TypeNavigation.Type,
 
                 LastImage = c.ImageRealestates.Select(img => new {
                     img.Id,

@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 
@@ -23,3 +24,4 @@ public partial class Advertisement
 
     public virtual ICollection<User> Users { get; set; } = new List<User>();
 }
+

@@ -1,3 +1,4 @@
+
 ﻿using BatDongSan.Helpers;
 using BatDongSan.Models;
 using Microsoft.EntityFrameworkCore;
@@ -63,18 +64,19 @@ namespace BatDongSan.Services
 
         public dynamic findAll()
         {
-			return db.Users.Select(c => new
-			{
-				Id = c.Id,
-				Username = c.Username,
-				Password = c.Password,
-				Name = c.Name,
-				Phone = c.Phone,
-				RoleId = c.RoleId,
-				AdvertisementId = c.AdvertisementId,
-				Status = c.Status,
-				securityCode = c.SecurityCode,
+            return db.Users.Select(c => new
+            {
+                Id = c.Id,
+                Username = c.Username,
+                Password = c.Password,
+                Name = c.Name,
+                Phone = c.Phone,
+                RoleId = c.RoleId,
+                AdvertisementId = c.AdvertisementId,
+                Status = c.Status,
+                securityCode = c.SecurityCode,
 				email = c.Email,
+				StatusUpdate = c.Statusupdate,
 				avatar = configuration["ImageUrl"] + c.Avatar
 			}).ToList();
         }
@@ -92,6 +94,7 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
+				StatusUpdate= c.Statusupdate,
 				avatar = configuration["ImageUrl"] + c.Avatar
 			}).ToList();
 		}
@@ -110,6 +113,7 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
+				StatusUpdate = c.Statusupdate,
 				avatar = configuration["ImageUrl"] + c.Avatar
 			}).ToList();
 		}
@@ -128,6 +132,7 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
+				StatusUpdate = c.Statusupdate,
 				avatar = configuration["ImageUrl"] + c.Avatar
 			}).ToList();
 		}
@@ -169,14 +174,16 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
                 email = c.Email,
-				avatar = configuration["ImageUrl"] + c.Avatar,
-				Advertisement = c.Advertisement != null ? new
+                Advertisement =c.Advertisement != null ?  new
 				{
 					Id = c.Advertisement.Id ,
 					Name = c.Advertisement.AdvertisementName,
 					QuantityDates = c.Advertisement.Quantitydate,
-				}: null
-            }).FirstOrDefault();
+				}:null,
+				avatar = configuration["ImageUrl"] + c.Avatar
+				StatusUpdate = c.Statusupdate,
+
+			}).FirstOrDefault();
 		}
 
 		public bool update(User user)
@@ -217,6 +224,7 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
+				StatusUpdate = c.Statusupdate,
 				avatar = configuration["ImageUrl"] + c.Avatar
 			}).FirstOrDefault();
 		}
@@ -258,18 +266,20 @@ namespace BatDongSan.Services
 			}
 		}
 
-		public bool updatePhoto(int id, string photo)
-		{
-			try
-			{
-				var user = db.Users.Find(id);
-				user.Avatar = photo;
-				return db.SaveChanges() > 0;
-			}
-			catch
-			{
-				return false;
-			}
-		}
-	}
+        public bool updatePhoto(int id, string photo)
+        {
+            try
+            {
+                var user = db.Users.Find(id);
+                user.Avatar = photo;
+                return db.SaveChanges() > 0;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+    }
 }
+
