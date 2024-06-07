@@ -13,7 +13,11 @@ public partial class ImageRealestate
 
     public int? Newsid { get; set; }
 
+    public int? Userid { get; set; }
+
     public virtual News? News { get; set; }
 
     public virtual Realestate? Realestate { get; set; }
+
+    public virtual User? User { get; set; }
 }

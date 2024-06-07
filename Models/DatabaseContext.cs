@@ -25,6 +25,8 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<Realestate> Realestates { get; set; }
 
+    public virtual DbSet<Remain> Remains { get; set; }
+
     public virtual DbSet<Role> Roles { get; set; }
 
     public virtual DbSet<Transaction> Transactions { get; set; }
@@ -35,6 +37,8 @@ public partial class DatabaseContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.UseCollation("Latin1_General_CI_AS");
+
         modelBuilder.Entity<Advertisement>(entity =>
         {
             entity.ToTable("advertisement");
@@ -82,6 +86,7 @@ public partial class DatabaseContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("url_image");
+            entity.Property(e => e.Userid).HasColumnName("userid");
 
             entity.HasOne(d => d.News).WithMany(p => p.ImageRealestates)
                 .HasForeignKey(d => d.Newsid)
@@ -90,6 +95,10 @@ public partial class DatabaseContext : DbContext
             entity.HasOne(d => d.Realestate).WithMany(p => p.ImageRealestates)
                 .HasForeignKey(d => d.RealestateId)
                 .HasConstraintName("FK_image_batdongsan_batdongsan");
+
+            entity.HasOne(d => d.User).WithMany(p => p.ImageRealestates)
+                .HasForeignKey(d => d.Userid)
+                .HasConstraintName("FK_image_realestate_user");
         });
 
         modelBuilder.Entity<News>(entity =>
@@ -156,6 +165,24 @@ public partial class DatabaseContext : DbContext
             entity.HasOne(d => d.Usersell).WithMany(p => p.Realestates)
                 .HasForeignKey(d => d.UsersellId)
                 .HasConstraintName("FK_batdongsan_user2");
+        });
+
+        modelBuilder.Entity<Remain>(entity =>
+        {
+            entity.ToTable("remain");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.IdAdv).HasColumnName("id_adv");
+            entity.Property(e => e.IdUser).HasColumnName("id_user");
+            entity.Property(e => e.Remaining).HasColumnName("remaining");
+
+            entity.HasOne(d => d.IdAdvNavigation).WithMany(p => p.Remains)
+                .HasForeignKey(d => d.IdAdv)
+                .HasConstraintName("FK_remain_advertisement");
+
+            entity.HasOne(d => d.IdUserNavigation).WithMany(p => p.Remains)
+                .HasForeignKey(d => d.IdUser)
+                .HasConstraintName("FK_remain_user");
         });
 
         modelBuilder.Entity<Role>(entity =>
@@ -239,6 +266,7 @@ public partial class DatabaseContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("securityCode");
             entity.Property(e => e.Status).HasColumnName("status");
+            entity.Property(e => e.Statusupdate).HasColumnName("statusupdate");
             entity.Property(e => e.Username)
                 .HasMaxLength(250)
                 .IsUnicode(false)

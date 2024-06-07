@@ -65,6 +65,21 @@ namespace BatDongSan.Controllers
 			}
 		}
 
+		[Produces("application/json")]
+		[HttpGet("findAllAgent")]
+		public IActionResult findAllAgent()
+		{
+			try
+			{
+				return Ok(userService.findAllAgent());
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
 		[Consumes("application/json")]
 		[Produces("application/json")]
 		[HttpPost("register")]

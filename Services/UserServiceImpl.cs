@@ -27,6 +27,7 @@ namespace BatDongSan.Services
                 var SecurityCode = RandomHelper.GenerateScurityCode();
                 user.SecurityCode = SecurityCode;
 				user.Avatar = "NoImage.jpg";
+				user.Statusupdate = false;
 
 				var content = "Nhan vao <a href='http://localhost:4200/verify;securityCode=" + SecurityCode + ";username=" + user.Username + "' >day</a> de kich hoat tai khoan";
 				var mailHelper = new MailHelper(configuration);
@@ -98,6 +99,24 @@ namespace BatDongSan.Services
 		public dynamic findAllUser()
 		{
 			return db.Users.Where(c => c.RoleId == 2).Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
+				email = c.Email,
+				avatar = configuration["ImageUrl"] + c.Avatar
+			}).ToList();
+		}
+
+		public dynamic findAllAgent()
+		{
+			return db.Users.Where(c => c.RoleId == 4).Select(c => new
 			{
 				Id = c.Id,
 				Username = c.Username,

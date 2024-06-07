@@ -7,6 +7,7 @@ namespace BatDongSan.Services
         public dynamic findAll();
 		public dynamic findAllAdmin();
 		public dynamic findAllUser();
+		public dynamic findAllAgent();
 		public dynamic findByUsername(string username);
 		public dynamic findById(int id);
 		public dynamic Verify(string code, string username);

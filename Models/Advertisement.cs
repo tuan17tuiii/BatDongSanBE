@@ -13,11 +13,13 @@ public partial class Advertisement
 
     public int? Quantitydate { get; set; }
 
-    public DateOnly? Time { get; set; }
+    public DateTime? Time { get; set; }
 
     public bool? Status { get; set; }
 
     public int? Quantitynews { get; set; }
+
+    public virtual ICollection<Remain> Remains { get; set; } = new List<Remain>();
 
     public virtual ICollection<User> Users { get; set; } = new List<User>();
 }
