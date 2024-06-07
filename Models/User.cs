@@ -27,9 +27,13 @@ public partial class User
 
     public string? Avatar { get; set; }
 
+    public bool? Statusupdate { get; set; }
+
     public virtual Advertisement? Advertisement { get; set; }
 
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
+
+    public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 
     public virtual ICollection<Realestate> Realestates { get; set; } = new List<Realestate>();
 

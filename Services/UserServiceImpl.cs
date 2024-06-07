@@ -73,7 +73,8 @@ namespace BatDongSan.Services
                 Status = c.Status,
                 securityCode = c.SecurityCode,
 				email = c.Email,
-            }).ToList();
+				StatusUpdate = c.Statusupdate,
+			}).ToList();
         }
 		public dynamic findAllAdmin()
 		{
@@ -89,6 +90,7 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
+				StatusUpdate= c.Statusupdate,
 			}).ToList();
 		}
 
@@ -106,6 +108,7 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
+				StatusUpdate = c.Statusupdate,
 			}).ToList();
 		}
 
@@ -146,13 +149,15 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
                 email = c.Email,
-                Advertisement = new
+                Advertisement =c.Advertisement != null ?  new
 				{
 					Id = c.Advertisement.Id ,
 					Name = c.Advertisement.AdvertisementName,
 					QuantityDates = c.Advertisement.Quantitydate,
-				}
-            }).FirstOrDefault();
+				}:null,
+				StatusUpdate = c.Statusupdate,
+
+			}).FirstOrDefault();
 		}
 
 		public bool update(User user)
@@ -193,6 +198,7 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
+				StatusUpdate = c.Statusupdate,
 			}).FirstOrDefault();
 		}
 
