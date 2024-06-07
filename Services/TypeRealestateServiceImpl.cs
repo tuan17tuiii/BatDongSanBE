@@ -45,7 +45,16 @@ namespace BatDongSan.Services
             }).ToList();
         }
 
-        public bool update(TypeRealestate typeRealestate)
+		public dynamic findById(int id)
+		{
+			return db.TypeRealestates.Where(c => c.Id == id).Select(c => new
+			{
+				Id = c.Id,
+				Type = c.Type,
+			}).SingleOrDefault();
+		}
+
+		public bool update(TypeRealestate typeRealestate)
         {
             try
             {

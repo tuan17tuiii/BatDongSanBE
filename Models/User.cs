@@ -37,6 +37,8 @@ public partial class User
 
     public virtual ICollection<Realestate> Realestates { get; set; } = new List<Realestate>();
 
+    public virtual ICollection<Remain> Remains { get; set; } = new List<Remain>();
+
     public virtual Role? Role { get; set; }
 
     public virtual ICollection<Transaction> TransactionBuyers { get; set; } = new List<Transaction>();

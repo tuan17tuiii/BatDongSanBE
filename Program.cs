@@ -31,7 +31,7 @@ builder.Services.AddScoped<TypeRealestateService, TypeRealestateServiceImpl>();
 builder.Services.AddScoped<UserService, UserServiceImpl>();
 builder.Services.AddScoped<TransactionService, TransactionServiceImpl>();
 builder.Services.AddScoped<NewsService, NewsServiceImpl>();
-
+builder.Services.AddScoped<RemainService , RemainServiceImpl>();
 
 
 builder.Services.AddControllers();
