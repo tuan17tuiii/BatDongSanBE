@@ -64,11 +64,11 @@ namespace BatDongSan.Controllers
         }
         [Produces("application/json")]
         [HttpPost("uploads")]
-        public IActionResult Uploads(IFormFile[] files, int id)//nhan tung gia tri rieng le
+        public IActionResult Uploads(IFormFile[] files,int id, string dataname)//nhan tung gia tri rieng le
         {
             try
             {
-                Debug.WriteLine(id);
+                Debug.WriteLine("dataname"+dataname);
                 var fileNames = new List<string>();
 
                 foreach (var file in files)
@@ -79,20 +79,27 @@ namespace BatDongSan.Controllers
                     var fileName = FileHelpers.GenerateFileName(file.FileName);
 
                     imageRealState.UrlImage = fileName;
-                    if (id > 0)
+                    if (dataname == "realstate")
                     {
                         imageRealState.RealestateId = id;
                         imageRealState.Newsid = null;
+						imageRealState.Userid = null;
 
 					}
-                    else
+                    else if(dataname == "news")
                     {
-                        imageRealState.Newsid = -id;
+                        imageRealState.Newsid = id;
 						imageRealState.RealestateId = null;
-
+                        imageRealState.Userid = null;
+					}
+					else if (dataname == "user")
+                    {
+						imageRealState.Userid = id;
+						imageRealState.RealestateId = null;
+						imageRealState.Newsid = null;
 					}
 
-                    Debug.WriteLine("fffffffff" + imageRealState.Id);
+						Debug.WriteLine("fffffffff" + imageRealState.Id);
 					Debug.WriteLine("fffffffff" + imageRealState.RealestateId);
 					Debug.WriteLine("fffffffff" + imageRealState.Newsid);
 					Debug.WriteLine("fffffffff" + imageRealState.UrlImage);

@@ -1,5 +1,7 @@
 ﻿using BatDongSan.Models;
 using BatDongSan.Services;
+using DemoFramework_Core.Helpers;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -9,9 +11,13 @@ namespace BatDongSan.Controllers
 	public class AccountController : Controller
 	{
 		private UserService userService;
-		public AccountController(UserService _userService)
+		private IWebHostEnvironment webHostEnvironment;
+		private IConfiguration configuration;
+		public AccountController(UserService _userService, IWebHostEnvironment _webHostEnvironment, IConfiguration _configuration)
 		{
 			this.userService = _userService;
+			this.webHostEnvironment = _webHostEnvironment;
+			this.configuration = _configuration;
 		}
 
 		[Produces("application/json")]
@@ -23,7 +29,7 @@ namespace BatDongSan.Controllers
 				return Ok(userService.findAll());
 
 			}
-			catch(Exception e)
+			catch (Exception e)
 			{
 				return BadRequest();
 			}
@@ -50,7 +56,7 @@ namespace BatDongSan.Controllers
 		{
 			try
 			{
-				return Ok(userService.findAllUser ());
+				return Ok(userService.findAllUser());
 
 			}
 			catch
@@ -88,7 +94,7 @@ namespace BatDongSan.Controllers
 				});
 
 			}
-			catch(Exception e)
+			catch (Exception e)
 			{
 				return BadRequest(e.InnerException);
 			}
@@ -103,9 +109,9 @@ namespace BatDongSan.Controllers
 				return Ok(userService.findByUsername(username));
 
 			}
-			catch
+			catch (Exception ex)
 			{
-				return BadRequest();
+				return BadRequest("loi ->>>>>>>>>>>>>>>>" + ex.Message);
 			}
 		}
 
@@ -126,7 +132,7 @@ namespace BatDongSan.Controllers
 
 		[Produces("application/json")]
 		[HttpGet("Verify/{code}/{username}")]
-		public IActionResult Verify(string code,string username)
+		public IActionResult Verify(string code, string username)
 		{
 			try
 			{
@@ -141,7 +147,7 @@ namespace BatDongSan.Controllers
 
 		[Produces("application/json")]
 		[HttpPut("Update")]
-		public IActionResult Update([FromBody] User user)
+		public IActionResult Update([FromBody] User user, IFormFile file)
 		{
 			try
 			{
@@ -151,6 +157,27 @@ namespace BatDongSan.Controllers
 			catch
 			{
 				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpPost("Upload")]
+		public IActionResult UploadAvatar(int id, IFormFile file)
+		{
+			try
+			{
+				var fileName = FileHelpers.GenerateFileName(file.FileName);
+				var path = Path.Combine(webHostEnvironment.WebRootPath, "images", fileName);
+				using (var filestream = new FileStream(path, FileMode.Create))
+				{
+					file.CopyTo(filestream);
+				}
+
+				return Ok(userService.updatePhoto(id, fileName));
+			}
+			catch
+			{
+				return BadRequest(); // tra ve ma 400
 			}
 		}
 

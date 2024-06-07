@@ -1,4 +1,3 @@
-
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
@@ -33,6 +32,7 @@ public partial class BatDongSanContext : DbContext
     public virtual DbSet<TypeRealestate> TypeRealestates { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.UseCollation("Latin1_General_CI_AS");
@@ -46,8 +46,9 @@ public partial class BatDongSanContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("advertisement_name");
-            
             entity.Property(e => e.Price).HasColumnName("price");
+            entity.Property(e => e.Quantitydate).HasColumnName("quantitydate");
+            entity.Property(e => e.Quantitynews).HasColumnName("quantitynews");
             entity.Property(e => e.Status).HasColumnName("status");
             entity.Property(e => e.Time).HasColumnName("time");
         });
@@ -83,14 +84,21 @@ public partial class BatDongSanContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("url_image");
+            entity.Property(e => e.Userid).HasColumnName("userid");
 
             entity.HasOne(d => d.News).WithMany(p => p.ImageRealestates)
                 .HasForeignKey(d => d.Newsid)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_image_realestate_news");
 
             entity.HasOne(d => d.Realestate).WithMany(p => p.ImageRealestates)
                 .HasForeignKey(d => d.RealestateId)
                 .HasConstraintName("FK_image_batdongsan_batdongsan");
+
+            entity.HasOne(d => d.User).WithMany(p => p.ImageRealestates)
+                .HasForeignKey(d => d.Userid)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_image_realestate_user");
         });
 
         modelBuilder.Entity<News>(entity =>
@@ -101,6 +109,7 @@ public partial class BatDongSanContext : DbContext
             entity.Property(e => e.Content)
                 .HasColumnType("text")
                 .HasColumnName("content");
+            entity.Property(e => e.Created).HasColumnName("created");
             entity.Property(e => e.Tag)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -124,10 +133,12 @@ public partial class BatDongSanContext : DbContext
                 .HasMaxLength(250)
                 .HasColumnName("city");
             entity.Property(e => e.CreatedAt).HasColumnName("created_at");
+            entity.Property(e => e.CreatedEnd).HasColumnName("created_end");
             entity.Property(e => e.Describe)
                 .HasMaxLength(1000)
                 .IsUnicode(false)
                 .HasColumnName("describe");
+            entity.Property(e => e.Expired).HasColumnName("expired");
             entity.Property(e => e.Price).HasColumnName("price");
             entity.Property(e => e.Region)
                 .HasMaxLength(250)
@@ -212,6 +223,10 @@ public partial class BatDongSanContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.AdvertisementId).HasColumnName("advertisement_id");
+            entity.Property(e => e.Avatar)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("avatar");
             entity.Property(e => e.Email)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -234,6 +249,9 @@ public partial class BatDongSanContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("securityCode");
             entity.Property(e => e.Status).HasColumnName("status");
+            entity.Property(e => e.Statusupdate)
+                .HasDefaultValue(false)
+                .HasColumnName("statusupdate");
             entity.Property(e => e.Username)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -253,4 +271,3 @@ public partial class BatDongSanContext : DbContext
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }
-

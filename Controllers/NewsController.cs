@@ -1,3 +1,4 @@
+
 ﻿using BatDongSan.Models;
 using BatDongSan.Services;
 using DemoFramework_Core.Helpers;
@@ -54,6 +55,24 @@ namespace BatDongSan.Controllers
 				return BadRequest();
 			}
 		}
+		[Produces("application/json")]
+		[HttpDelete("Delete/{id}")]
+		public IActionResult Delete(int id)
+		{
+			try
+			{
+				return Ok(new
+				{
+					rs = NewsService.delete(id)
+				}
+				) ;
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
 		[Consumes("application/json")]
 		[Produces("application/json")]
 		[HttpPost("create")]
@@ -85,3 +104,4 @@ namespace BatDongSan.Controllers
 
 	}
 }
+

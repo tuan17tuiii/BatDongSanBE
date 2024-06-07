@@ -20,6 +20,7 @@ namespace BatDongSan.Controllers
             webHostEnvironment = _webHostEnvironment;
             configuration = _configuration;
         }
+
         [Produces("application/json")]
         [HttpGet("findAll")]
         public IActionResult FindAll()
@@ -34,7 +35,23 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
-        [Produces("application/json")]
+
+		[Produces("application/json")]
+		[HttpGet("findAll2")]
+		public IActionResult FindAll2()
+		{
+			try
+			{
+				return Ok(realestateService.findAll2());
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
         [HttpGet("findById/{id}")]
         public IActionResult FindById(int id)
         {
@@ -48,9 +65,25 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
-        [Produces("application/json")]
+
+		[Produces("application/json")]
+		[HttpGet("findByType/{id}")]
+		public IActionResult findByType(int id)
+		{
+			try
+			{
+				return Ok(realestateService.findByType(id));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
         [HttpGet("findByUserSellTrue/{id}")]
-        public IActionResult FindByUserSell(int id)
+        public IActionResult FindByUserSellTrue(int id)
         {
             try
             {
@@ -76,7 +109,21 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
-        [Produces("application/json")]
+		[Produces("application/json")]
+		[HttpGet("findByUserSell/{id}")]
+		public IActionResult FindByUserSell(int id)
+		{
+			try
+			{
+				return Ok(realestateService.findByUserSell(id));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+		[Produces("application/json")]
         [HttpGet("findByCityRegion/{city}/{region}")]
         public IActionResult FindByCityRegion(string city , string region)
         {
@@ -154,20 +201,50 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
-        [Produces("application/json")]
-        [HttpGet("totalById/{id}")]
-        public IActionResult toTalById(int id)
-        {
-            try
-            {
-                return Ok(realestateService.totalById(id));
 
-            }
-            catch
-            {
-                return BadRequest();
-            }
-        }
-    }
+		[Produces("application/json")]
+		[HttpPut("Update")]
+		public IActionResult Update([FromBody] Realestate realestate)
+		{
+			try
+			{
+				return Ok(realestateService.update(realestate));
 
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpDelete("Delete/{id}")]
+		public IActionResult Delete(int id)
+		{
+			try
+			{
+				return Ok(realestateService.delete(id));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpGet("totalById/{id}")]
+		public IActionResult toTalById(int id)
+		{
+			try
+			{
+				return Ok(realestateService.totalById(id));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+	}
 }
