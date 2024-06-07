@@ -531,6 +531,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BatDongSan.Controllers.RemainController",
+    "Method": "Create",
+    "RelativePath": "remain/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "remain",
+        "Type": "BatDongSan.Models.Remain",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RemainController",
+    "Method": "findAll",
+    "RelativePath": "remain/findAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RemainController",
+    "Method": "FindById",
+    "RelativePath": "remain/findById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RemainController",
+    "Method": "Update",
+    "RelativePath": "remain/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "remain",
+        "Type": "BatDongSan.Models.Remain",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BatDongSan.Controllers.RoleController",
     "Method": "Create",
     "RelativePath": "role/create",

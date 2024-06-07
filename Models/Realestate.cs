@@ -23,7 +23,7 @@ public partial class Realestate
 
     public bool? Status { get; set; }
 
-    public DateTime CreatedAt { get; set; }
+    public DateTime ? CreatedAt { get; set; }
 
     public string? Region { get; set; }
 
@@ -39,7 +39,7 @@ public partial class Realestate
 
     public bool? Expired { get; set; }
 
-    public DateTime CreatedEnd { get; set; }
+    public DateTime ? CreatedEnd { get; set; }
 
     public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 

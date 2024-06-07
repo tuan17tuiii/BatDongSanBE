@@ -19,5 +19,7 @@ public partial class Advertisement
 
     public int? Quantitynews { get; set; }
 
+    public virtual ICollection<Remain> Remains { get; set; } = new List<Remain>();
+
     public virtual ICollection<User> Users { get; set; } = new List<User>();
 }
