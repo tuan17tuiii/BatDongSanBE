@@ -8,9 +8,9 @@ namespace BatDongSan.Services
 		public dynamic findAll2();
 		public dynamic findById(int id);
         public dynamic findByUserSellTrue(int id);
-        public dynamic findById(int id);
+        
 		public dynamic findByUserSell(int id);
-		public dynamic findByUserSellTrue(int id);
+		
         public dynamic findByUserSellFalse(int id);
         public dynamic findByCityRegion(string city , string region);
         public dynamic findByType(int id);

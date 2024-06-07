@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ﻿using System;
 using System.Collections.Generic;
 
@@ -24,30 +24,3 @@ public partial class Transaction
 
     public virtual User? Seller { get; set; }
 }
-=======
-﻿using System;
-using System.Collections.Generic;
-
-namespace BatDongSan.Models;
-
-public partial class Transaction
-{
-    public int Id { get; set; }
-
-    public int? BuyerId { get; set; }
-
-    public int? SellerId { get; set; }
-
-    public DateTime? TransactionDate { get; set; }
-
-    public double? Amount { get; set; }
-
-    public int? RealestateId { get; set; }
-
-    public virtual User? Buyer { get; set; }
-
-    public virtual Realestate? Realestate { get; set; }
-
-    public virtual User? Seller { get; set; }
-}
->>>>>>> fa643b155611d6bf07b6a2005446b1e45a5d767e
