@@ -155,6 +155,7 @@ namespace BatDongSan.Services
 					Id = c.Advertisement.Id ,
 					Name = c.Advertisement.AdvertisementName,
 					QuantityDates = c.Advertisement.Quantitydate,
+					Price = c.Advertisement.Price ,
 				}:null,
 				StatusUpdate = c.Statusupdate,
 

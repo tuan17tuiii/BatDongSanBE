@@ -184,6 +184,32 @@
         "Name": "user",
         "Type": "BatDongSan.Models.User",
         "IsRequired": true
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "UploadAvatar",
+    "RelativePath": "account/Upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -363,6 +389,11 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "dataname",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -378,6 +409,22 @@
       {
         "Name": "news",
         "Type": "BatDongSan.Models.News",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.NewsController",
+    "Method": "Delete",
+    "RelativePath": "news/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -427,6 +474,22 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "Delete",
+    "RelativePath": "realstate/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
     "Method": "MarkExpired",
     "RelativePath": "realstate/expire",
     "HttpMethod": "POST",
@@ -439,6 +502,16 @@
     "ContainingType": "BatDongSan.Controllers.RealstateController",
     "Method": "FindAll",
     "RelativePath": "realstate/findAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "FindAll2",
+    "RelativePath": "realstate/findAll2",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -484,6 +557,38 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "findByType",
+    "RelativePath": "realstate/findByType/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "FindByUserSell",
+    "RelativePath": "realstate/findByUserSell/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
     "Method": "FindByUserSellFalse",
     "RelativePath": "realstate/findByUserSellFalse/{id}",
     "HttpMethod": "GET",
@@ -500,7 +605,7 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.RealstateController",
-    "Method": "FindByUserSell",
+    "Method": "FindByUserSellTrue",
     "RelativePath": "realstate/findByUserSellTrue/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -531,6 +636,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "Update",
+    "RelativePath": "realstate/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "realestate",
+        "Type": "BatDongSan.Models.Realestate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BatDongSan.Controllers.RemainController",
     "Method": "Create",
     "RelativePath": "remain/create",
@@ -541,6 +662,22 @@
       {
         "Name": "remain",
         "Type": "BatDongSan.Models.Remain",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RemainController",
+    "Method": "Delete",
+    "RelativePath": "remain/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -672,6 +809,38 @@
       {
         "Name": "date",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.TypeRealstateController",
+    "Method": "Create",
+    "RelativePath": "typerealstate/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "typeRealestate",
+        "Type": "BatDongSan.Models.TypeRealestate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.TypeRealstateController",
+    "Method": "Delete",
+    "RelativePath": "typerealstate/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
