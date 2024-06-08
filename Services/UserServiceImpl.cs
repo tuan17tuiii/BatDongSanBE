@@ -27,20 +27,32 @@ namespace BatDongSan.Services
                 user.Status = false;
                 var SecurityCode = RandomHelper.GenerateScurityCode();
                 user.SecurityCode = SecurityCode;
+<<<<<<< HEAD
                 user.Avatar = "NoImage.jpg";
                 user.Statusupdate = false;
+=======
+				user.Avatar = "NoImage.jpg";
+>>>>>>> 10b3227b56d6d7998535024507ff17d3185b23c3
 
                 var content = "Nhan vao <a href='http://localhost:4200/verify;securityCode=" + SecurityCode + ";username=" + user.Username + "' >day</a> de kich hoat tai khoan";
                 var mailHelper = new MailHelper(configuration);
 
                 if (mailHelper.Send("hankanderson2201@gmail.com", user.Email, "Verify", content))
                 {
+<<<<<<< HEAD
                     db.Users.Add(user);
                     return db.SaveChanges() > 0;
                 }
                 else
                 {
                     return false;
+=======
+					db.Users.Add(user);
+					return true;
+                }
+                else { 
+                    return false; 
+>>>>>>> 10b3227b56d6d7998535024507ff17d3185b23c3
                 }
 
             }
@@ -65,6 +77,7 @@ namespace BatDongSan.Services
 
         public dynamic findAll()
         {
+<<<<<<< HEAD
             return db.Users.Select(c => new
             {
                 Id = c.Id,
@@ -143,6 +156,65 @@ namespace BatDongSan.Services
             try
             {
                 var user = db.Users.SingleOrDefault(c => c.SecurityCode == code && c.Username == username);
+=======
+			return db.Users.Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
+				email = c.Email,
+				avatar = configuration["ImageUrl"] + c.Avatar
+			}).ToList();
+        }
+		public dynamic findAllAdmin()
+		{
+			return db.Users.Where(c => c.RoleId == 1).Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
+				email = c.Email,
+				avatar = configuration["ImageUrl"] + c.Avatar
+			}).ToList();
+		}
+
+		public dynamic findAllUser()
+		{
+			return db.Users.Where(c => c.RoleId == 2).Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
+				email = c.Email,
+				StatusUpdate=c.Statusupdate,
+				avatar = configuration["ImageUrl"] + c.Avatar
+			}).ToList();
+		}
+
+		public dynamic Verify(string code, string username)
+		{
+            try
+            {
+				var user = db.Users.SingleOrDefault(c => c.SecurityCode == code && c.Username == username);
+>>>>>>> 10b3227b56d6d7998535024507ff17d3185b23c3
 
                 if (user != null)
                 {
@@ -175,6 +247,7 @@ namespace BatDongSan.Services
                 Status = c.Status,
                 securityCode = c.SecurityCode,
                 email = c.Email,
+<<<<<<< HEAD
                 Advertisement = c.Advertisement != null ? new
                 {
                     Id = c.Advertisement.Id,
@@ -183,6 +256,18 @@ namespace BatDongSan.Services
                 } : null,
                 avatar = configuration["ImageUrl"] + c.Avatar,
                 StatusUpdate = c.Statusupdate,
+=======
+				StatusUpdate = c.Statusupdate,
+				avatar = configuration["ImageUrl"] + c.Avatar,
+				Advertisement =c.Advertisement != null ?  new
+				{
+					Id = c.Advertisement.Id ,
+					Name = c.Advertisement.AdvertisementName,
+					QuantityDates = c.Advertisement.Quantitydate,
+				}: null
+            }).FirstOrDefault();
+		}
+>>>>>>> 10b3227b56d6d7998535024507ff17d3185b23c3
 
             }).FirstOrDefault();
         }
@@ -286,6 +371,13 @@ namespace BatDongSan.Services
             }
         }
 
-    }
+		public dynamic findAllAgent()
+		{
+			throw new NotImplementedException();
+		}
+	}
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 10b3227b56d6d7998535024507ff17d3185b23c3
