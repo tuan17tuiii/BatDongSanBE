@@ -41,7 +41,7 @@ public partial class User
 
     public virtual Role? Role { get; set; }
 
-    public virtual ICollection<Transaction> TransactionBuyers { get; set; } = new List<Transaction>();
+    public virtual ICollection<Transaction> TransactionIdAdvNavigations { get; set; } = new List<Transaction>();
 
-    public virtual ICollection<Transaction> TransactionSellers { get; set; } = new List<Transaction>();
+    public virtual ICollection<Transaction> TransactionIdUserNavigations { get; set; } = new List<Transaction>();
 }

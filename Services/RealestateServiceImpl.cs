@@ -53,7 +53,7 @@ namespace BatDongSan.Services
 				Bathrooms = c.Bathrooms,
 				Status = c.Status,
 				CreatedAt = c.CreatedAt,
-				City = c.City,
+				City = c.City,	
 				Region = c.Region,
 				Street = c.Street,
 				transactionType = c.TransactionType,

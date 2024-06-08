@@ -27,7 +27,15 @@ namespace BatDongSan.Services
 
         public bool delete(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                db.Remains.Remove(db.Remains.Find(id));
+                return db.SaveChanges() > 0;
+            }
+            catch
+            {
+                return false;
+            }
         }
         
         public dynamic findAll()
@@ -48,7 +56,8 @@ namespace BatDongSan.Services
                 Id = c.Id,
                 idUser = c.IdUser ,
                 idAdv = c.IdAdv , 
-                remaining = c.Remaining
+                remaining = c.Remaining,
+                createdend = c.Createdend,
             }).FirstOrDefault();//ko co firstordefault la tra ve list còn có là trả về đối tượng 
         }
 
@@ -59,8 +68,9 @@ namespace BatDongSan.Services
                 db.Entry(remain).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 return db.SaveChanges() > 0;
             }
-            catch
+            catch(Exception ex)
             {
+                Debug.WriteLine(ex);
                 return false;
             }
         }

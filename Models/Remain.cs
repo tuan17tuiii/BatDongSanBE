@@ -13,6 +13,8 @@ public partial class Remain
 
     public int? Remaining { get; set; }
 
+    public DateTime Createdend { get; set; }
+
     public virtual Advertisement? IdAdvNavigation { get; set; }
 
     public virtual User? IdUserNavigation { get; set; }

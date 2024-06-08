@@ -71,5 +71,19 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
+        [Produces("application/json")]
+        [HttpDelete("delete/{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                return Ok(remainService.delete(id));
+
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
     }
 }

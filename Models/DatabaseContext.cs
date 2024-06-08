@@ -34,7 +34,8 @@ public partial class DatabaseContext : DbContext
     public virtual DbSet<TypeRealestate> TypeRealestates { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
-    
+
+   
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.UseCollation("Latin1_General_CI_AS");
@@ -94,6 +95,7 @@ public partial class DatabaseContext : DbContext
 
             entity.HasOne(d => d.Realestate).WithMany(p => p.ImageRealestates)
                 .HasForeignKey(d => d.RealestateId)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_image_batdongsan_batdongsan");
 
             entity.HasOne(d => d.User).WithMany(p => p.ImageRealestates)
@@ -109,6 +111,7 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.Content)
                 .HasColumnType("text")
                 .HasColumnName("content");
+            entity.Property(e => e.Created).HasColumnName("created");
             entity.Property(e => e.Tag)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -172,6 +175,7 @@ public partial class DatabaseContext : DbContext
             entity.ToTable("remain");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Createdend).HasColumnName("createdend");
             entity.Property(e => e.IdAdv).HasColumnName("id_adv");
             entity.Property(e => e.IdUser).HasColumnName("id_user");
             entity.Property(e => e.Remaining).HasColumnName("remaining");
@@ -201,23 +205,18 @@ public partial class DatabaseContext : DbContext
             entity.ToTable("transaction");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Amount).HasColumnName("amount");
-            entity.Property(e => e.BuyerId).HasColumnName("buyer_id");
-            entity.Property(e => e.RealestateId).HasColumnName("realestate_id");
-            entity.Property(e => e.SellerId).HasColumnName("seller_id");
-            entity.Property(e => e.TransactionDate).HasColumnName("transaction_date");
+            entity.Property(e => e.CreatedAt).HasColumnName("createdAt");
+            entity.Property(e => e.IdAdv).HasColumnName("id_adv");
+            entity.Property(e => e.IdUser).HasColumnName("id_user");
+            entity.Property(e => e.Price).HasColumnName("price");
 
-            entity.HasOne(d => d.Buyer).WithMany(p => p.TransactionBuyers)
-                .HasForeignKey(d => d.BuyerId)
-                .HasConstraintName("FK_transaction_user");
-
-            entity.HasOne(d => d.Realestate).WithMany(p => p.Transactions)
-                .HasForeignKey(d => d.RealestateId)
-                .HasConstraintName("FK_transaction_batdongsan");
-
-            entity.HasOne(d => d.Seller).WithMany(p => p.TransactionSellers)
-                .HasForeignKey(d => d.SellerId)
+            entity.HasOne(d => d.IdAdvNavigation).WithMany(p => p.TransactionIdAdvNavigations)
+                .HasForeignKey(d => d.IdAdv)
                 .HasConstraintName("FK_transaction_user1");
+
+            entity.HasOne(d => d.IdUserNavigation).WithMany(p => p.TransactionIdUserNavigations)
+                .HasForeignKey(d => d.IdUser)
+                .HasConstraintName("FK_transaction_user");
         });
 
         modelBuilder.Entity<TypeRealestate>(entity =>

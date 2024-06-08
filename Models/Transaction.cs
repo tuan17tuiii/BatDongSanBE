@@ -1,4 +1,3 @@
-
 ﻿using System;
 using System.Collections.Generic;
 
@@ -8,19 +7,15 @@ public partial class Transaction
 {
     public int Id { get; set; }
 
-    public int? BuyerId { get; set; }
+    public int? IdUser { get; set; }
 
-    public int? SellerId { get; set; }
+    public int? IdAdv { get; set; }
 
-    public DateTime? TransactionDate { get; set; }
+    public DateOnly? CreatedAt { get; set; }
 
-    public double? Amount { get; set; }
+    public double? Price { get; set; }
 
-    public int? RealestateId { get; set; }
+    public virtual User? IdAdvNavigation { get; set; }
 
-    public virtual User? Buyer { get; set; }
-
-    public virtual Realestate? Realestate { get; set; }
-
-    public virtual User? Seller { get; set; }
+    public virtual User? IdUserNavigation { get; set; }
 }
