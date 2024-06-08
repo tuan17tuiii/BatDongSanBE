@@ -11,7 +11,7 @@ public partial class Transaction
 
     public int? IdAdv { get; set; }
 
-    public DateOnly? CreatedAt { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
     public double? Price { get; set; }
 
