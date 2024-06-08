@@ -9,11 +9,10 @@
       "BatDongSan/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
-          "Microsoft.EntityFrameworkCore": "9.0.0-preview.4.24267.1",
-          "Microsoft.EntityFrameworkCore.Design": "9.0.0-preview.4.24267.1",
-          "Microsoft.EntityFrameworkCore.Proxies": "9.0.0-preview.4.24267.1",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0-preview.4.24267.1",
-          "Microsoft.EntityFrameworkCore.Tools": "9.0.0-preview.4.24267.1",
+          "Microsoft.EntityFrameworkCore.Design": "8.0.6",
+          "Microsoft.EntityFrameworkCore.Proxies": "8.0.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.6",
+          "Microsoft.EntityFrameworkCore.Tools": "8.0.6",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "9.0.0-preview.4.24271.3",
           "Newtonsoft.Json": "13.0.3",
           "Swashbuckle.AspNetCore": "6.6.2"
@@ -1087,7 +1086,12 @@
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0",
           "Microsoft.SqlServer.Server": "1.0.0",
           "System.Configuration.ConfigurationManager": "8.0.0",
-          "System.Runtime.Caching": "8.0.0"
+          "System.Diagnostics.DiagnosticSource": "6.0.1",
+          "System.Runtime.Caching": "6.0.0",
+          "System.Security.Cryptography.Cng": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0",
+          "System.Text.Encodings.Web": "9.0.0-preview.4.24266.19"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Data.SqlClient.dll": {
@@ -1180,6 +1184,8 @@
           "Microsoft.CodeAnalysis.CSharp.Features": "4.8.0",
           "Microsoft.Extensions.DependencyModel": "9.0.0-preview.4.24266.19",
           "Mono.TextTemplating": "3.0.0-preview-0052-g5d0f76c785",
+          "Microsoft.Extensions.DependencyModel": "9.0.0-preview.4.24266.19",
+          "Mono.TextTemplating": "2.3.1",
           "Newtonsoft.Json": "13.0.3",
           "NuGet.ProjectModel": "6.9.1"
         },
@@ -1217,9 +1223,9 @@
         "dependencies": {
           "Humanizer.Core": "2.14.1",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.8.0",
-          "Microsoft.EntityFrameworkCore.Relational": "9.0.0-preview.4.24267.1",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.6",
           "Microsoft.Extensions.DependencyModel": "9.0.0-preview.4.24266.19",
-          "Mono.TextTemplating": "3.0.0-preview-0052-g5d0f76c785"
+          "Mono.TextTemplating": "2.3.1"
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Design.dll": {
@@ -1283,17 +1289,11 @@
       },
       "Microsoft.Extensions.Caching.Memory/9.0.0-preview.4.24266.19": {
         "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "9.0.0-preview.4.24266.19",
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-preview.4.24266.19",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.0-preview.4.24266.19",
-          "Microsoft.Extensions.Options": "9.0.0-preview.4.24266.19",
-          "Microsoft.Extensions.Primitives": "9.0.0-preview.4.24266.19"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.26619"
-          }
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0"
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/9.0.0-preview.4.24266.19": {
@@ -1350,6 +1350,10 @@
             "fileVersion": "9.0.24.26619"
           }
         }
+          "Microsoft.Extensions.DependencyInjection": "9.0.0-preview.4.24266.19",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.0"
+        }
       },
       "Microsoft.Extensions.Logging.Abstractions/9.0.0-preview.4.24266.19": {
         "dependencies": {
@@ -1360,6 +1364,8 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.24.26619"
           }
+        }
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-preview.4.24266.19"
         }
       },
       "Microsoft.Extensions.Options/9.0.0-preview.4.24266.19": {
@@ -1372,6 +1378,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.24.26619"
           }
+        }
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-preview.4.24266.19",
+          "Microsoft.Extensions.Primitives": "8.0.0"
         }
       },
       "Microsoft.Extensions.Primitives/9.0.0-preview.4.24266.19": {
@@ -1579,10 +1588,10 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/9.0.0-preview.4.24271.3": {
+      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/8.0.2": {
         "dependencies": {
-          "Microsoft.DotNet.Scaffolding.Shared": "9.0.0-preview.4.24271.3",
-          "Microsoft.VisualStudio.Web.CodeGeneration": "9.0.0-preview.4.24271.3"
+          "Microsoft.DotNet.Scaffolding.Shared": "8.0.2",
+          "Microsoft.VisualStudio.Web.CodeGeneration": "8.0.2"
         },
         "runtime": {
           "lib/net8.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {
@@ -1592,6 +1601,12 @@
         }
       },
       "Mono.TextTemplating/3.0.0-preview-0052-g5d0f76c785": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.27103"
+          }
+        }
+      },
+      "Mono.TextTemplating/2.3.1": {
         "dependencies": {
           "System.CodeDom": "6.0.0"
         },
@@ -1932,17 +1947,22 @@
             "fileVersion": "8.0.23.53103"
           }
         }
-      },
-      "System.Security.Principal.Windows/5.0.0": {},
-      "System.Text.Encoding/4.3.0": {
+        "runtimeTargets": {
+      "System.Security.Permissions/7.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "5.0.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
+          "System.Windows.Extensions": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/System.Security.Permissions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+      "System.Text.Encoding.CodePages/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
       "System.Text.Encodings.Web/9.0.0-preview.4.24266.19": {
-        "runtime": {
+        "dependencies": {
           "lib/net8.0/System.Text.Encodings.Web.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.24.26619"
@@ -1971,6 +1991,17 @@
       "System.Threading.Channels/7.0.0": {},
       "System.Threading.Tasks.Dataflow/8.0.0": {},
       "System.Threading.Tasks.Extensions/4.5.4": {}
+    }
+  },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/System.Windows.Extensions.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -2710,17 +2741,6 @@
     "Microsoft.OpenApi/1.6.14": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tTaBT8qjk3xINfESyOPE2rIellPvB7qpVqiWiyA/lACVvz+xOGiXhFUfohcx82NLbi5avzLW0lx+s6oAqQijfw==",
-      "path": "microsoft.openapi/1.6.14",
-      "hashPath": "microsoft.openapi.1.6.14.nupkg.sha512"
-    },
-    "Microsoft.SqlServer.Server/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-N4KeF3cpcm1PUHym1RmakkzfkEv3GRMyofVv40uXsQhCQeglr2OHNcUk2WOG51AKpGO8ynGpo9M/kFXSzghwug==",
-      "path": "microsoft.sqlserver.server/1.0.0",
-      "hashPath": "microsoft.sqlserver.server.1.0.0.nupkg.sha512"
-    },
     "Microsoft.VisualStudio.Web.CodeGeneration/9.0.0-preview.4.24271.3": {
       "type": "package",
       "serviceable": true,
@@ -2729,46 +2749,57 @@
       "hashPath": "microsoft.visualstudio.web.codegeneration.9.0.0-preview.4.24271.3.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Core/9.0.0-preview.4.24271.3": {
-      "type": "package",
-      "serviceable": true,
+      "path": "microsoft.sqlserver.server/1.0.0",
+      "hashPath": "microsoft.sqlserver.server.1.0.0.nupkg.sha512"
       "sha512": "sha512-4yYeMgLqxoDF9mNPxB8QnfEDfUefweEL7jsCRQz34rhprSN573HmDN0j/Ie55aSLYH+2szkRZnaHJjHNLY5VEA==",
       "path": "microsoft.visualstudio.web.codegeneration.core/9.0.0-preview.4.24271.3",
       "hashPath": "microsoft.visualstudio.web.codegeneration.core.9.0.0-preview.4.24271.3.nupkg.sha512"
-    },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Design/9.0.0-preview.4.24271.3": {
-      "type": "package",
       "serviceable": true,
+    "Microsoft.VisualStudio.Web.CodeGeneration.Design/9.0.0-preview.4.24271.3": {
+      "path": "microsoft.visualstudio.web.codegeneration/8.0.2",
+      "hashPath": "microsoft.visualstudio.web.codegeneration.8.0.2.nupkg.sha512"
       "sha512": "sha512-c6bXzVHgab8L0y7VGIKQWcDgvtQOAjVb0cs7chcEqE2FEuIr2Q8X4vjM06PtYRqhQj+VE9iGxH40cCNwlATftA==",
       "path": "microsoft.visualstudio.web.codegeneration.design/9.0.0-preview.4.24271.3",
       "hashPath": "microsoft.visualstudio.web.codegeneration.design.9.0.0-preview.4.24271.3.nupkg.sha512"
-    },
-    "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/9.0.0-preview.4.24271.3": {
-      "type": "package",
       "serviceable": true,
+    "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/9.0.0-preview.4.24271.3": {
+      "path": "microsoft.visualstudio.web.codegeneration.core/8.0.2",
+      "hashPath": "microsoft.visualstudio.web.codegeneration.core.8.0.2.nupkg.sha512"
       "sha512": "sha512-f2k8fcgFJxnCTG4oRgXh7vPzQ3Zm1WsPYYOnprMDlHom3h20PR8u5edR8d+KEoUB1CgrC5HxXKLkMjAtaDE/dg==",
       "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/9.0.0-preview.4.24271.3",
       "hashPath": "microsoft.visualstudio.web.codegeneration.entityframeworkcore.9.0.0-preview.4.24271.3.nupkg.sha512"
-    },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Templating/9.0.0-preview.4.24271.3": {
-      "type": "package",
       "serviceable": true,
+    "Microsoft.VisualStudio.Web.CodeGeneration.Templating/9.0.0-preview.4.24271.3": {
+      "path": "microsoft.visualstudio.web.codegeneration.design/8.0.2",
+      "hashPath": "microsoft.visualstudio.web.codegeneration.design.8.0.2.nupkg.sha512"
       "sha512": "sha512-WnQ/XvD58HgGXQxrUR26XeQx12EVWIG9ulLGojLGpi9n4PVvNI5AbhGwwsXTngzpCLevw3y+lyv1xlWhHjaCCA==",
       "path": "microsoft.visualstudio.web.codegeneration.templating/9.0.0-preview.4.24271.3",
       "hashPath": "microsoft.visualstudio.web.codegeneration.templating.9.0.0-preview.4.24271.3.nupkg.sha512"
-    },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Utils/9.0.0-preview.4.24271.3": {
-      "type": "package",
       "serviceable": true,
+    "Microsoft.VisualStudio.Web.CodeGeneration.Utils/9.0.0-preview.4.24271.3": {
+      "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/8.0.2",
+      "hashPath": "microsoft.visualstudio.web.codegeneration.entityframeworkcore.8.0.2.nupkg.sha512"
       "sha512": "sha512-q7LBS0IxeiKr2gmI4OJuWeScm2NbVfq3DEIGux4KC8RdV/NEd5GPoaW0+IPF3iQDOysZwBXFVBEaUPC88Kxy5A==",
       "path": "microsoft.visualstudio.web.codegeneration.utils/9.0.0-preview.4.24271.3",
       "hashPath": "microsoft.visualstudio.web.codegeneration.utils.9.0.0-preview.4.24271.3.nupkg.sha512"
-    },
-    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/9.0.0-preview.4.24271.3": {
-      "type": "package",
       "serviceable": true,
+    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/9.0.0-preview.4.24271.3": {
+      "path": "microsoft.visualstudio.web.codegeneration.templating/8.0.2",
+      "hashPath": "microsoft.visualstudio.web.codegeneration.templating.8.0.2.nupkg.sha512"
       "sha512": "sha512-8k5OCjJPzgyIjyLQln9L5dkTCxLxrPDI+9FtNPfwJRqMe1PJa/zn1JuVYaXd9qnEleyczgNWoBR50GcQTtok4w==",
       "path": "microsoft.visualstudio.web.codegenerators.mvc/9.0.0-preview.4.24271.3",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.9.0.0-preview.4.24271.3.nupkg.sha512"
+      "serviceable": true,
+      "sha512": "sha512-eRn0vFzk+B/TIqrf3a4cOuU3HqwNweAGeuF53/X5nK+DKsjM0w8tjA5YxZKEONapM2E6YTKlZtKqXXs4oufRdQ==",
+      "path": "microsoft.visualstudio.web.codegenerators.mvc/8.0.2",
+      "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2nXPrhdAyAzir0gLl8Yy8S5Mnm/uBSQQA7jEsILOS1MTyS7DbmV1NgViMtvV1sfCD1ebITpNwb1NIinKeJgUVQ==",
+      "path": "microsoft.win32.systemevents/7.0.0",
+      "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
     },
     "Mono.TextTemplating/3.0.0-preview-0052-g5d0f76c785": {
       "type": "package",
@@ -2941,23 +2972,30 @@
     "System.Data.DataSetExtensions/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
-      "path": "system.data.datasetextensions/4.5.0",
-      "hashPath": "system.data.datasetextensions.4.5.0.nupkg.sha512"
-    },
-    "System.Diagnostics.DiagnosticSource/6.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ==",
-      "path": "system.diagnostics.diagnosticsource/6.0.1",
-      "hashPath": "system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512"
-    },
     "System.Diagnostics.EventLog/8.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-fdYxcRjQqTTacKId/2IECojlDSFvp7LP5N78+0z/xH7v/Tuw5ZAxu23Y6PTCRinqyu2ePx+Gn1098NC6jM6d+A==",
       "path": "system.diagnostics.eventlog/8.0.0",
       "hashPath": "system.diagnostics.eventlog.8.0.0.nupkg.sha512"
+      "serviceable": true,
+      "sha512": "sha512-KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ==",
+      "path": "system.diagnostics.diagnosticsource/6.0.1",
+      "hashPath": "system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eUDP47obqQm3SFJfP6z+Fx2nJ4KKTQbXB4Q9Uesnzw9SbYdhjyoGXuvDn/gEmFY6N5Z3bFFbpAQGA7m6hrYJCw==",
+      "path": "system.diagnostics.eventlog/7.0.0",
+      "hashPath": "system.diagnostics.eventlog.7.0.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
+      "path": "system.drawing.common/7.0.0",
+      "hashPath": "system.drawing.common.7.0.0.nupkg.sha512"
     },
     "System.Formats.Asn1/6.0.0": {
       "type": "package",
@@ -3067,14 +3105,14 @@
     "System.Security.Cryptography.ProtectedData/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
-      "path": "system.security.cryptography.protecteddata/8.0.0",
-      "hashPath": "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
-    },
-    "System.Security.Principal.Windows/5.0.0": {
+    "System.Text.Encoding.CodePages/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
+      "sha512": "sha512-ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+      "path": "system.text.encoding.codepages/6.0.0",
+      "hashPath": "system.text.encoding.codepages.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/9.0.0-preview.4.24266.19": {
       "path": "system.security.principal.windows/5.0.0",
       "hashPath": "system.security.principal.windows.5.0.0.nupkg.sha512"
     },
@@ -3085,7 +3123,14 @@
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
     },
-    "System.Text.Encodings.Web/9.0.0-preview.4.24266.19": {
+    "System.Text.Encoding.CodePages/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+      "path": "system.text.encoding.codepages/6.0.0",
+      "hashPath": "system.text.encoding.codepages.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/8.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-6vXIMGHJfftGoXTJmiTAoe6PfTg5euJNrAjdWrP0AvxL8J4/OhHI37f8iop8/aCbOPopWZYtqnUZaHdLIqkcog==",

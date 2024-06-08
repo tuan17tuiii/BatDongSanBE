@@ -1,4 +1,4 @@
-
+﻿
 ﻿using BatDongSan.Helpers;
 using BatDongSan.Models;
 using Microsoft.EntityFrameworkCore;
@@ -28,7 +28,6 @@ namespace BatDongSan.Services
                 var SecurityCode = RandomHelper.GenerateScurityCode();
                 user.SecurityCode = SecurityCode;
 				user.Avatar = "NoImage.jpg";
-				user.Statusupdate = false;
 
 				var content = "Nhan vao <a href='http://localhost:4200/verify;securityCode=" + SecurityCode + ";username=" + user.Username + "' >day</a> de kich hoat tai khoan";
 				var mailHelper = new MailHelper(configuration);
@@ -36,7 +35,7 @@ namespace BatDongSan.Services
                 if (mailHelper.Send("hankanderson2201@gmail.com", user.Email, "Verify", content))
                 {
 					db.Users.Add(user);
-					return db.SaveChanges() > 0;
+					return true;
                 }
                 else { 
                     return false; 
@@ -76,7 +75,6 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
-				StatusUpdate = c.Statusupdate,
 				avatar = configuration["ImageUrl"] + c.Avatar
 			}).ToList();
         }
@@ -94,7 +92,6 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
 				email = c.Email,
-				StatusUpdate= c.Statusupdate,
 				avatar = configuration["ImageUrl"] + c.Avatar
 			}).ToList();
 		}
@@ -115,25 +112,6 @@ namespace BatDongSan.Services
 				email = c.Email,
 				StatusUpdate = c.Statusupdate,
 				avatar = configuration["ImageUrl"] + c.Avatar,
-			}).ToList();
-		}
-
-		public dynamic findAllAgent()
-		{
-			return db.Users.Where(c => c.RoleId == 4).Select(c => new
-			{
-				Id = c.Id,
-				Username = c.Username,
-				Password = c.Password,
-				Name = c.Name,
-				Phone = c.Phone,
-				RoleId = c.RoleId,
-				AdvertisementId = c.AdvertisementId,
-				Status = c.Status,
-				securityCode = c.SecurityCode,
-				email = c.Email,
-				StatusUpdate = c.Statusupdate,
-				avatar = configuration["ImageUrl"] + c.Avatar
 			}).ToList();
 		}
 
@@ -174,7 +152,9 @@ namespace BatDongSan.Services
 				Status = c.Status,
 				securityCode = c.SecurityCode,
                 email = c.Email,
-                Advertisement =c.Advertisement != null ?  new
+				StatusUpdate = c.Statusupdate,
+				avatar = configuration["ImageUrl"] + c.Avatar,
+				Advertisement =c.Advertisement != null ?  new
 				{
 					Id = c.Advertisement.Id ,
 					Name = c.Advertisement.AdvertisementName,
@@ -287,4 +267,3 @@ namespace BatDongSan.Services
 
     }
 }
-
