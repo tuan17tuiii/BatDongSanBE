@@ -45,7 +45,7 @@ namespace BatDongSan.Controllers
 				return Ok(realestateService.findAll2());
 
 			}
-			catch
+			catch(Exception ex)
 			{
 				return BadRequest();
 			}
