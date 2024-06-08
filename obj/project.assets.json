@@ -1204,72 +1204,45 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Microsoft.Data.SqlClient/5.2.0": {
+      "Microsoft.Data.SqlClient/5.1.5": {
         "type": "package",
         "dependencies": {
           "Azure.Identity": "1.10.3",
-          "Microsoft.Data.SqlClient.SNI.runtime": "5.2.0",
+          "Microsoft.Data.SqlClient.SNI.runtime": "5.1.1",
           "Microsoft.Identity.Client": "4.56.0",
           "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0",
           "Microsoft.SqlServer.Server": "1.0.0",
-          "System.Configuration.ConfigurationManager": "8.0.0",
-          "System.Runtime.Caching": "8.0.0"
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Diagnostics.DiagnosticSource": "6.0.1",
+          "System.Runtime.Caching": "6.0.0",
+          "System.Security.Cryptography.Cng": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0"
         },
         "compile": {
-          "ref/net8.0/Microsoft.Data.SqlClient.dll": {
-            "related": ".xml"
+          "ref/net6.0/Microsoft.Data.SqlClient.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Microsoft.Data.SqlClient.dll": {
-            "related": ".xml"
-          }
-        },
-        "resource": {
-          "lib/net8.0/de/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net8.0/es/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net8.0/fr/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net8.0/it/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net8.0/ja/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net8.0/ko/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net8.0/pt-BR/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net8.0/ru/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net8.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net8.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "zh-Hant"
+          "lib/net6.0/Microsoft.Data.SqlClient.dll": {
+            "related": ".pdb;.xml"
           }
         },
         "runtimeTargets": {
-          "runtimes/unix/lib/net8.0/Microsoft.Data.SqlClient.dll": {
+          "runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll": {
             "assetType": "runtime",
             "rid": "unix"
           },
-          "runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll": {
+          "runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "Microsoft.Data.SqlClient.SNI.runtime/5.2.0": {
+      "Microsoft.Data.SqlClient.SNI.runtime/5.1.1": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
@@ -1385,11 +1358,11 @@
           "build/net8.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Proxies/9.0.0-preview.4.24267.1": {
+      "Microsoft.EntityFrameworkCore.Proxies/8.0.6": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "5.1.1",
-          "Microsoft.EntityFrameworkCore": "9.0.0-preview.4.24267.1"
+          "Microsoft.EntityFrameworkCore": "8.0.6"
         },
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
@@ -1419,11 +1392,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/9.0.0-preview.4.24267.1": {
+      "Microsoft.EntityFrameworkCore.SqlServer/8.0.6": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Data.SqlClient": "5.2.0",
-          "Microsoft.EntityFrameworkCore.Relational": "9.0.0-preview.4.24267.1"
+          "Microsoft.Data.SqlClient": "5.1.5",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.6"
         },
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
@@ -1436,10 +1409,16 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/9.0.0-preview.4.24267.1": {
+      "Microsoft.EntityFrameworkCore.Tools/8.0.6": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "9.0.0-preview.4.24267.1"
+          "Microsoft.EntityFrameworkCore.Design": "8.0.6"
+        },
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
@@ -2534,26 +2513,26 @@
           }
         }
       },
-      "System.Runtime.Caching/8.0.0": {
+      "System.Runtime.Caching/6.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "8.0.0"
+          "System.Configuration.ConfigurationManager": "6.0.0"
         },
         "compile": {
-          "lib/net8.0/_._": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/System.Runtime.Caching.dll": {
+          "lib/net6.0/System.Runtime.Caching.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/netcoreapp3.1/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net8.0/System.Runtime.Caching.dll": {
+          "runtimes/win/lib/net6.0/System.Runtime.Caching.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2598,18 +2577,23 @@
           }
         }
       },
-      "System.Security.Cryptography.Cng/4.5.0": {
+      "System.Security.Cryptography.Cng/5.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Formats.Asn1": "5.0.0"
+        },
         "compile": {
-          "ref/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {
+          "ref/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {}
+          "lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {
+          "runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2689,6 +2673,31 @@
         "compile": {
           "ref/netstandard1.3/System.Text.Encoding.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "System.Text.Encoding.CodePages/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
           }
         }
       },
@@ -4840,15 +4849,16 @@
         "version.txt"
       ]
     },
-    "Microsoft.Data.SqlClient/5.2.0": {
-      "sha512": "3alfyqRN3ELRtdvU1dGtLBRNQqprr3TJ0WrUJfMISPwg1nPUN2P3Lelah68IKWuV27Ceb7ig95hWNHFTSXfxMg==",
+    "Microsoft.Data.SqlClient/5.1.5": {
+      "sha512": "6kvhQjY5uBCdBccezFD2smfnpQjQ33cZtUZVrNvxlwoBu6uopM5INH6uSgLI7JRLtlQ3bMPwnhMq4kchsXeZ5w==",
       "type": "package",
-      "path": "microsoft.data.sqlclient/5.2.0",
+      "path": "microsoft.data.sqlclient/5.1.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "dotnet.png",
         "lib/net462/Microsoft.Data.SqlClient.dll",
+        "lib/net462/Microsoft.Data.SqlClient.pdb",
         "lib/net462/Microsoft.Data.SqlClient.xml",
         "lib/net462/de/Microsoft.Data.SqlClient.resources.dll",
         "lib/net462/es/Microsoft.Data.SqlClient.resources.dll",
@@ -4861,86 +4871,54 @@
         "lib/net462/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
         "lib/net462/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
         "lib/net6.0/Microsoft.Data.SqlClient.dll",
+        "lib/net6.0/Microsoft.Data.SqlClient.pdb",
         "lib/net6.0/Microsoft.Data.SqlClient.xml",
-        "lib/net6.0/de/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net6.0/es/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net6.0/fr/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net6.0/it/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net6.0/ja/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net6.0/ko/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net6.0/pt-BR/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net6.0/ru/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net6.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net6.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net8.0/Microsoft.Data.SqlClient.dll",
-        "lib/net8.0/Microsoft.Data.SqlClient.xml",
-        "lib/net8.0/de/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net8.0/es/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net8.0/fr/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net8.0/it/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net8.0/ja/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net8.0/ko/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net8.0/pt-BR/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net8.0/ru/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net8.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net8.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
         "lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
+        "lib/netstandard2.0/Microsoft.Data.SqlClient.pdb",
         "lib/netstandard2.0/Microsoft.Data.SqlClient.xml",
-        "lib/netstandard2.0/de/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.0/es/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.0/fr/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.0/it/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.0/ja/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.0/ko/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.0/pt-BR/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.0/ru/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
         "lib/netstandard2.1/Microsoft.Data.SqlClient.dll",
+        "lib/netstandard2.1/Microsoft.Data.SqlClient.pdb",
         "lib/netstandard2.1/Microsoft.Data.SqlClient.xml",
-        "lib/netstandard2.1/de/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.1/es/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.1/fr/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.1/it/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.1/ja/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.1/ko/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.1/pt-BR/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.1/ru/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.1/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netstandard2.1/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
-        "microsoft.data.sqlclient.5.2.0.nupkg.sha512",
+        "microsoft.data.sqlclient.5.1.5.nupkg.sha512",
         "microsoft.data.sqlclient.nuspec",
         "ref/net462/Microsoft.Data.SqlClient.dll",
+        "ref/net462/Microsoft.Data.SqlClient.pdb",
         "ref/net462/Microsoft.Data.SqlClient.xml",
         "ref/net6.0/Microsoft.Data.SqlClient.dll",
+        "ref/net6.0/Microsoft.Data.SqlClient.pdb",
         "ref/net6.0/Microsoft.Data.SqlClient.xml",
-        "ref/net8.0/Microsoft.Data.SqlClient.dll",
-        "ref/net8.0/Microsoft.Data.SqlClient.xml",
         "ref/netstandard2.0/Microsoft.Data.SqlClient.dll",
+        "ref/netstandard2.0/Microsoft.Data.SqlClient.pdb",
         "ref/netstandard2.0/Microsoft.Data.SqlClient.xml",
         "ref/netstandard2.1/Microsoft.Data.SqlClient.dll",
+        "ref/netstandard2.1/Microsoft.Data.SqlClient.pdb",
         "ref/netstandard2.1/Microsoft.Data.SqlClient.xml",
         "runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll",
-        "runtimes/unix/lib/net8.0/Microsoft.Data.SqlClient.dll",
+        "runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.pdb",
         "runtimes/unix/lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
+        "runtimes/unix/lib/netstandard2.0/Microsoft.Data.SqlClient.pdb",
         "runtimes/unix/lib/netstandard2.1/Microsoft.Data.SqlClient.dll",
+        "runtimes/unix/lib/netstandard2.1/Microsoft.Data.SqlClient.pdb",
         "runtimes/win/lib/net462/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/net462/Microsoft.Data.SqlClient.pdb",
         "runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll",
-        "runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.pdb",
         "runtimes/win/lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
-        "runtimes/win/lib/netstandard2.1/Microsoft.Data.SqlClient.dll"
+        "runtimes/win/lib/netstandard2.0/Microsoft.Data.SqlClient.pdb",
+        "runtimes/win/lib/netstandard2.1/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/netstandard2.1/Microsoft.Data.SqlClient.pdb"
       ]
     },
-    "Microsoft.Data.SqlClient.SNI.runtime/5.2.0": {
-      "sha512": "po1jhvFd+8pbfvJR/puh+fkHi0GRanAdvayh/0e47yaM6CXWZ6opUjCMFuYlAnD2LcbyvQE7fPJKvogmaUcN+w==",
+    "Microsoft.Data.SqlClient.SNI.runtime/5.1.1": {
+      "sha512": "wNGM5ZTQCa2blc9ikXQouybGiyMd6IHPVJvAlBEPtr6JepZEOYeDxGyprYvFVeOxlCXs7avridZQ0nYkHzQWCQ==",
       "type": "package",
-      "path": "microsoft.data.sqlclient.sni.runtime/5.2.0",
+      "path": "microsoft.data.sqlclient.sni.runtime/5.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "dotnet.png",
-        "microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512",
+        "microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
         "microsoft.data.sqlclient.sni.runtime.nuspec",
         "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll",
         "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll",
@@ -5038,10 +5016,10 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Proxies/9.0.0-preview.4.24267.1": {
-      "sha512": "dYX1rfc+Xk1j3WK3K68RO9XxwBWTulUZ23K6YOQp8FLvC+UIJpI07MccGfoe2C4GfOg3xY49egvym/+Mp+FUuQ==",
+    "Microsoft.EntityFrameworkCore.Proxies/8.0.6": {
+      "sha512": "2fyscFpV9bj2T+ObN6zKZLjjbqmVuWD5spCBkgAONPa8P4FFBcVIXK8u6WbbEvIeKzKXnOpTz9B1CMVmztEkZg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.proxies/9.0.0-preview.4.24267.1",
+      "path": "microsoft.entityframeworkcore.proxies/8.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5049,7 +5027,7 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.xml",
-        "microsoft.entityframeworkcore.proxies.9.0.0-preview.4.24267.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.proxies.8.0.6.nupkg.sha512",
         "microsoft.entityframeworkcore.proxies.nuspec"
       ]
     },
@@ -5068,10 +5046,10 @@
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/9.0.0-preview.4.24267.1": {
-      "sha512": "x999YAk/TmBeBXZlvtkEiJv7XydyUVuxeRRqmDc186XwTx9UWarpfAI0U0WtxZ6bKXUw9nJA8C9KAEUOXJb80Q==",
+    "Microsoft.EntityFrameworkCore.SqlServer/8.0.6": {
+      "sha512": "EUdsIcRew4vxE6pfi3aPUGvAGnfdCswPhWIU07SW5RymZldDCDo2dW/MyQw8nYDMQfsZYgE6+jyCg5VTV8lSMg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/9.0.0-preview.4.24267.1",
+      "path": "microsoft.entityframeworkcore.sqlserver/8.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5079,21 +5057,22 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.9.0.0-preview.4.24267.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.8.0.6.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/9.0.0-preview.4.24267.1": {
-      "sha512": "PoWJpoMRgcaOazaCbgdP7r52OrnYkRukhBRqIemaFUg21N+6jnVh0xSYnlpxCUEpkAvsa0nzvvQzhQ9VhMOzgQ==",
+    "Microsoft.EntityFrameworkCore.Tools/8.0.6": {
+      "sha512": "UsrAqShiZQBK2lcZsXoyFPccbiLRd2az1uXe1he2z4r2TUYyxNQFy+eysGCpZg0g62I4jFRJfvXIAmCi4QCUpg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/9.0.0-preview.4.24267.1",
+      "path": "microsoft.entityframeworkcore.tools/8.0.6",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "docs/PACKAGE.md",
-        "microsoft.entityframeworkcore.tools.9.0.0-preview.4.24267.1.nupkg.sha512",
+        "lib/net8.0/_._",
+        "microsoft.entityframeworkcore.tools.8.0.6.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -5101,9 +5080,9 @@
         "tools/EntityFrameworkCore.psm1",
         "tools/about_EntityFrameworkCore.help.txt",
         "tools/init.ps1",
-        "tools/net472/any/ef.exe",
-        "tools/net472/win-arm64/ef.exe",
-        "tools/net472/win-x86/ef.exe",
+        "tools/net461/any/ef.exe",
+        "tools/net461/win-arm64/ef.exe",
+        "tools/net461/win-x86/ef.exe",
         "tools/netcoreapp2.0/any/ef.dll",
         "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
@@ -7545,41 +7524,39 @@
         "system.runtime.nuspec"
       ]
     },
-    "System.Runtime.Caching/8.0.0": {
-      "sha512": "4TmlmvGp4kzZomm7J2HJn6IIx0UUrQyhBDyb5O1XiunZlQImXW+B8b7W/sTPcXhSf9rp5NR5aDtQllwbB5elOQ==",
+    "System.Runtime.Caching/6.0.0": {
+      "sha512": "E0e03kUp5X2k+UAoVl6efmI7uU7JRBWi5EIdlQ7cr0NpBGjHG4fWII35PgsBY9T4fJQ8E4QPsL0rKksU9gcL5A==",
       "type": "package",
-      "path": "system.runtime.caching/8.0.0",
+      "path": "system.runtime.caching/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
-        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Runtime.Caching.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net462/_._",
+        "lib/net461/_._",
         "lib/net6.0/System.Runtime.Caching.dll",
         "lib/net6.0/System.Runtime.Caching.xml",
-        "lib/net7.0/System.Runtime.Caching.dll",
-        "lib/net7.0/System.Runtime.Caching.xml",
-        "lib/net8.0/System.Runtime.Caching.dll",
-        "lib/net8.0/System.Runtime.Caching.xml",
+        "lib/netcoreapp3.1/System.Runtime.Caching.dll",
+        "lib/netcoreapp3.1/System.Runtime.Caching.xml",
         "lib/netstandard2.0/System.Runtime.Caching.dll",
         "lib/netstandard2.0/System.Runtime.Caching.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/_._",
         "runtimes/win/lib/net6.0/System.Runtime.Caching.dll",
         "runtimes/win/lib/net6.0/System.Runtime.Caching.xml",
-        "runtimes/win/lib/net7.0/System.Runtime.Caching.dll",
-        "runtimes/win/lib/net7.0/System.Runtime.Caching.xml",
-        "runtimes/win/lib/net8.0/System.Runtime.Caching.dll",
-        "runtimes/win/lib/net8.0/System.Runtime.Caching.xml",
-        "system.runtime.caching.8.0.0.nupkg.sha512",
+        "runtimes/win/lib/netcoreapp3.1/System.Runtime.Caching.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Runtime.Caching.xml",
+        "runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
+        "runtimes/win/lib/netstandard2.0/System.Runtime.Caching.xml",
+        "system.runtime.caching.6.0.0.nupkg.sha512",
         "system.runtime.caching.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -7656,26 +7633,35 @@
         "version.txt"
       ]
     },
-    "System.Security.Cryptography.Cng/4.5.0": {
-      "sha512": "WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
+    "System.Security.Cryptography.Cng/5.0.0": {
+      "sha512": "jIMXsKn94T9JY7PvPq/tMfqa6GAaHpElRDpmG+SuL+D3+sTw2M8VhnibKnN8Tq+4JqbPJ/f+BwtLeDMEnzAvRg==",
       "type": "package",
-      "path": "system.security.cryptography.cng/4.5.0",
+      "path": "system.security.cryptography.cng/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net46/System.Security.Cryptography.Cng.dll",
         "lib/net461/System.Security.Cryptography.Cng.dll",
+        "lib/net461/System.Security.Cryptography.Cng.xml",
         "lib/net462/System.Security.Cryptography.Cng.dll",
+        "lib/net462/System.Security.Cryptography.Cng.xml",
         "lib/net47/System.Security.Cryptography.Cng.dll",
+        "lib/net47/System.Security.Cryptography.Cng.xml",
         "lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll",
+        "lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll",
+        "lib/netcoreapp3.0/System.Security.Cryptography.Cng.xml",
         "lib/netstandard1.3/System.Security.Cryptography.Cng.dll",
         "lib/netstandard1.4/System.Security.Cryptography.Cng.dll",
         "lib/netstandard1.6/System.Security.Cryptography.Cng.dll",
         "lib/netstandard2.0/System.Security.Cryptography.Cng.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Cng.xml",
+        "lib/netstandard2.1/System.Security.Cryptography.Cng.dll",
+        "lib/netstandard2.1/System.Security.Cryptography.Cng.xml",
         "lib/uap10.0.16299/_._",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
@@ -7694,11 +7680,15 @@
         "ref/netcoreapp2.0/System.Security.Cryptography.Cng.xml",
         "ref/netcoreapp2.1/System.Security.Cryptography.Cng.dll",
         "ref/netcoreapp2.1/System.Security.Cryptography.Cng.xml",
+        "ref/netcoreapp3.0/System.Security.Cryptography.Cng.dll",
+        "ref/netcoreapp3.0/System.Security.Cryptography.Cng.xml",
         "ref/netstandard1.3/System.Security.Cryptography.Cng.dll",
         "ref/netstandard1.4/System.Security.Cryptography.Cng.dll",
         "ref/netstandard1.6/System.Security.Cryptography.Cng.dll",
         "ref/netstandard2.0/System.Security.Cryptography.Cng.dll",
         "ref/netstandard2.0/System.Security.Cryptography.Cng.xml",
+        "ref/netstandard2.1/System.Security.Cryptography.Cng.dll",
+        "ref/netstandard2.1/System.Security.Cryptography.Cng.xml",
         "ref/uap10.0.16299/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
@@ -7706,14 +7696,19 @@
         "ref/xamarinwatchos10/_._",
         "runtimes/win/lib/net46/System.Security.Cryptography.Cng.dll",
         "runtimes/win/lib/net461/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.Cng.xml",
         "runtimes/win/lib/net462/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/net462/System.Security.Cryptography.Cng.xml",
         "runtimes/win/lib/net47/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/net47/System.Security.Cryptography.Cng.xml",
         "runtimes/win/lib/netcoreapp2.0/System.Security.Cryptography.Cng.dll",
         "runtimes/win/lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Cng.xml",
         "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll",
         "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll",
         "runtimes/win/lib/uap10.0.16299/_._",
-        "system.security.cryptography.cng.4.5.0.nupkg.sha512",
+        "system.security.cryptography.cng.5.0.0.nupkg.sha512",
         "system.security.cryptography.cng.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -7913,6 +7908,45 @@
         "ref/xamarinwatchos10/_._",
         "system.text.encoding.4.3.0.nupkg.sha512",
         "system.text.encoding.nuspec"
+      ]
+    },
+    "System.Text.Encoding.CodePages/6.0.0": {
+      "sha512": "ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.xml",
+        "lib/net6.0/System.Text.Encoding.CodePages.dll",
+        "lib/net6.0/System.Text.Encoding.CodePages.xml",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "system.text.encoding.codepages.6.0.0.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Text.Encodings.Web/9.0.0-preview.4.24266.19": {
@@ -8121,9 +8155,9 @@
       "BCrypt.Net-Core >= 1.6.0",
       "Microsoft.EntityFrameworkCore >= 9.0.0-preview.4.24267.1",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0-preview.4.24267.1",
-      "Microsoft.EntityFrameworkCore.Proxies >= 9.0.0-preview.4.24267.1",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0-preview.4.24267.1",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.0-preview.4.24267.1",
+      "Microsoft.EntityFrameworkCore.Proxies >= 8.0.6",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.6",
+      "Microsoft.EntityFrameworkCore.Tools >= 8.0.6",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 9.0.0-preview.4.24271.3",
       "Newtonsoft.Json >= 13.0.3",
       "Swashbuckle.AspNetCore >= 6.6.2"
@@ -8189,17 +8223,17 @@
           },
           "Microsoft.EntityFrameworkCore.Proxies": {
             "target": "Package",
-            "version": "[9.0.0-preview.4.24267.1, )"
+            "version": "[8.0.6, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
-            "version": "[9.0.0-preview.4.24267.1, )"
+            "version": "[8.0.6, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.0-preview.4.24267.1, )"
+            "version": "[8.0.6, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",

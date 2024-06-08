@@ -65,6 +65,20 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
+		[Produces("application/json")]
+		[HttpGet("searchfilter")]
+		public IActionResult searchfilter(string? key, string? address, string? pricemin, string? pricemax, string? areamin, string? areamax)
+		{
+			try
+			{
+				return Ok(realestateService.searchfilter(key, address, pricemin, pricemax, areamin, areamax));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
 
 		[Produces("application/json")]
 		[HttpGet("findByType/{id}")]

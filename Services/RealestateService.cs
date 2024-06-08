@@ -1,3 +1,4 @@
+
 ﻿using BatDongSan.Models;
 
 namespace BatDongSan.Services
@@ -22,3 +23,4 @@ namespace BatDongSan.Services
 
     }
 }
+
