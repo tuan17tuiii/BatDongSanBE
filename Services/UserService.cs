@@ -4,7 +4,7 @@ namespace BatDongSan.Services
 {
     public interface UserService
     {
-        public dynamic findAll();
+		public dynamic findAll();
 		public dynamic findAllAdmin();
 		public dynamic findAllUser();
 		public dynamic findAllAgent();
