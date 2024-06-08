@@ -64,17 +64,17 @@ namespace BatDongSan.Services
 
         public dynamic findAll()
         {
-            return db.Users.Select(c => new
-            {
-                Id = c.Id,
-                Username = c.Username,
-                Password = c.Password,
-                Name = c.Name,
-                Phone = c.Phone,
-                RoleId = c.RoleId,
-                AdvertisementId = c.AdvertisementId,
-                Status = c.Status,
-                securityCode = c.SecurityCode,
+			return db.Users.Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
 				email = c.Email,
 				StatusUpdate = c.Statusupdate,
 				avatar = configuration["ImageUrl"] + c.Avatar
@@ -114,7 +114,7 @@ namespace BatDongSan.Services
 				securityCode = c.SecurityCode,
 				email = c.Email,
 				StatusUpdate = c.Statusupdate,
-				avatar = configuration["ImageUrl"] + c.Avatar
+				avatar = configuration["ImageUrl"] + c.Avatar,
 			}).ToList();
 		}
 
@@ -180,7 +180,7 @@ namespace BatDongSan.Services
 					Name = c.Advertisement.AdvertisementName,
 					QuantityDates = c.Advertisement.Quantitydate,
 				}:null,
-				avatar = configuration["ImageUrl"] + c.Avatar
+				avatar = configuration["ImageUrl"] + c.Avatar,
 				StatusUpdate = c.Statusupdate,
 
 			}).FirstOrDefault();
@@ -225,7 +225,12 @@ namespace BatDongSan.Services
 				securityCode = c.SecurityCode,
 				email = c.Email,
 				StatusUpdate = c.Statusupdate,
-				avatar = configuration["ImageUrl"] + c.Avatar
+				avatar = configuration["ImageUrl"] + c.Avatar,
+				image = c.ImageRealestates.Where(img => img.Userid == c.Id).Select(img => new
+				{
+					Userid = img.Userid,
+					UrlImage = configuration["ImageUrl"] + img.UrlImage
+				}).ToList()
 			}).FirstOrDefault();
 		}
 
