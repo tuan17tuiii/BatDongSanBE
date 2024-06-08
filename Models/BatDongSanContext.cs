@@ -109,7 +109,7 @@ public partial class BatDongSanContext : DbContext
             entity.Property(e => e.Content)
                 .HasColumnType("text")
                 .HasColumnName("content");
-            entity.Property(e => e.Created).HasColumnName("created");
+            
             entity.Property(e => e.Tag)
                 .HasMaxLength(250)
                 .IsUnicode(false)
@@ -181,26 +181,7 @@ public partial class BatDongSanContext : DbContext
 
         modelBuilder.Entity<Transaction>(entity =>
         {
-            entity.ToTable("transaction");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Amount).HasColumnName("amount");
-            entity.Property(e => e.BuyerId).HasColumnName("buyer_id");
-            entity.Property(e => e.RealestateId).HasColumnName("realestate_id");
-            entity.Property(e => e.SellerId).HasColumnName("seller_id");
-            entity.Property(e => e.TransactionDate).HasColumnName("transaction_date");
-
-            entity.HasOne(d => d.Buyer).WithMany(p => p.TransactionBuyers)
-                .HasForeignKey(d => d.BuyerId)
-                .HasConstraintName("FK_transaction_user");
-
-            entity.HasOne(d => d.Realestate).WithMany(p => p.Transactions)
-                .HasForeignKey(d => d.RealestateId)
-                .HasConstraintName("FK_transaction_batdongsan");
-
-            entity.HasOne(d => d.Seller).WithMany(p => p.TransactionSellers)
-                .HasForeignKey(d => d.SellerId)
-                .HasConstraintName("FK_transaction_user1");
+            
         });
 
         modelBuilder.Entity<TypeRealestate>(entity =>

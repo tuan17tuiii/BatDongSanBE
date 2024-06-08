@@ -53,11 +53,11 @@ namespace BatDongSan.Services
 				Bathrooms = c.Bathrooms,
 				Status = c.Status,
 				CreatedAt = c.CreatedAt,
-				City = c.City,
+				City = c.City,	
 				Region = c.Region,
 				Street = c.Street,
-				transaction_Type = c.TransactionType,
-				Usersell_Id = c.UsersellId,
+				transactionType = c.TransactionType,
+				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
 				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
@@ -86,19 +86,13 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
-				transaction_Type = c.TransactionType,
-				Usersell_Id = c.UsersellId,
+				transactionType = c.TransactionType,
+				UsersellId = c.UsersellId,
 				sold = c.Sold,
 				expired = c.Expired,
 				created_end = c.CreatedEnd,
 				TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
-				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
-				{
-					Id = a.Id,
-					urlImage = a.UrlImage// Thêm các trường cần thiết khác từ ImageRealestate
-
-				}).ToList(),
 			}).ToList();
 		}
 
@@ -119,8 +113,9 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
-				Usersell_Id = c.UsersellId,
-				TypeRealState = c.TypeNavigation.Type
+				UsersellId = c.UsersellId,
+				TypeRealState = c.TypeNavigation.Type,
+				transactionType = c.TransactionType,
 			}).ToList();
 		}
 
@@ -141,8 +136,9 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
-				Usersell_Id = c.UsersellId,
-				TypeRealState = c.TypeNavigation.Type
+				UsersellId = c.UsersellId,
+				TypeRealState = c.TypeNavigation.Type,
+				transactionType = c.TransactionType,
 			}).SingleOrDefault();
 		}
 
@@ -163,8 +159,9 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
-				Usersell_Id = c.UsersellId,
-				TypeRealState = c.TypeNavigation.Type
+				UsersellId = c.UsersellId,
+				TypeRealState = c.TypeNavigation.Type,
+				transactionType = c.TransactionType,
 			}).SingleOrDefault();
 		}
 
@@ -186,8 +183,8 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
-				transaction_type = c.TransactionType,
-				Usersell_Id = c.UsersellId,
+				transactionType = c.TransactionType,
+				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
 				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
@@ -216,10 +213,10 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
-                Usersell_Id = c.UsersellId,
+				UsersellId = c.UsersellId,
                 TypeRealState = c.TypeNavigation.Type,
-
-                LastImage = c.ImageRealestates.Select(img => new {
+				transactionType = c.TransactionType,
+				LastImage = c.ImageRealestates.Select(img => new {
                     img.Id,
                     img.UrlImage, // Giả sử thuộc tính này tồn tại
                     
@@ -245,13 +242,13 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
-
-                LastImage = c.ImageRealestates.Select(img => new {
+				transactionType = c.TransactionType,
+				LastImage = c.ImageRealestates.Select(img => new {
                     img.Id,
                     img.UrlImage, // Giả sử thuộc tính này tồn tại
 
 				}).FirstOrDefault(),
-				Usersell_Id = c.UsersellId,
+				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type
 			}).ToList();
 		}
@@ -295,9 +292,10 @@ namespace BatDongSan.Services
                 City = c.City,
                 Region = c.Region,
                 Street = c.Street,
-                Usersell_Id = c.UsersellId,
-                TypeRealState = c.TypeNavigation.Type
-            }).ToList();
+				UsersellId = c.UsersellId,
+                TypeRealState = c.TypeNavigation.Type,
+				transactionType = c.TransactionType,
+			}).ToList();
         }
 
 		public dynamic search(string key)

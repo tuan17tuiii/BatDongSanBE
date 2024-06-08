@@ -45,7 +45,7 @@ namespace BatDongSan.Controllers
 				return Ok(realestateService.findAll2());
 
 			}
-			catch
+			catch(Exception ex)
 			{
 				return BadRequest();
 			}
@@ -172,7 +172,7 @@ namespace BatDongSan.Controllers
                 Debug.WriteLine(realestate.Street);
                 Debug.WriteLine(realestate.TransactionType);
                 int productId = realestateService.create(realestate); // Tạo sản phẩm và lấy ID của sản phẩm
-                Debug.WriteLine(productId);
+                Debug.WriteLine("ID: "+ productId);
                 if (productId != -1)
                 {
                     // Nếu thành công, trả về kết quả thành công và ID của sản phẩm

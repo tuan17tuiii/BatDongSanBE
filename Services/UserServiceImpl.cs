@@ -1,4 +1,4 @@
-﻿
+
 using BatDongSan.Helpers;
 using BatDongSan.Models;
 using Microsoft.EntityFrameworkCore;
@@ -42,6 +42,7 @@ namespace BatDongSan.Services
 				{
 					return false;
 				}
+
 
 			}
 			catch
@@ -99,7 +100,6 @@ namespace BatDongSan.Services
 				avatar = configuration["ImageUrl"] + c.Avatar
 			}).ToList();
 		}
-
 		public dynamic findAllUser()
 		{
 			return db.Users.Where(c => c.RoleId == 2).Select(c => new
@@ -143,7 +143,6 @@ namespace BatDongSan.Services
 			try
 			{
 				var user = db.Users.SingleOrDefault(c => c.SecurityCode == code && c.Username == username);
-
 				if (user != null)
 				{
 					user.Status = true;
@@ -183,7 +182,6 @@ namespace BatDongSan.Services
 				} : null,
 				avatar = configuration["ImageUrl"] + c.Avatar,
 				StatusUpdate = c.Statusupdate,
-
 			}).FirstOrDefault();
 		}
 
@@ -288,4 +286,3 @@ namespace BatDongSan.Services
 
 	}
 }
-

@@ -9,6 +9,7 @@
       "BatDongSan/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
+          "Microsoft.EntityFrameworkCore": "8.0.6",
           "Microsoft.EntityFrameworkCore.Design": "8.0.6",
           "Microsoft.EntityFrameworkCore.Proxies": "8.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.6",
