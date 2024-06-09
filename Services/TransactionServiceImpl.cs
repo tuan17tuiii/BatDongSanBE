@@ -5,7 +5,13 @@ namespace BatDongSan.Services
 {
     public class TransactionServiceImpl : TransactionService
     {
-        public bool create(Transaction transaction)
+		private DatabaseContext db;
+		public TransactionServiceImpl(DatabaseContext _db)
+		{
+			db = _db;
+		}
+
+		public bool create(Transaction transaction)
         {
             throw new NotImplementedException();
         }
@@ -22,7 +28,14 @@ namespace BatDongSan.Services
 
         public dynamic findAll()
         {
-            throw new NotImplementedException();
+            return db.Transactions.Select(t => new
+            {
+                Id = t.Id,
+				IdUser = t.IdUser,
+                IdAdv = t.IdAdv,
+				CreatedAt = t.CreatedAt,
+                Price = t.Price,
+            }).ToList();
         }
 
         public dynamic Today(string date)
