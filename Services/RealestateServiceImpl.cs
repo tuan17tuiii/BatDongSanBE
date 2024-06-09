@@ -133,12 +133,15 @@ namespace BatDongSan.Services
 				Bathrooms = c.Bathrooms,
 				Status = c.Status,
 				CreatedAt = c.CreatedAt,
+				CreatedEnd = c.CreatedEnd,
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
 				UsersellId = c.UsersellId,
-				TypeRealState = c.TypeNavigation.Type,
+				TypeRealState = c.TypeNavigation.Id,
 				transactionType = c.TransactionType,
+				Expired = c.Expired , 
+				sold = c.Sold
 			}).SingleOrDefault();
 		}
 
