@@ -38,8 +38,6 @@ public partial class DatabaseContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.UseCollation("Latin1_General_CI_AS");
-
         modelBuilder.Entity<Advertisement>(entity =>
         {
             entity.ToTable("advertisement");

@@ -46,6 +46,7 @@ namespace BatDongSan.Services
                 idUser = c.IdUser,
                 idAdv = c.IdAdv,
                 remaining = c.Remaining,
+                createdend = c.Createdend
             }).ToList();
         }
 
