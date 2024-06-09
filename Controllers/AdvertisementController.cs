@@ -42,6 +42,21 @@ namespace BatDongSan.Controllers
 			}
 		}
 
+		[Produces("application/json")]
+		[HttpGet("searchByName/{name}")]
+		public IActionResult searchByName(string name)
+		{
+			try
+			{
+				return Ok(advertisementService.searchByName(name));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
 		[Consumes("application/json")]
         [Produces("application/json")]
         [HttpPost("create")]

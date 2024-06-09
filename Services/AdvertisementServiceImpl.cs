@@ -64,6 +64,20 @@ namespace BatDongSan.Services
 			}).SingleOrDefault();
 		}
 
+		public dynamic searchByName(string name)
+		{
+			return db.Advertisements.Where(c => c.AdvertisementName.Contains(name)).Select(c => new
+			{
+				Id = c.Id,
+				AdvertisementName = c.AdvertisementName,
+				Price = c.Price,
+				QuantityDates = c.Quantitydate,
+				QuantityNews = c.Quantitynews,
+				Time = c.Time,
+				Status = c.Status,
+			}).ToList();
+		}
+
 		public bool update(Advertisement advertisement)
         {
             try

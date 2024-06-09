@@ -285,5 +285,58 @@ namespace BatDongSan.Services
             }
         }
 
-    }
+		public dynamic SearchByUsername(string username, int role)
+		{
+			return db.Users.Where(c => c.Username.Contains(username) && c.RoleId == role).Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
+				email = c.Email,
+				Advertisement = c.Advertisement != null ? new
+				{
+					Id = c.Advertisement.Id,
+					Name = c.Advertisement.AdvertisementName,
+					QuantityDates = c.Advertisement.Quantitydate,
+					Price = c.Advertisement.Price
+				} : null,
+				avatar = configuration["ImageUrl"] + c.Avatar,
+				StatusUpdate = c.Statusupdate,
+
+			}).ToList();
+		}
+
+		public dynamic SearchByEmail(string email, int role)
+		{
+			return db.Users.Where(c => c.Email.Contains(email) && c.RoleId == role).Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
+				email = c.Email,
+				Advertisement = c.Advertisement != null ? new
+				{
+					Id = c.Advertisement.Id,
+					Name = c.Advertisement.AdvertisementName,
+					QuantityDates = c.Advertisement.Quantitydate,
+					Price = c.Advertisement.Price
+				} : null,
+				avatar = configuration["ImageUrl"] + c.Avatar,
+				StatusUpdate = c.Statusupdate,
+
+			}).ToList();
+		}
+	}
 }

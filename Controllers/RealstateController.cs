@@ -96,6 +96,21 @@ namespace BatDongSan.Controllers
 		}
 
 		[Produces("application/json")]
+		[HttpGet("searchByTitle/{title}")]
+		public IActionResult searchByTitle(string title)
+		{
+			try
+			{
+				return Ok(realestateService.searchByTitle(title));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
         [HttpGet("findByUserSellTrue/{id}")]
         public IActionResult FindByUserSellTrue(int id)
         {
