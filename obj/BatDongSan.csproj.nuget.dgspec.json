@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\BatDongSanBE\\BatDongSan.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\QuocHi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\BatDongSan.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\BatDongSan.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\BatDongSan.csproj",
+        "projectName": "BatDongSan",
+        "projectPath": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\BatDongSan.csproj",
+        "packagesPath": "C:\\Users\\QUOC DAT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\QUOC DAT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +51,14 @@
           "warnAsError": [
             "NU1605"
           ]
+<<<<<<< HEAD
         },
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
+=======
+>>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
         }
       },
       "frameworks": {
@@ -105,7 +125,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
         }
       }
     }

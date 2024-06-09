@@ -252,5 +252,35 @@ namespace BatDongSan.Controllers
 				return BadRequest("loi =>>>>>>>>>>>>>>>>>" + ex.Message);
 			}
 		}
+
+		[Produces("application/json")]
+		[HttpGet("searchByUsername/{username}/{role}")]
+		public IActionResult searchByUsername(string username, int role)
+		{
+			try
+			{
+				return Ok(userService.SearchByUsername(username, role));
+
+			}
+			catch (Exception ex)
+			{
+				return BadRequest("loi ->>>>>>>>>>>>>>>>" + ex.Message);
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpGet("searchByEmail/{email}/{role}")]
+		public IActionResult searchByEmail(string email, int role)
+		{
+			try
+			{
+				return Ok(userService.SearchByEmail(email, role));
+
+			}
+			catch (Exception ex)
+			{
+				return BadRequest("loi ->>>>>>>>>>>>>>>>" + ex.Message);
+			}
+		}
 	}
 }
