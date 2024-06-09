@@ -1,4 +1,5 @@
-﻿using BatDongSan.Services;
+﻿using BatDongSan.Models;
+using BatDongSan.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BatDongSan.Controllers
@@ -53,6 +54,51 @@ namespace BatDongSan.Controllers
 
 			}
 			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpPut("Update")]
+		public IActionResult Update([FromBody] Transaction transaction)
+		{
+			try
+			{
+				return Ok(transactionService.update(transaction));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Consumes("application/json")]
+		[Produces("application/json")]
+		[HttpPost("Create")]
+		public IActionResult Create([FromBody] Transaction transaction)
+		{
+			try
+			{
+				return Ok(transactionService.create(transaction));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
+		[HttpDelete("Delete/{id}")]
+		public IActionResult Delete(int id)
+		{
+			try
+			{
+				return Ok(transactionService.delete(id));
+			}
+			catch (Exception ex)
 			{
 				return BadRequest();
 			}
