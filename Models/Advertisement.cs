@@ -21,5 +21,7 @@ public partial class Advertisement
 
     public virtual ICollection<Remain> Remains { get; set; } = new List<Remain>();
 
+    public virtual ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
+
     public virtual ICollection<User> Users { get; set; } = new List<User>();
 }

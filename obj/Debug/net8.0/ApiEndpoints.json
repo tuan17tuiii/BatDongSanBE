@@ -184,6 +184,48 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "searchByEmail",
+    "RelativePath": "account/searchByEmail/{email}/{role}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
+    "Method": "searchByUsername",
+    "RelativePath": "account/searchByUsername/{username}/{role}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AccountController",
     "Method": "Update",
     "RelativePath": "account/Update",
     "HttpMethod": "PUT",
@@ -298,6 +340,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.AdvertisementController",
+    "Method": "searchByName",
+    "RelativePath": "advertisement/searchByName/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -647,6 +705,22 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.RealstateController",
+    "Method": "searchByTitle",
+    "RelativePath": "realstate/searchByTitle/{title}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.RealstateController",
     "Method": "searchfilter",
     "RelativePath": "realstate/searchfilter",
     "HttpMethod": "GET",
@@ -836,6 +910,38 @@
   },
   {
     "ContainingType": "BatDongSan.Controllers.TransactionController",
+    "Method": "Create",
+    "RelativePath": "Transaction/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transaction",
+        "Type": "BatDongSan.Models.Transaction",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.TransactionController",
+    "Method": "Delete",
+    "RelativePath": "Transaction/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.TransactionController",
     "Method": "FindAll",
     "RelativePath": "Transaction/FindAll",
     "HttpMethod": "GET",
@@ -876,6 +982,22 @@
       {
         "Name": "date",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BatDongSan.Controllers.TransactionController",
+    "Method": "Update",
+    "RelativePath": "Transaction/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transaction",
+        "Type": "BatDongSan.Models.Transaction",
         "IsRequired": true
       }
     ],

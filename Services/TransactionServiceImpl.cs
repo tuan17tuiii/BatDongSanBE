@@ -13,8 +13,15 @@ namespace BatDongSan.Services
 
 		public bool create(Transaction transaction)
 		{
-			db.Transactions.Add(transaction);
-			return db.SaveChanges() > 0;
+			try
+			{
+                db.Transactions.Add(transaction);
+                return db.SaveChanges() > 0;
+			}
+			catch
+			{
+				return false;
+			}
 		}
 
 		public dynamic dateRange(string from, string to)

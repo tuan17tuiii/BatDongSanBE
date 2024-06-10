@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "99pskjuPx8aZZTFBxxks6Jk2gCZCoRDsoUh9rbP3ix4=",
-=======
-  "Hash": "cnII2C37r559gKsPTRhi+VXQqvasFa0dBzWG5yp+KW4=",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+  "Hash": "yILkG8tJ8inskX626P3JnSRWqSyeKS5HyXb6Y/dChQI=",
   "Source": "BatDongSan",
   "BasePath": "_content/BatDongSan",
   "Mode": "Default",
@@ -14,18 +10,13 @@
     {
       "Name": "BatDongSan\\wwwroot",
       "Source": "BatDongSan",
-<<<<<<< HEAD
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\0086e0d7fdd34878bb5204a2d4d402ba.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -49,12 +40,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\04c2e47cf31247fea4e92c22723ec0b0.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/04c2e47cf31247fea4e92c22723ec0b0.jpg",
       "AssetKind": "All",
@@ -70,17 +55,10 @@
       "OriginalItemSpec": "wwwroot\\images\\04c2e47cf31247fea4e92c22723ec0b0.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\0aa1b5a0bc5c4210b48d6a4af38ec4b8.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\0aa1b5a0bc5c4210b48d6a4af38ec4b8.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/0aa1b5a0bc5c4210b48d6a4af38ec4b8.jpg",
       "AssetKind": "All",
@@ -96,7 +74,6 @@
       "OriginalItemSpec": "wwwroot\\images\\0aa1b5a0bc5c4210b48d6a4af38ec4b8.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\0b06e662607c47339e924b748422258c.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -120,12 +97,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\0c22ff0d5fe94094b4a63aa76a411d8c.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/0c22ff0d5fe94094b4a63aa76a411d8c.jpg",
       "AssetKind": "All",
@@ -141,17 +112,10 @@
       "OriginalItemSpec": "wwwroot\\images\\0c22ff0d5fe94094b4a63aa76a411d8c.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\0efff9fa71ab4c8a8c5dcee92f7e08f1.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\0efff9fa71ab4c8a8c5dcee92f7e08f1.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/0efff9fa71ab4c8a8c5dcee92f7e08f1.jpg",
       "AssetKind": "All",
@@ -167,17 +131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\0efff9fa71ab4c8a8c5dcee92f7e08f1.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\1195c66dcb424ea4a3ef89320679e9fd.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\1195c66dcb424ea4a3ef89320679e9fd.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/1195c66dcb424ea4a3ef89320679e9fd.jpg",
       "AssetKind": "All",
@@ -193,17 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1195c66dcb424ea4a3ef89320679e9fd.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\1306cdc474c44b499102334eb3995e6a.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\1306cdc474c44b499102334eb3995e6a.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/1306cdc474c44b499102334eb3995e6a.jpg",
       "AssetKind": "All",
@@ -219,16 +169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1306cdc474c44b499102334eb3995e6a.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\1aabfed173b94abf8dab9cf9cbc57f5c.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\182813f1512440e3874ad51bf58c2e83.webp",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\182813f1512440e3874ad51bf58c2e83.webp",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/182813f1512440e3874ad51bf58c2e83.webp",
       "AssetKind": "All",
@@ -244,11 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\182813f1512440e3874ad51bf58c2e83.webp"
     },
     {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\1aabfed173b94abf8dab9cf9cbc57f5c.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\1aabfed173b94abf8dab9cf9cbc57f5c.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/1aabfed173b94abf8dab9cf9cbc57f5c.jpg",
       "AssetKind": "All",
@@ -264,7 +207,6 @@
       "OriginalItemSpec": "wwwroot\\images\\1aabfed173b94abf8dab9cf9cbc57f5c.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\1ada956f29d246a291831ec5e7a53110.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -284,16 +226,29 @@
       "OriginalItemSpec": "wwwroot\\images\\1ada956f29d246a291831ec5e7a53110.jpg"
     },
     {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\1afe7e2b71714bda896e604b8fe6cf79.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/1afe7e2b71714bda896e604b8fe6cf79.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1afe7e2b71714bda896e604b8fe6cf79.jpg"
+    },
+    {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\1d57da306c15446390d19091f603ae09.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\1d57da306c15446390d19091f603ae09.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/1d57da306c15446390d19091f603ae09.jpg",
       "AssetKind": "All",
@@ -309,17 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1d57da306c15446390d19091f603ae09.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\1e52f07adcb043d3913a034cffb2f2cb.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\1e52f07adcb043d3913a034cffb2f2cb.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/1e52f07adcb043d3913a034cffb2f2cb.jpg",
       "AssetKind": "All",
@@ -335,17 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1e52f07adcb043d3913a034cffb2f2cb.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\2057f9617de34f0aa1736b7e6846d176.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\2057f9617de34f0aa1736b7e6846d176.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/2057f9617de34f0aa1736b7e6846d176.jpg",
       "AssetKind": "All",
@@ -361,16 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2057f9617de34f0aa1736b7e6846d176.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\213ace1f840241ff870dab5046025d3a.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\2063c8bed27d4504accb4e603acac40d.webp",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\2063c8bed27d4504accb4e603acac40d.webp",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/2063c8bed27d4504accb4e603acac40d.webp",
       "AssetKind": "All",
@@ -386,11 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2063c8bed27d4504accb4e603acac40d.webp"
     },
     {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\213ace1f840241ff870dab5046025d3a.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\213ace1f840241ff870dab5046025d3a.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/213ace1f840241ff870dab5046025d3a.jpg",
       "AssetKind": "All",
@@ -406,7 +340,6 @@
       "OriginalItemSpec": "wwwroot\\images\\213ace1f840241ff870dab5046025d3a.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\21700fcce1674ebaa56159cff12ad26f.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -430,12 +363,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\2256a63902964b7c875252074f5bdff4.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/2256a63902964b7c875252074f5bdff4.jpg",
       "AssetKind": "All",
@@ -451,17 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2256a63902964b7c875252074f5bdff4.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\231a1fee3d8a4f0e82e13c89490962f6.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\231a1fee3d8a4f0e82e13c89490962f6.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/231a1fee3d8a4f0e82e13c89490962f6.jpg",
       "AssetKind": "All",
@@ -477,17 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\231a1fee3d8a4f0e82e13c89490962f6.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\23be8df7f0364892902204744cf84297.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\23be8df7f0364892902204744cf84297.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/23be8df7f0364892902204744cf84297.jpg",
       "AssetKind": "All",
@@ -503,17 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\23be8df7f0364892902204744cf84297.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\24b997536143473c8cd4e2ac0b364d1e.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\24b997536143473c8cd4e2ac0b364d1e.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/24b997536143473c8cd4e2ac0b364d1e.jpg",
       "AssetKind": "All",
@@ -529,17 +435,29 @@
       "OriginalItemSpec": "wwwroot\\images\\24b997536143473c8cd4e2ac0b364d1e.jpg"
     },
     {
-<<<<<<< HEAD
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\27c85870c75d4f9da749df37513f28ed.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/27c85870c75d4f9da749df37513f28ed.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\27c85870c75d4f9da749df37513f28ed.jpg"
+    },
+    {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\2871b60b287346e0879606feee605fe9.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\2871b60b287346e0879606feee605fe9.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/2871b60b287346e0879606feee605fe9.jpg",
       "AssetKind": "All",
@@ -555,7 +473,6 @@
       "OriginalItemSpec": "wwwroot\\images\\2871b60b287346e0879606feee605fe9.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\2ac515e0856b4e1aabc9f3df7fa19584.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -579,12 +496,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\32092cae2844486ead8d8e68677ac17f.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/32092cae2844486ead8d8e68677ac17f.jpg",
       "AssetKind": "All",
@@ -600,16 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\32092cae2844486ead8d8e68677ac17f.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\32900b17d5154f2d903d2a73c65daf32.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\3283ad98fba6489ea770c5edf8a0e590.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3283ad98fba6489ea770c5edf8a0e590.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/3283ad98fba6489ea770c5edf8a0e590.jpg",
       "AssetKind": "All",
@@ -625,11 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3283ad98fba6489ea770c5edf8a0e590.jpg"
     },
     {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\32900b17d5154f2d903d2a73c65daf32.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\32900b17d5154f2d903d2a73c65daf32.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/32900b17d5154f2d903d2a73c65daf32.jpg",
       "AssetKind": "All",
@@ -645,17 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\32900b17d5154f2d903d2a73c65daf32.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\33eaf41b3d984812b6b699890ba2059a.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\33eaf41b3d984812b6b699890ba2059a.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/33eaf41b3d984812b6b699890ba2059a.png",
       "AssetKind": "All",
@@ -671,17 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\33eaf41b3d984812b6b699890ba2059a.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\33eb189f54ec4fc4aaf525e07ced32cd.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\33eb189f54ec4fc4aaf525e07ced32cd.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/33eb189f54ec4fc4aaf525e07ced32cd.jpg",
       "AssetKind": "All",
@@ -697,17 +587,10 @@
       "OriginalItemSpec": "wwwroot\\images\\33eb189f54ec4fc4aaf525e07ced32cd.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\34af726f50e14c8fa6e4dd8e9bbd29d7.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\34af726f50e14c8fa6e4dd8e9bbd29d7.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/34af726f50e14c8fa6e4dd8e9bbd29d7.jpg",
       "AssetKind": "All",
@@ -723,17 +606,10 @@
       "OriginalItemSpec": "wwwroot\\images\\34af726f50e14c8fa6e4dd8e9bbd29d7.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\3559cd55579f4b63b3b13119b5c2a8f7.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3559cd55579f4b63b3b13119b5c2a8f7.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/3559cd55579f4b63b3b13119b5c2a8f7.jpg",
       "AssetKind": "All",
@@ -749,7 +625,6 @@
       "OriginalItemSpec": "wwwroot\\images\\3559cd55579f4b63b3b13119b5c2a8f7.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\35bcd7bd5920408480d464a473bbcc4c.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -773,12 +648,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\35f930a58d2c4b799397e5cb02ebddbc.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/35f930a58d2c4b799397e5cb02ebddbc.jpg",
       "AssetKind": "All",
@@ -794,17 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\35f930a58d2c4b799397e5cb02ebddbc.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\36143b4b9b3047fd913e1e927a8b07ca.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\36143b4b9b3047fd913e1e927a8b07ca.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/36143b4b9b3047fd913e1e927a8b07ca.jpg",
       "AssetKind": "All",
@@ -820,17 +682,10 @@
       "OriginalItemSpec": "wwwroot\\images\\36143b4b9b3047fd913e1e927a8b07ca.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\3665d03fd3bf47cb89e384cbe17f463d.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3665d03fd3bf47cb89e384cbe17f463d.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/3665d03fd3bf47cb89e384cbe17f463d.jpg",
       "AssetKind": "All",
@@ -846,16 +701,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3665d03fd3bf47cb89e384cbe17f463d.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\37844638592543a2b716bc89c67aca9d.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\37216580ab9e47919b59aad737a25e37.webp",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\37216580ab9e47919b59aad737a25e37.webp",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/37216580ab9e47919b59aad737a25e37.webp",
       "AssetKind": "All",
@@ -871,11 +720,10 @@
       "OriginalItemSpec": "wwwroot\\images\\37216580ab9e47919b59aad737a25e37.webp"
     },
     {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\37844638592543a2b716bc89c67aca9d.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\37844638592543a2b716bc89c67aca9d.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/37844638592543a2b716bc89c67aca9d.jpg",
       "AssetKind": "All",
@@ -891,17 +739,29 @@
       "OriginalItemSpec": "wwwroot\\images\\37844638592543a2b716bc89c67aca9d.jpg"
     },
     {
-<<<<<<< HEAD
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\38764110854b44c18178fa7656a8ee6d.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/38764110854b44c18178fa7656a8ee6d.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\38764110854b44c18178fa7656a8ee6d.jpg"
+    },
+    {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\39687ddf5b4345deb26c82821e972d13.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\39687ddf5b4345deb26c82821e972d13.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/39687ddf5b4345deb26c82821e972d13.jpg",
       "AssetKind": "All",
@@ -917,7 +777,6 @@
       "OriginalItemSpec": "wwwroot\\images\\39687ddf5b4345deb26c82821e972d13.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\3aee99fceeef46e7ba6c0b5a77c7b29f.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -941,12 +800,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3ba4441bfa924fe79c4e7d9dd799d125.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/3ba4441bfa924fe79c4e7d9dd799d125.jpg",
       "AssetKind": "All",
@@ -962,17 +815,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3ba4441bfa924fe79c4e7d9dd799d125.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\3da3db8c924b433eb69c26217abf2379.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3da3db8c924b433eb69c26217abf2379.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/3da3db8c924b433eb69c26217abf2379.jpg",
       "AssetKind": "All",
@@ -988,17 +834,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3da3db8c924b433eb69c26217abf2379.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\3e12ebf352c8441e992a817d1824e539.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\3e12ebf352c8441e992a817d1824e539.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/3e12ebf352c8441e992a817d1824e539.jpg",
       "AssetKind": "All",
@@ -1014,7 +853,6 @@
       "OriginalItemSpec": "wwwroot\\images\\3e12ebf352c8441e992a817d1824e539.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\3f3a7691502f45d3a04816721793f492.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -1038,12 +876,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\40361d9410f341a5bd67bc16801e6faa.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/40361d9410f341a5bd67bc16801e6faa.png",
       "AssetKind": "All",
@@ -1059,17 +891,10 @@
       "OriginalItemSpec": "wwwroot\\images\\40361d9410f341a5bd67bc16801e6faa.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\422026be8438401b8200d1fc57e36dc8.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\422026be8438401b8200d1fc57e36dc8.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/422026be8438401b8200d1fc57e36dc8.jpg",
       "AssetKind": "All",
@@ -1085,17 +910,10 @@
       "OriginalItemSpec": "wwwroot\\images\\422026be8438401b8200d1fc57e36dc8.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\43e9f71992ff48f0bc870f38ff167775.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\43e9f71992ff48f0bc870f38ff167775.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/43e9f71992ff48f0bc870f38ff167775.png",
       "AssetKind": "All",
@@ -1111,7 +929,6 @@
       "OriginalItemSpec": "wwwroot\\images\\43e9f71992ff48f0bc870f38ff167775.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\4417e50cff384ae9bc1435785e2fa487.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -1154,12 +971,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\44faad334ce1457b99be898ad933c63b.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/44faad334ce1457b99be898ad933c63b.jpg",
       "AssetKind": "All",
@@ -1175,16 +986,29 @@
       "OriginalItemSpec": "wwwroot\\images\\44faad334ce1457b99be898ad933c63b.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\47e97e778dcb43fb8d757dffc77b877c.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\456c200b5c7b46629f117a775976a014.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\46c7175041654ceb8987c7f212d054c7.jpg",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/456c200b5c7b46629f117a775976a014.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\456c200b5c7b46629f117a775976a014.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\46c7175041654ceb8987c7f212d054c7.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/46c7175041654ceb8987c7f212d054c7.jpg",
       "AssetKind": "All",
@@ -1200,11 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\images\\46c7175041654ceb8987c7f212d054c7.jpg"
     },
     {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\47e97e778dcb43fb8d757dffc77b877c.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\47e97e778dcb43fb8d757dffc77b877c.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/47e97e778dcb43fb8d757dffc77b877c.jpg",
       "AssetKind": "All",
@@ -1220,17 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\images\\47e97e778dcb43fb8d757dffc77b877c.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\487a797375ee4382906cd42d25fe92c1.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\487a797375ee4382906cd42d25fe92c1.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/487a797375ee4382906cd42d25fe92c1.jpg",
       "AssetKind": "All",
@@ -1246,7 +1062,6 @@
       "OriginalItemSpec": "wwwroot\\images\\487a797375ee4382906cd42d25fe92c1.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\4917e4119f384e4999cecceb4d0626e4.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -1270,12 +1085,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\4928198442b344d580c6a1af747528ab.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/4928198442b344d580c6a1af747528ab.png",
       "AssetKind": "All",
@@ -1291,17 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\images\\4928198442b344d580c6a1af747528ab.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\4c0a2d072afc405ca5ac9c0d5b17c28a.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\4c0a2d072afc405ca5ac9c0d5b17c28a.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/4c0a2d072afc405ca5ac9c0d5b17c28a.jpg",
       "AssetKind": "All",
@@ -1317,17 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\4c0a2d072afc405ca5ac9c0d5b17c28a.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\4e5f07f9f8524e41a9b5e50b9fa45018.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\4e5f07f9f8524e41a9b5e50b9fa45018.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/4e5f07f9f8524e41a9b5e50b9fa45018.jpg",
       "AssetKind": "All",
@@ -1343,7 +1138,6 @@
       "OriginalItemSpec": "wwwroot\\images\\4e5f07f9f8524e41a9b5e50b9fa45018.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\521dc17450d147c6b041996809fec63f.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -1367,12 +1161,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\53df7edb973043d2a25d24a99383e313.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/53df7edb973043d2a25d24a99383e313.jpg",
       "AssetKind": "All",
@@ -1388,17 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\images\\53df7edb973043d2a25d24a99383e313.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\56112f4fe7af46b392f88f17a81f1a95.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\56112f4fe7af46b392f88f17a81f1a95.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/56112f4fe7af46b392f88f17a81f1a95.png",
       "AssetKind": "All",
@@ -1414,17 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\images\\56112f4fe7af46b392f88f17a81f1a95.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\56221f7d9f874106bfbe3438bb55397a.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\56221f7d9f874106bfbe3438bb55397a.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/56221f7d9f874106bfbe3438bb55397a.jpg",
       "AssetKind": "All",
@@ -1440,7 +1214,25 @@
       "OriginalItemSpec": "wwwroot\\images\\56221f7d9f874106bfbe3438bb55397a.jpg"
     },
     {
-<<<<<<< HEAD
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\5686236dfd8941b7bcbdf3fddd6cbf47.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/5686236dfd8941b7bcbdf3fddd6cbf47.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\5686236dfd8941b7bcbdf3fddd6cbf47.jpg"
+    },
+    {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\572a45e0eadd49e6a7963cf1a15097d5.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -1483,12 +1275,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\5b7bedbbcd0e4307a355e0316cf222de.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/5b7bedbbcd0e4307a355e0316cf222de.jpg",
       "AssetKind": "All",
@@ -1504,17 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5b7bedbbcd0e4307a355e0316cf222de.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\5b9e4254627e495380472154f5ef6106.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\5b9e4254627e495380472154f5ef6106.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/5b9e4254627e495380472154f5ef6106.png",
       "AssetKind": "All",
@@ -1530,17 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5b9e4254627e495380472154f5ef6106.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\5c5b802375434f78ae7592bc7e3f82c2.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\5c5b802375434f78ae7592bc7e3f82c2.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/5c5b802375434f78ae7592bc7e3f82c2.jpg",
       "AssetKind": "All",
@@ -1556,7 +1328,6 @@
       "OriginalItemSpec": "wwwroot\\images\\5c5b802375434f78ae7592bc7e3f82c2.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\5ca5cb9a929044689a204b16bb36071d.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -1580,12 +1351,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\5e43fb4467df4c129a73004a9d86ed74.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/5e43fb4467df4c129a73004a9d86ed74.jpg",
       "AssetKind": "All",
@@ -1601,16 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5e43fb4467df4c129a73004a9d86ed74.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\7128efcccea0449b8c5e8e26587e4268.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\61c0d3eadad84045a5dc28d8489d2a90.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\61c0d3eadad84045a5dc28d8489d2a90.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/61c0d3eadad84045a5dc28d8489d2a90.jpg",
       "AssetKind": "All",
@@ -1626,11 +1385,29 @@
       "OriginalItemSpec": "wwwroot\\images\\61c0d3eadad84045a5dc28d8489d2a90.jpg"
     },
     {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\7128efcccea0449b8c5e8e26587e4268.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\6e9a3eb56c0a4546bccac760b801dcac.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/6e9a3eb56c0a4546bccac760b801dcac.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6e9a3eb56c0a4546bccac760b801dcac.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\7128efcccea0449b8c5e8e26587e4268.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/7128efcccea0449b8c5e8e26587e4268.jpg",
       "AssetKind": "All",
@@ -1646,17 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7128efcccea0449b8c5e8e26587e4268.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\73955d1fdff345fe9d16e84c5105730e.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\73955d1fdff345fe9d16e84c5105730e.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/73955d1fdff345fe9d16e84c5105730e.jpg",
       "AssetKind": "All",
@@ -1672,17 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\73955d1fdff345fe9d16e84c5105730e.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\7713dc4c07aa4a47a5d94ef399db8583.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\7713dc4c07aa4a47a5d94ef399db8583.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/7713dc4c07aa4a47a5d94ef399db8583.jpg",
       "AssetKind": "All",
@@ -1698,17 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7713dc4c07aa4a47a5d94ef399db8583.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\773390e5b67649f9ab3df8b537129938.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\773390e5b67649f9ab3df8b537129938.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/773390e5b67649f9ab3df8b537129938.jpg",
       "AssetKind": "All",
@@ -1724,17 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\images\\773390e5b67649f9ab3df8b537129938.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\7a6f22c2f46a4c3aa2b48d73541a8ad4.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\7a6f22c2f46a4c3aa2b48d73541a8ad4.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/7a6f22c2f46a4c3aa2b48d73541a8ad4.png",
       "AssetKind": "All",
@@ -1750,17 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7a6f22c2f46a4c3aa2b48d73541a8ad4.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\7bb048f6dc2e45ff99ec54641a217f4b.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\7bb048f6dc2e45ff99ec54641a217f4b.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/7bb048f6dc2e45ff99ec54641a217f4b.png",
       "AssetKind": "All",
@@ -1776,7 +1518,6 @@
       "OriginalItemSpec": "wwwroot\\images\\7bb048f6dc2e45ff99ec54641a217f4b.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\7c149713f1f640b6be34d13c87309c43.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -1800,12 +1541,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\7c283b1aa05c44bba3899d5fc2eb19ae.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/7c283b1aa05c44bba3899d5fc2eb19ae.jpg",
       "AssetKind": "All",
@@ -1821,7 +1556,6 @@
       "OriginalItemSpec": "wwwroot\\images\\7c283b1aa05c44bba3899d5fc2eb19ae.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\7c561f1354244a74b4ae4278fbcefb90.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -1845,12 +1579,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\82421c71ecf9469996a271232faf7f28.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/82421c71ecf9469996a271232faf7f28.jpg",
       "AssetKind": "All",
@@ -1866,21 +1594,12 @@
       "OriginalItemSpec": "wwwroot\\images\\82421c71ecf9469996a271232faf7f28.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\87896161037f4c5087a43fa907a1e0c5.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\862abc64c2ef4840928dd84002a1e277.webp",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/87896161037f4c5087a43fa907a1e0c5.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\890cd7b8fb7d4bee9916bf6de2d44101.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/890cd7b8fb7d4bee9916bf6de2d44101.jpg",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+      "RelativePath": "images/862abc64c2ef4840928dd84002a1e277.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1891,23 +1610,89 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
+      "OriginalItemSpec": "wwwroot\\images\\862abc64c2ef4840928dd84002a1e277.webp"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\87896161037f4c5087a43fa907a1e0c5.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/87896161037f4c5087a43fa907a1e0c5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\87896161037f4c5087a43fa907a1e0c5.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\883cc651dd67462f8af3e20756cdd7dd.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/883cc651dd67462f8af3e20756cdd7dd.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\883cc651dd67462f8af3e20756cdd7dd.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\890cd7b8fb7d4bee9916bf6de2d44101.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/890cd7b8fb7d4bee9916bf6de2d44101.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\890cd7b8fb7d4bee9916bf6de2d44101.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\89c2921ef969480b9bded9b6b6d7620c.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/89c2921ef969480b9bded9b6b6d7620c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\89c2921ef969480b9bded9b6b6d7620c.jpg"
     },
     {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\8a1ff4eba00e4edcb53347b2acbcb660.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot\\images\\890cd7b8fb7d4bee9916bf6de2d44101.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\8a1ff4eba00e4edcb53347b2acbcb660.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/8a1ff4eba00e4edcb53347b2acbcb660.png",
       "AssetKind": "All",
@@ -1923,21 +1708,12 @@
       "OriginalItemSpec": "wwwroot\\images\\8a1ff4eba00e4edcb53347b2acbcb660.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\8bfdb28783dd4b6f8aafcbfede2c472b.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/8bfdb28783dd4b6f8aafcbfede2c472b.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\8c5448c3df50417694b8c221f1840409.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/8c5448c3df50417694b8c221f1840409.jpg",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1948,8 +1724,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\images\\8bfdb28783dd4b6f8aafcbfede2c472b.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\8c5448c3df50417694b8c221f1840409.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/8c5448c3df50417694b8c221f1840409.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8c5448c3df50417694b8c221f1840409.jpg"
     },
     {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\8d3ba7f6c4d84f088dcae996cdede53d.jpg",
@@ -1975,15 +1769,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot\\images\\8c5448c3df50417694b8c221f1840409.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\8e124108ff964069b749109d3b20cca4.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/8e124108ff964069b749109d3b20cca4.png",
       "AssetKind": "All",
@@ -1999,17 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8e124108ff964069b749109d3b20cca4.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\8f2e702bc5d7493f9aea6a80d619a30c.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\8f2e702bc5d7493f9aea6a80d619a30c.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/8f2e702bc5d7493f9aea6a80d619a30c.jpg",
       "AssetKind": "All",
@@ -2025,17 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8f2e702bc5d7493f9aea6a80d619a30c.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\90374867f2a1414db73cabe41085c635.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\90374867f2a1414db73cabe41085c635.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/90374867f2a1414db73cabe41085c635.png",
       "AssetKind": "All",
@@ -2051,17 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\images\\90374867f2a1414db73cabe41085c635.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\94e7ebccd2f14e8fb7cf49ad77ff7107.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\94e7ebccd2f14e8fb7cf49ad77ff7107.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/94e7ebccd2f14e8fb7cf49ad77ff7107.jpg",
       "AssetKind": "All",
@@ -2077,21 +1841,12 @@
       "OriginalItemSpec": "wwwroot\\images\\94e7ebccd2f14e8fb7cf49ad77ff7107.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\983c753b99154520bb914d73638822b8.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/983c753b99154520bb914d73638822b8.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\9908c726d7e140cd85df8b600483bd1d.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/9908c726d7e140cd85df8b600483bd1d.jpg",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2102,7 +1857,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\images\\983c753b99154520bb914d73638822b8.jpg"
     },
     {
@@ -2125,19 +1879,29 @@
       "OriginalItemSpec": "wwwroot\\images\\986313c009964a13b68a857f3624e08a.jpg"
     },
     {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\9908c726d7e140cd85df8b600483bd1d.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/9908c726d7e140cd85df8b600483bd1d.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\9908c726d7e140cd85df8b600483bd1d.jpg"
+    },
+    {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\996677eded7d4e19908e40ae3a960364.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot\\images\\9908c726d7e140cd85df8b600483bd1d.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\996677eded7d4e19908e40ae3a960364.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/996677eded7d4e19908e40ae3a960364.jpg",
       "AssetKind": "All",
@@ -2153,17 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\images\\996677eded7d4e19908e40ae3a960364.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\9bb314811b2c484294fe0b287a40d926.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\9bb314811b2c484294fe0b287a40d926.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/9bb314811b2c484294fe0b287a40d926.jpg",
       "AssetKind": "All",
@@ -2179,7 +1936,6 @@
       "OriginalItemSpec": "wwwroot\\images\\9bb314811b2c484294fe0b287a40d926.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\9f82a84de96d4508913f09cd03a25d98.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -2203,12 +1959,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a13d5816be38455e9b0b99502b7b8d1d.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/a13d5816be38455e9b0b99502b7b8d1d.jpg",
       "AssetKind": "All",
@@ -2224,17 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a13d5816be38455e9b0b99502b7b8d1d.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\a1904dc1af4942dcb116e08c4d0b2e2b.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a1904dc1af4942dcb116e08c4d0b2e2b.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/a1904dc1af4942dcb116e08c4d0b2e2b.jpg",
       "AssetKind": "All",
@@ -2250,17 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a1904dc1af4942dcb116e08c4d0b2e2b.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\a28e3aaebe2842be967e33b456906aa5.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a28e3aaebe2842be967e33b456906aa5.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/a28e3aaebe2842be967e33b456906aa5.jpg",
       "AssetKind": "All",
@@ -2276,21 +2012,12 @@
       "OriginalItemSpec": "wwwroot\\images\\a28e3aaebe2842be967e33b456906aa5.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\a3a6b4d9237441b3804fce389972c457.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/a3a6b4d9237441b3804fce389972c457.png",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a3c0b6703e9144cfb15f92ae2352c122.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/a3c0b6703e9144cfb15f92ae2352c122.jpg",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2301,8 +2028,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\images\\a3a6b4d9237441b3804fce389972c457.png"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\a3c0b6703e9144cfb15f92ae2352c122.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/a3c0b6703e9144cfb15f92ae2352c122.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a3c0b6703e9144cfb15f92ae2352c122.jpg"
     },
     {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\a566cef76a9e4daf8c4b0a43e54be7fb.jpg",
@@ -2347,15 +2092,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot\\images\\a3c0b6703e9144cfb15f92ae2352c122.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\a728bca1005c4a3b8552adea0fd77e7f.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/a728bca1005c4a3b8552adea0fd77e7f.jpg",
       "AssetKind": "All",
@@ -2371,7 +2107,6 @@
       "OriginalItemSpec": "wwwroot\\images\\a728bca1005c4a3b8552adea0fd77e7f.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\a87ea492588644318d51175650590f8b.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -2414,12 +2149,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\aeea98bbced74e08ace95ff27e66361d.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/aeea98bbced74e08ace95ff27e66361d.jpg",
       "AssetKind": "All",
@@ -2435,17 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\images\\aeea98bbced74e08ace95ff27e66361d.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\b0db29516be244659539e1b88e09af1a.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\b0db29516be244659539e1b88e09af1a.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/b0db29516be244659539e1b88e09af1a.jpg",
       "AssetKind": "All",
@@ -2461,17 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b0db29516be244659539e1b88e09af1a.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\b11a2f43dc6a4919b99d24bd24a2c5bf.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\b11a2f43dc6a4919b99d24bd24a2c5bf.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/b11a2f43dc6a4919b99d24bd24a2c5bf.jpg",
       "AssetKind": "All",
@@ -2487,17 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b11a2f43dc6a4919b99d24bd24a2c5bf.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\b11d69ae259b425fb74462430e9e8fe6.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\b11d69ae259b425fb74462430e9e8fe6.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/b11d69ae259b425fb74462430e9e8fe6.jpg",
       "AssetKind": "All",
@@ -2513,17 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b11d69ae259b425fb74462430e9e8fe6.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\b125f510e985427c8f2d957ea9eee8f5.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\b125f510e985427c8f2d957ea9eee8f5.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/b125f510e985427c8f2d957ea9eee8f5.jpg",
       "AssetKind": "All",
@@ -2539,17 +2240,29 @@
       "OriginalItemSpec": "wwwroot\\images\\b125f510e985427c8f2d957ea9eee8f5.jpg"
     },
     {
-<<<<<<< HEAD
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\b6e3dad0dfd648a3a7d84ae0d0966d7a.webp",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/b6e3dad0dfd648a3a7d84ae0d0966d7a.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b6e3dad0dfd648a3a7d84ae0d0966d7a.webp"
+    },
+    {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\b82d4c0c7a564a5cb36cac1abd604a2b.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\b82d4c0c7a564a5cb36cac1abd604a2b.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/b82d4c0c7a564a5cb36cac1abd604a2b.jpg",
       "AssetKind": "All",
@@ -2565,17 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b82d4c0c7a564a5cb36cac1abd604a2b.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\ba3a4525756742df92871b334cb7c420.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ba3a4525756742df92871b334cb7c420.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/ba3a4525756742df92871b334cb7c420.jpg",
       "AssetKind": "All",
@@ -2591,21 +2297,12 @@
       "OriginalItemSpec": "wwwroot\\images\\ba3a4525756742df92871b334cb7c420.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\bbc4cbc69a8e4e67b3af76040003ef5a.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\bb5bd69904024101969002cc73df74ae.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/bbc4cbc69a8e4e67b3af76040003ef5a.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\bb5bd69904024101969002cc73df74ae.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
       "RelativePath": "images/bb5bd69904024101969002cc73df74ae.jpg",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2616,7 +2313,25 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
+      "OriginalItemSpec": "wwwroot\\images\\bb5bd69904024101969002cc73df74ae.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\bbc4cbc69a8e4e67b3af76040003ef5a.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/bbc4cbc69a8e4e67b3af76040003ef5a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\bbc4cbc69a8e4e67b3af76040003ef5a.jpg"
     },
     {
@@ -2643,15 +2358,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot\\images\\bb5bd69904024101969002cc73df74ae.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\bca4d3335ba847ff9afd6b8f75c357db.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/bca4d3335ba847ff9afd6b8f75c357db.jpg",
       "AssetKind": "All",
@@ -2667,17 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bca4d3335ba847ff9afd6b8f75c357db.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\bcc888c6a4374f19a3ac993327a07763.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\bcc888c6a4374f19a3ac993327a07763.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/bcc888c6a4374f19a3ac993327a07763.png",
       "AssetKind": "All",
@@ -2693,17 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bcc888c6a4374f19a3ac993327a07763.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\bcf196cda4d64c55b6227426cfe70c77.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\bcf196cda4d64c55b6227426cfe70c77.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/bcf196cda4d64c55b6227426cfe70c77.jpg",
       "AssetKind": "All",
@@ -2719,17 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bcf196cda4d64c55b6227426cfe70c77.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\c23f06665be74baa8106ab8203cf2d06.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\c23f06665be74baa8106ab8203cf2d06.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/c23f06665be74baa8106ab8203cf2d06.jpg",
       "AssetKind": "All",
@@ -2745,17 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\images\\c23f06665be74baa8106ab8203cf2d06.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\c3e3d257fed04c9e91d627cb80087546.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\c3e3d257fed04c9e91d627cb80087546.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/c3e3d257fed04c9e91d627cb80087546.jpg",
       "AssetKind": "All",
@@ -2771,16 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\images\\c3e3d257fed04c9e91d627cb80087546.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\cae69095ecc94942a7a563a7b06338f0.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\c99280db9eea490c926dfff338bc485f.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\c99280db9eea490c926dfff338bc485f.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/c99280db9eea490c926dfff338bc485f.jpg",
       "AssetKind": "All",
@@ -2796,11 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\images\\c99280db9eea490c926dfff338bc485f.jpg"
     },
     {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\cae69095ecc94942a7a563a7b06338f0.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\cae69095ecc94942a7a563a7b06338f0.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/cae69095ecc94942a7a563a7b06338f0.jpg",
       "AssetKind": "All",
@@ -2816,17 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cae69095ecc94942a7a563a7b06338f0.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\cecd264f0d384aa5b4af9786ff40c97a.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\cecd264f0d384aa5b4af9786ff40c97a.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/cecd264f0d384aa5b4af9786ff40c97a.png",
       "AssetKind": "All",
@@ -2842,17 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cecd264f0d384aa5b4af9786ff40c97a.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\cefda03567f94d2080ef0e691e9eed99.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\cefda03567f94d2080ef0e691e9eed99.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/cefda03567f94d2080ef0e691e9eed99.jpg",
       "AssetKind": "All",
@@ -2868,17 +2525,48 @@
       "OriginalItemSpec": "wwwroot\\images\\cefda03567f94d2080ef0e691e9eed99.jpg"
     },
     {
-<<<<<<< HEAD
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\d12e7d9bdb5a45ad89033b562b55bccc.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/d12e7d9bdb5a45ad89033b562b55bccc.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d12e7d9bdb5a45ad89033b562b55bccc.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\d2d221bca7f8444b8612e7441c40b243.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/d2d221bca7f8444b8612e7441c40b243.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d2d221bca7f8444b8612e7441c40b243.jpg"
+    },
+    {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\d5462e06cd2a4fc2a27f6263f0111fbc.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d5462e06cd2a4fc2a27f6263f0111fbc.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/d5462e06cd2a4fc2a27f6263f0111fbc.jpg",
       "AssetKind": "All",
@@ -2894,17 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\images\\d5462e06cd2a4fc2a27f6263f0111fbc.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\d585ecc704704d6f89ddbbc41a2619f4.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d585ecc704704d6f89ddbbc41a2619f4.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/d585ecc704704d6f89ddbbc41a2619f4.jpg",
       "AssetKind": "All",
@@ -2920,17 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\images\\d585ecc704704d6f89ddbbc41a2619f4.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\d59482f2de004e999ef4dfbe26b3c764.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d59482f2de004e999ef4dfbe26b3c764.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/d59482f2de004e999ef4dfbe26b3c764.jpg",
       "AssetKind": "All",
@@ -2946,7 +2620,6 @@
       "OriginalItemSpec": "wwwroot\\images\\d59482f2de004e999ef4dfbe26b3c764.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\d5b8ae4991ef47a39e4caca3d6a0ca28.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -2966,16 +2639,29 @@
       "OriginalItemSpec": "wwwroot\\images\\d5b8ae4991ef47a39e4caca3d6a0ca28.jpg"
     },
     {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\d5f0cc0f97304b008b49b1d3d8b0558b.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/d5f0cc0f97304b008b49b1d3d8b0558b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d5f0cc0f97304b008b49b1d3d8b0558b.jpg"
+    },
+    {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\d7cd73ddd30c4968a0498a6f00214608.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d7cd73ddd30c4968a0498a6f00214608.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/d7cd73ddd30c4968a0498a6f00214608.jpg",
       "AssetKind": "All",
@@ -2991,17 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\images\\d7cd73ddd30c4968a0498a6f00214608.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\d7f11e86b9644dca9cf66d8a379c108a.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d7f11e86b9644dca9cf66d8a379c108a.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/d7f11e86b9644dca9cf66d8a379c108a.jpg",
       "AssetKind": "All",
@@ -3017,17 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\images\\d7f11e86b9644dca9cf66d8a379c108a.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\d865517d3e9b4636a4afcea2add0169c.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\d865517d3e9b4636a4afcea2add0169c.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/d865517d3e9b4636a4afcea2add0169c.png",
       "AssetKind": "All",
@@ -3043,17 +2715,29 @@
       "OriginalItemSpec": "wwwroot\\images\\d865517d3e9b4636a4afcea2add0169c.png"
     },
     {
-<<<<<<< HEAD
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\d8df3d62f769445c8df21f30c89b2079.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/d8df3d62f769445c8df21f30c89b2079.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d8df3d62f769445c8df21f30c89b2079.jpg"
+    },
+    {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\dbf52f1310064a449e4676797d451a6e.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\dbf52f1310064a449e4676797d451a6e.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/dbf52f1310064a449e4676797d451a6e.jpg",
       "AssetKind": "All",
@@ -3069,17 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dbf52f1310064a449e4676797d451a6e.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\dd5326e3358941e5a3b58819f146bad0.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\dd5326e3358941e5a3b58819f146bad0.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/dd5326e3358941e5a3b58819f146bad0.jpg",
       "AssetKind": "All",
@@ -3095,17 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dd5326e3358941e5a3b58819f146bad0.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\de849ee9e34a4e3da494e27d25616e47.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\de849ee9e34a4e3da494e27d25616e47.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/de849ee9e34a4e3da494e27d25616e47.jpg",
       "AssetKind": "All",
@@ -3121,17 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\images\\de849ee9e34a4e3da494e27d25616e47.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\df29ba08f74b42e38d28123090ebb895.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\df29ba08f74b42e38d28123090ebb895.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/df29ba08f74b42e38d28123090ebb895.jpg",
       "AssetKind": "All",
@@ -3147,16 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\images\\df29ba08f74b42e38d28123090ebb895.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\e4d8a18333ec4fa1b43147d60b29c50c.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\e4abe4f6d69b43cbb8b72e4e2d1bdeb8.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\e4abe4f6d69b43cbb8b72e4e2d1bdeb8.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/e4abe4f6d69b43cbb8b72e4e2d1bdeb8.jpg",
       "AssetKind": "All",
@@ -3172,11 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\images\\e4abe4f6d69b43cbb8b72e4e2d1bdeb8.jpg"
     },
     {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\e4d8a18333ec4fa1b43147d60b29c50c.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\e4d8a18333ec4fa1b43147d60b29c50c.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/e4d8a18333ec4fa1b43147d60b29c50c.jpg",
       "AssetKind": "All",
@@ -3192,21 +2848,12 @@
       "OriginalItemSpec": "wwwroot\\images\\e4d8a18333ec4fa1b43147d60b29c50c.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\e58b6e0f97a848aca76a81bf06476c7e.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/e58b6e0f97a848aca76a81bf06476c7e.jpg",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ec41ee69178547618e8510aa9fb0fcba.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
-      "BasePath": "_content/BatDongSan",
-      "RelativePath": "images/ec41ee69178547618e8510aa9fb0fcba.jpg",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3217,23 +2864,32 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\images\\e58b6e0f97a848aca76a81bf06476c7e.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\ec41ee69178547618e8510aa9fb0fcba.jpg",
+      "SourceId": "BatDongSan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/ec41ee69178547618e8510aa9fb0fcba.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ec41ee69178547618e8510aa9fb0fcba.jpg"
     },
     {
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\ec9669a781a343d0ab08e7f23d49d664.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "OriginalItemSpec": "wwwroot\\images\\ec41ee69178547618e8510aa9fb0fcba.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ec9669a781a343d0ab08e7f23d49d664.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/ec9669a781a343d0ab08e7f23d49d664.jpg",
       "AssetKind": "All",
@@ -3249,17 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ec9669a781a343d0ab08e7f23d49d664.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\ecfa9c6dfaba42f89ec8dde655a323f2.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ecfa9c6dfaba42f89ec8dde655a323f2.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/ecfa9c6dfaba42f89ec8dde655a323f2.jpg",
       "AssetKind": "All",
@@ -3275,17 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ecfa9c6dfaba42f89ec8dde655a323f2.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\ef61c8f8441e426595f44a27436b6673.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ef61c8f8441e426595f44a27436b6673.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/ef61c8f8441e426595f44a27436b6673.jpg",
       "AssetKind": "All",
@@ -3301,17 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ef61c8f8441e426595f44a27436b6673.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\ef9a3f7d696a477ca7a5e17c8cdb7341.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\ef9a3f7d696a477ca7a5e17c8cdb7341.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/ef9a3f7d696a477ca7a5e17c8cdb7341.jpg",
       "AssetKind": "All",
@@ -3327,17 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ef9a3f7d696a477ca7a5e17c8cdb7341.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\f163cae85511443e90aee285a4e668d4.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f163cae85511443e90aee285a4e668d4.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/f163cae85511443e90aee285a4e668d4.jpg",
       "AssetKind": "All",
@@ -3353,17 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f163cae85511443e90aee285a4e668d4.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\f25bb83c7c694b57a35cff27fd01b098.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f25bb83c7c694b57a35cff27fd01b098.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/f25bb83c7c694b57a35cff27fd01b098.jpg",
       "AssetKind": "All",
@@ -3379,7 +3000,6 @@
       "OriginalItemSpec": "wwwroot\\images\\f25bb83c7c694b57a35cff27fd01b098.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\f41f44d145b64e13a914cf1af199f103.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -3403,12 +3023,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f542ba2e58584f6083ef3287601e8f30.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/f542ba2e58584f6083ef3287601e8f30.jpg",
       "AssetKind": "All",
@@ -3424,17 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f542ba2e58584f6083ef3287601e8f30.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\f597f62f8f18427cb7ea4b2246e2fbaf.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f597f62f8f18427cb7ea4b2246e2fbaf.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/f597f62f8f18427cb7ea4b2246e2fbaf.jpg",
       "AssetKind": "All",
@@ -3450,16 +3057,29 @@
       "OriginalItemSpec": "wwwroot\\images\\f597f62f8f18427cb7ea4b2246e2fbaf.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\fa0a80039fdc4a6e8affba8be5639d09.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\f84f1594336a4cb88e615f63e60128ec.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\f88c5cbfa19045509783d4191b3ec0be.jpg",
+      "BasePath": "_content/BatDongSan",
+      "RelativePath": "images/f84f1594336a4cb88e615f63e60128ec.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f84f1594336a4cb88e615f63e60128ec.jpg"
+    },
+    {
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\f88c5cbfa19045509783d4191b3ec0be.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/f88c5cbfa19045509783d4191b3ec0be.jpg",
       "AssetKind": "All",
@@ -3475,11 +3095,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f88c5cbfa19045509783d4191b3ec0be.jpg"
     },
     {
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\fa0a80039fdc4a6e8affba8be5639d09.jpg",
+      "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\fa0a80039fdc4a6e8affba8be5639d09.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+      "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/fa0a80039fdc4a6e8affba8be5639d09.jpg",
       "AssetKind": "All",
@@ -3495,17 +3114,10 @@
       "OriginalItemSpec": "wwwroot\\images\\fa0a80039fdc4a6e8affba8be5639d09.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\fb68e41567e446ff8f9341ad3571c82a.png",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\fb68e41567e446ff8f9341ad3571c82a.png",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/fb68e41567e446ff8f9341ad3571c82a.png",
       "AssetKind": "All",
@@ -3521,17 +3133,10 @@
       "OriginalItemSpec": "wwwroot\\images\\fb68e41567e446ff8f9341ad3571c82a.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\fbd0a0baac344074885e945d969d5dee.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\fbd0a0baac344074885e945d969d5dee.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/fbd0a0baac344074885e945d969d5dee.jpg",
       "AssetKind": "All",
@@ -3547,7 +3152,6 @@
       "OriginalItemSpec": "wwwroot\\images\\fbd0a0baac344074885e945d969d5dee.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\BatDongSanBE\\wwwroot\\images\\fd111c4179b04082ae31d57ac8fe6be5.jpg",
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
@@ -3571,12 +3175,6 @@
       "SourceId": "BatDongSan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BatDongSanBE\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\images\\fe431843cf5147959db2fbcad68937a0.jpg",
-      "SourceId": "BatDongSan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\QUOC DAT\\source\\repos\\tuan17tuiii\\BatDongSanBE\\wwwroot\\",
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
       "BasePath": "_content/BatDongSan",
       "RelativePath": "images/fe431843cf5147959db2fbcad68937a0.jpg",
       "AssetKind": "All",

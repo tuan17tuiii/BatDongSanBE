@@ -13,7 +13,7 @@ public partial class News
 
     public string? Tag { get; set; }
 
-    public DateTime? Created { get; set; }
+    public DateOnly? Created { get; set; }
 
     public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 }

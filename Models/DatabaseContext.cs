@@ -35,7 +35,7 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-
+   
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Advertisement>(entity =>
@@ -200,6 +200,8 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<Transaction>(entity =>
         {
+            entity.HasKey(e => e.Id).HasName("PK_transaction_1");
+
             entity.ToTable("transaction");
 
             entity.Property(e => e.Id).HasColumnName("id");
@@ -208,13 +210,13 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.IdUser).HasColumnName("id_user");
             entity.Property(e => e.Price).HasColumnName("price");
 
-            entity.HasOne(d => d.IdAdvNavigation).WithMany(p => p.TransactionIdAdvNavigations)
+            entity.HasOne(d => d.IdAdvNavigation).WithMany(p => p.Transactions)
                 .HasForeignKey(d => d.IdAdv)
-                .HasConstraintName("FK_transaction_user1");
+                .HasConstraintName("FK_transaction_advertisement");
 
-            entity.HasOne(d => d.IdUserNavigation).WithMany(p => p.TransactionIdUserNavigations)
+            entity.HasOne(d => d.IdUserNavigation).WithMany(p => p.Transactions)
                 .HasForeignKey(d => d.IdUser)
-                .HasConstraintName("FK_transaction_user");
+                .HasConstraintName("FK_transaction_user2");
         });
 
         modelBuilder.Entity<TypeRealestate>(entity =>

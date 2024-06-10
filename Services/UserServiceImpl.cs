@@ -12,11 +12,7 @@ namespace BatDongSan.Services
 	{
 		private DatabaseContext db;
 		private IConfiguration configuration;
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
 		public UserServiceImpl(DatabaseContext _db, IConfiguration _configuration)
 		{
 			db = _db;
@@ -32,30 +28,12 @@ namespace BatDongSan.Services
 				var SecurityCode = RandomHelper.GenerateScurityCode();
 				user.SecurityCode = SecurityCode;
 				user.Avatar = "NoImage.jpg";
-<<<<<<< HEAD
 
-=======
-				user.Statusupdate = false;
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
 
 				var content = "Nhan vao <a href='http://localhost:4200/verify;securityCode=" + SecurityCode + ";username=" + user.Username + "' >day</a> de kich hoat tai khoan";
 				var mailHelper = new MailHelper(configuration);
 
-<<<<<<< HEAD
 
-				if (mailHelper.Send("hankanderson2201@gmail.com", user.Email, "Verify", content))
-				{
-					db.Users.Add(user);
-					return db.SaveChanges() > 0;
-				}
-				else
-				{
-					return false;
-				}
-
-
-
-=======
                 if (mailHelper.Send("hankanderson2201@gmail.com", user.Email, "Verify", content))
                 {
                     db.Users.Add(user);
@@ -65,7 +43,6 @@ namespace BatDongSan.Services
                 {
                     return false;
                 }
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
 			}
 			catch
 			{
@@ -73,10 +50,7 @@ namespace BatDongSan.Services
 			}
 		}
 
-<<<<<<< HEAD
 
-		public bool delete(int id)
-=======
 		public bool delete(int id)
 		{
 			try
@@ -315,7 +289,7 @@ namespace BatDongSan.Services
         }
 
 		public dynamic SearchByUsername(string username, int role)
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
+
 		{
 			return db.Users.Where(c => c.Username.Contains(username) && c.RoleId == role).Select(c => new
 			{
@@ -353,15 +327,7 @@ namespace BatDongSan.Services
 				Phone = c.Phone,
 				RoleId = c.RoleId,
 				AdvertisementId = c.AdvertisementId,
-                Advertisement = c.Advertisement != null ? new
-                {
-                    Id = c.Advertisement.Id,
-                    Name = c.Advertisement.AdvertisementName,
-                    QuantityDates = c.Advertisement.Quantitydate,
-                } : null,
-                Status = c.Status,
-				securityCode = c.SecurityCode,
-				email = c.Email,
+                
 				Advertisement = c.Advertisement != null ? new
 				{
 					Id = c.Advertisement.Id,
@@ -376,7 +342,4 @@ namespace BatDongSan.Services
 		}
 	}
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 6027ce989e59b07495f889d719a96ee3c77bb009
