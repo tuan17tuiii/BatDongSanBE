@@ -12,6 +12,7 @@ namespace BatDongSan.Services
 	{
 		private DatabaseContext db;
 		private IConfiguration configuration;
+
 		public UserServiceImpl(DatabaseContext _db, IConfiguration _configuration)
 		{
 			db = _db;
@@ -27,7 +28,6 @@ namespace BatDongSan.Services
 				var SecurityCode = RandomHelper.GenerateScurityCode();
 				user.SecurityCode = SecurityCode;
 				user.Avatar = "NoImage.jpg";
-				user.Statusupdate = false;
 
 				var content = "CLick <a href='http://localhost:4200/verify;securityCode=" + SecurityCode + ";username=" + user.Username + "' >Here</a> to verify your account";
 				var mailHelper = new MailHelper(configuration);
@@ -47,6 +47,7 @@ namespace BatDongSan.Services
 				return false;
 			}
 		}
+
 
 		public bool delete(int id)
 		{
@@ -286,6 +287,7 @@ namespace BatDongSan.Services
 		}
 
 		public dynamic SearchByUsername(string username, int role)
+
 		{
 			return db.Users.Where(c => c.Username.Contains(username) && c.RoleId == role).Select(c => new
 			{
@@ -323,9 +325,7 @@ namespace BatDongSan.Services
 				Phone = c.Phone,
 				RoleId = c.RoleId,
 				AdvertisementId = c.AdvertisementId,
-				Status = c.Status,
-				securityCode = c.SecurityCode,
-				email = c.Email,
+                
 				Advertisement = c.Advertisement != null ? new
 				{
 					Id = c.Advertisement.Id,
@@ -375,3 +375,4 @@ namespace BatDongSan.Services
 		}
 	}
 }
+

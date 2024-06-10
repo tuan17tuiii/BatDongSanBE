@@ -17,7 +17,7 @@ public partial class BatDongSanContext : DbContext
 
     public virtual DbSet<Advertisement> Advertisements { get; set; }
 
-    public virtual DbSet<Comment> Comments { get; set; }
+    
 
     public virtual DbSet<ImageRealestate> ImageRealestates { get; set; }
 
@@ -53,23 +53,7 @@ public partial class BatDongSanContext : DbContext
             entity.Property(e => e.Time).HasColumnName("time");
         });
 
-        modelBuilder.Entity<Comment>(entity =>
-        {
-            entity.ToTable("comment");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.BatdongsanId).HasColumnName("batdongsan_id");
-            entity.Property(e => e.Content)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("content");
-            entity.Property(e => e.CreatedAt).HasColumnName("created_at");
-            entity.Property(e => e.UserId).HasColumnName("user_id");
-
-            entity.HasOne(d => d.User).WithMany(p => p.Comments)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK_comment_user");
-        });
+       
 
         modelBuilder.Entity<ImageRealestate>(entity =>
         {

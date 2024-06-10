@@ -81,7 +81,10 @@ namespace BatDongSan.Controllers
 		{
 			try
 			{
-				return Ok(transactionService.create(transaction));
+				return Ok(new
+                {
+                    Result = transactionService.create(transaction)
+                });
 
 			}
 			catch

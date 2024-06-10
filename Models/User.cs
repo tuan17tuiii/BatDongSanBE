@@ -31,7 +31,7 @@ public partial class User
 
     public virtual Advertisement? Advertisement { get; set; }
 
-    public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
+    
 
     public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 
@@ -41,7 +41,5 @@ public partial class User
 
     public virtual Role? Role { get; set; }
 
-    public virtual ICollection<Transaction> TransactionIdAdvNavigations { get; set; } = new List<Transaction>();
-
-    public virtual ICollection<Transaction> TransactionIdUserNavigations { get; set; } = new List<Transaction>();
+    public virtual ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
 }

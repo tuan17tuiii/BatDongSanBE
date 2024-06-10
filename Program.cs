@@ -24,7 +24,7 @@ builder.Services.AddDbContext<DatabaseContext>(option => option.UseLazyLoadingPr
 builder.Services.AddScoped<UserService, UserServiceImpl>();
 builder.Services.AddScoped<RoleService, RoleServiceImpl>();
 builder.Services.AddScoped<AdvertisementService, AdvertisementServiceImpl>();
-builder.Services.AddScoped<CommentService, CommentServiceImpl>();
+
 builder.Services.AddScoped<ImageRealestateService, ImageRealestateServiceImpl>();
 builder.Services.AddScoped<RealestateService, RealestateServiceImpl>();
 builder.Services.AddScoped<TypeRealestateService, TypeRealestateServiceImpl>();

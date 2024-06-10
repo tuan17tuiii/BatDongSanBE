@@ -252,7 +252,10 @@ namespace BatDongSan.Controllers
 		{
 			try
 			{
-				return Ok(realestateService.delete(id));
+				return Ok(new
+                {
+                    result = realestateService.delete(id)
+                });
 
 			}
 			catch
