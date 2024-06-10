@@ -40,10 +40,11 @@ public partial class Realestate
     public bool? Expired { get; set; }
 
 
-    public DateTime? CreatedEnd { get; set; }
+	public DateTime? CreatedEnd { get; set; }
+	
+public DateTime? Statusupdate { get; set; }
 
-
-    public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
+	public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 
     public virtual TypeRealestate? TypeNavigation { get; set; }
 

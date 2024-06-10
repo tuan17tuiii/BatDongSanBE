@@ -60,6 +60,8 @@ namespace BatDongSan.Services
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
+				Users = c.Usersell,
+				Userrole = c.Usersell.RoleId,
 				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
 				{
 					Id = a.Id,
@@ -86,13 +88,17 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
-				transactionType = c.TransactionType,
+				TransactionType = c.TransactionType,
 				UsersellId = c.UsersellId,
-				sold = c.Sold,
-				expired = c.Expired,
-				created_end = c.CreatedEnd,
 				TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
+				Users = c.Usersell.Avatar,
+				Userrole = c.Usersell.RoleId,
+				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+				{
+					Id = a.Id,
+					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
+				}).ToList(),
 			}).ToList();
 		}
 
@@ -116,6 +122,13 @@ namespace BatDongSan.Services
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				transactionType = c.TransactionType,
+				Users = c.Usersell.Avatar,
+				Userrole = c.Usersell.RoleId,
+				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+				{
+					Id = a.Id,
+					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
+				}).ToList(),
 			}).ToList();
 		}
 
@@ -139,6 +152,13 @@ namespace BatDongSan.Services
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				transactionType = c.TransactionType,
+				Users = c.Usersell.Avatar,
+				Userrole = c.Usersell.RoleId,
+				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+				{
+					Id = a.Id,
+					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
+				}).ToList(),
 			}).SingleOrDefault();
 		}
 
@@ -162,6 +182,13 @@ namespace BatDongSan.Services
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				transactionType = c.TransactionType,
+				Users = c.Usersell.Avatar,
+				Userrole = c.Usersell.RoleId,
+				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+				{
+					Id = a.Id,
+					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
+				}).ToList(),
 			}).SingleOrDefault();
 		}
 
@@ -187,6 +214,8 @@ namespace BatDongSan.Services
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
+				Users = c.Usersell.Avatar,
+				Userrole = c.Usersell.RoleId,
 				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
 				{
 					Id = a.Id,
@@ -214,13 +243,20 @@ namespace BatDongSan.Services
                 Region = c.Region,
                 Street = c.Street,
 				UsersellId = c.UsersellId,
-                TypeRealState = c.TypeNavigation.Type,
-				transactionType = c.TransactionType,
+				Users = c.Usersell.Avatar,
+				TypeRealState = c.TypeNavigation.Type,
+				TransactionType = c.TransactionType,
+				Userrole = c.Usersell.RoleId,
 				LastImage = c.ImageRealestates.Select(img => new {
                     img.Id,
                     img.UrlImage, // Giả sử thuộc tính này tồn tại
                     
-                }).FirstOrDefault()
+                }).FirstOrDefault(),
+				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+				{
+					Id = a.Id,
+					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
+				}).ToList(),
 
 			}).ToList();
 		}
@@ -242,14 +278,21 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
-				transactionType = c.TransactionType,
+				TransactionType = c.TransactionType,
 				LastImage = c.ImageRealestates.Select(img => new {
                     img.Id,
                     img.UrlImage, // Giả sử thuộc tính này tồn tại
 
 				}).FirstOrDefault(),
 				UsersellId = c.UsersellId,
-				TypeRealState = c.TypeNavigation.Type
+				Users = c.Usersell.Avatar,
+				TypeRealState = c.TypeNavigation.Type,
+				Userrole = c.Usersell.RoleId,
+				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+				{
+					Id = a.Id,
+					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
+				}).ToList(),
 			}).ToList();
 		}
 
@@ -293,8 +336,15 @@ namespace BatDongSan.Services
                 Region = c.Region,
                 Street = c.Street,
 				UsersellId = c.UsersellId,
-                TypeRealState = c.TypeNavigation.Type,
-				transactionType = c.TransactionType,
+				Users = c.Usersell.Avatar,
+				TypeRealState = c.TypeNavigation.Type,
+				TransactionType = c.TransactionType,
+				Userrole = c.Usersell.RoleId,
+				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+				{
+					Id = a.Id,
+					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
+				}).ToList(),
 			}).ToList();
         }
 
@@ -315,10 +365,12 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
-				transaction_type = c.TransactionType,
+				TransactionType = c.TransactionType,
 				Usersell_Id = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
+				Userrole = c.Usersell.RoleId,
+				Users = c.Usersell.Avatar,
 				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
 				{
 					Id = a.Id,
@@ -337,7 +389,7 @@ namespace BatDongSan.Services
 			bool areaminParsed = float.TryParse(areamin, out float areaminFloat);
 			bool areamaxParsed = float.TryParse(areamax, out float areamaxFloat);
 
-			return db.Realestates.Where(p =>
+			return db.Realestates.OrderByDescending(x=>x.Id).Where(r => r.Status == true && r.Expired == false && r.Sold == false) . Where(p =>
 				// Kiểm tra điều kiện của 'key'
 				(
 					(string.IsNullOrEmpty(key) ||
@@ -369,10 +421,12 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
-				transaction_type = c.TransactionType,
+				TransactionType = c.TransactionType,
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
+				Users = c.Usersell.Avatar,
+				Userrole=c.Usersell.RoleId,
 				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
 				{
 					Id = a.Id,

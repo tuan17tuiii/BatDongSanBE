@@ -44,4 +44,9 @@ public partial class User
     public virtual ICollection<Transaction> TransactionIdAdvNavigations { get; set; } = new List<Transaction>();
 
     public virtual ICollection<Transaction> TransactionIdUserNavigations { get; set; } = new List<Transaction>();
+
+	internal object Select(Func<object, object> value)
+	{
+		throw new NotImplementedException();
+	}
 }
