@@ -282,5 +282,20 @@ namespace BatDongSan.Controllers
 				return BadRequest("loi ->>>>>>>>>>>>>>>>" + ex.Message);
 			}
 		}
+
+		[Produces("application/json")]
+		[HttpGet("ForgetPassword/{email}")]
+		public IActionResult ForgetPassword(string email)
+		{
+			try
+			{
+				return Ok(userService.forgetPassword(email));
+
+			}
+			catch (Exception ex)
+			{
+				return BadRequest("loi ->>>>>>>>>>>>>>>>" + ex.Message);
+			}
+		}
 	}
 }

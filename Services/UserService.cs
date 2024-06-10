@@ -21,5 +21,6 @@ namespace BatDongSan.Services
         public bool delete(int id);
 		public dynamic SearchByUsername(string username, int role);
 		public dynamic SearchByEmail(string email, int role);
+		public dynamic forgetPassword(string email);
 	}
 }
