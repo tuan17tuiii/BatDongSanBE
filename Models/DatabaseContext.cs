@@ -17,8 +17,6 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<Advertisement> Advertisements { get; set; }
 
-    
-
     public virtual DbSet<ImageRealestate> ImageRealestates { get; set; }
 
     public virtual DbSet<News> News { get; set; }
@@ -35,9 +33,10 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.UseCollation("Latin1_General_CI_AS");
+
         modelBuilder.Entity<Advertisement>(entity =>
         {
             entity.ToTable("advertisement");
@@ -54,7 +53,6 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.Time).HasColumnName("time");
         });
 
-        
         modelBuilder.Entity<ImageRealestate>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK_image_batdongsan");
