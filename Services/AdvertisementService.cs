@@ -6,6 +6,7 @@ namespace BatDongSan.Services
     {
         public dynamic findAll();
 		public dynamic findById(int id);
+		public dynamic searchByName(string name);
 		public bool create(Advertisement advertisement);
         public bool update(Advertisement advertisement);
         public bool delete(int id);

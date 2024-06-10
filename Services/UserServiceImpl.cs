@@ -28,9 +28,8 @@ namespace BatDongSan.Services
 				var SecurityCode = RandomHelper.GenerateScurityCode();
 				user.SecurityCode = SecurityCode;
 				user.Avatar = "NoImage.jpg";
-				user.Statusupdate = false;
 
-				var content = "Nhan vao <a href='http://localhost:4200/verify;securityCode=" + SecurityCode + ";username=" + user.Username + "' >day</a> de kich hoat tai khoan";
+				var content = "CLick <a href='http://localhost:4200/verify;securityCode=" + SecurityCode + ";username=" + user.Username + "' >Here</a> to verify your account";
 				var mailHelper = new MailHelper(configuration);
 
 				if (mailHelper.Send("hankanderson2201@gmail.com", user.Email, "Verify", content))
@@ -42,14 +41,13 @@ namespace BatDongSan.Services
 				{
 					return false;
 				}
-
-
 			}
 			catch
 			{
 				return false;
 			}
 		}
+
 
 		public bool delete(int id)
 		{
@@ -100,6 +98,7 @@ namespace BatDongSan.Services
 				avatar = configuration["ImageUrl"] + c.Avatar
 			}).ToList();
 		}
+
 		public dynamic findAllUser()
 		{
 			return db.Users.Where(c => c.RoleId == 2).Select(c => new
@@ -143,6 +142,7 @@ namespace BatDongSan.Services
 			try
 			{
 				var user = db.Users.SingleOrDefault(c => c.SecurityCode == code && c.Username == username);
+
 				if (user != null)
 				{
 					user.Status = true;
@@ -179,9 +179,11 @@ namespace BatDongSan.Services
 					Id = c.Advertisement.Id,
 					Name = c.Advertisement.AdvertisementName,
 					QuantityDates = c.Advertisement.Quantitydate,
+					Price = c.Advertisement.Price
 				} : null,
 				avatar = configuration["ImageUrl"] + c.Avatar,
 				StatusUpdate = c.Statusupdate,
+
 			}).FirstOrDefault();
 		}
 
@@ -284,5 +286,93 @@ namespace BatDongSan.Services
 			}
 		}
 
+		public dynamic SearchByUsername(string username, int role)
+
+		{
+			return db.Users.Where(c => c.Username.Contains(username) && c.RoleId == role).Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+				Status = c.Status,
+				securityCode = c.SecurityCode,
+				email = c.Email,
+				Advertisement = c.Advertisement != null ? new
+				{
+					Id = c.Advertisement.Id,
+					Name = c.Advertisement.AdvertisementName,
+					QuantityDates = c.Advertisement.Quantitydate,
+					Price = c.Advertisement.Price
+				} : null,
+				avatar = configuration["ImageUrl"] + c.Avatar,
+				StatusUpdate = c.Statusupdate,
+
+			}).ToList();
+		}
+
+		public dynamic SearchByEmail(string email, int role)
+		{
+			return db.Users.Where(c => c.Email.Contains(email) && c.RoleId == role).Select(c => new
+			{
+				Id = c.Id,
+				Username = c.Username,
+				Password = c.Password,
+				Name = c.Name,
+				Phone = c.Phone,
+				RoleId = c.RoleId,
+				AdvertisementId = c.AdvertisementId,
+                
+				Advertisement = c.Advertisement != null ? new
+				{
+					Id = c.Advertisement.Id,
+					Name = c.Advertisement.AdvertisementName,
+					QuantityDates = c.Advertisement.Quantitydate,
+					Price = c.Advertisement.Price
+				} : null,
+				avatar = configuration["ImageUrl"] + c.Avatar,
+				StatusUpdate = c.Statusupdate,
+
+			}).ToList();
+		}
+
+		public dynamic forgetPassword(string email)
+		{
+			try
+			{
+				var account = db.Users.SingleOrDefault(u => u.Email == email);
+				if (account != null)
+				{
+					var SecurityCode = RandomHelper.GenerateScurityCode();
+					account.SecurityCode = SecurityCode;
+
+					var content = "Click <a href='http://localhost:4200/resetpassword;code=" + SecurityCode + ";email=" + email + ";id="+ account.Id +"' >Here</a> to reset your password";
+					var mailHelper = new MailHelper(configuration);
+
+					if (mailHelper.Send("hankanderson2201@gmail.com", email, "Change Password Request", content))
+					{
+						return db.SaveChanges() > 0;
+					}
+					else
+					{
+						return false;
+					}
+				}
+				else
+				{
+					return false;
+				}
+			}
+			catch (Exception ex)
+			{
+				return false;
+			}
+			
+
+		}
 	}
 }
+

@@ -175,6 +175,22 @@ namespace BatDongSan.Controllers
                 return BadRequest();
             }
         }
+        [Produces("application/json")]
+        [HttpDelete("Delete/{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                return Ok(new
+                {
+                    result = imageRealestateService.delete(id)
+                });
 
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
     }
 }

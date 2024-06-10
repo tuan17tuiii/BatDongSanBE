@@ -1,5 +1,6 @@
 ﻿using BatDongSan.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Diagnostics;
 
 namespace BatDongSan.Services
@@ -53,7 +54,7 @@ namespace BatDongSan.Services
 				Bathrooms = c.Bathrooms,
 				Status = c.Status,
 				CreatedAt = c.CreatedAt,
-				City = c.City,	
+				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
 				transactionType = c.TransactionType,
@@ -130,6 +131,8 @@ namespace BatDongSan.Services
 					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
 				}).ToList(),
 			}).ToList();
+                statusupdate = c.Statusupdate,
+            }).ToList();
 		}
 
 		public dynamic findById(int id)
@@ -146,11 +149,12 @@ namespace BatDongSan.Services
 				Bathrooms = c.Bathrooms,
 				Status = c.Status,
 				CreatedAt = c.CreatedAt,
+				CreatedEnd = c.CreatedEnd,
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
 				UsersellId = c.UsersellId,
-				TypeRealState = c.TypeNavigation.Type,
+				TypeRealState = c.TypeNavigation.Id,
 				transactionType = c.TransactionType,
 				Users = c.Usersell.Avatar,
 				Userrole = c.Usersell.RoleId,
@@ -159,6 +163,9 @@ namespace BatDongSan.Services
 					Id = a.Id,
 					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
 				}).ToList(),
+                statusupdate = c.Statusupdate,
+                Expired = c.Expired , 
+				sold = c.Sold
 			}).SingleOrDefault();
 		}
 
@@ -190,9 +197,11 @@ namespace BatDongSan.Services
 					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
 				}).ToList(),
 			}).SingleOrDefault();
+                statusupdate = c.Statusupdate,
+            }).SingleOrDefault();
 		}
 
-	
+
 		public dynamic findByUserSell(int id)
 		{
 			return db.Realestates.Where(p => p.UsersellId == id).Select(c => new
@@ -217,6 +226,8 @@ namespace BatDongSan.Services
 				Users = c.Usersell.Avatar,
 				Userrole = c.Usersell.RoleId,
 				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+                statusupdate = c.Statusupdate,
+                image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
 				{
 					Id = a.Id,
 					urlImage = a.UrlImage// Thêm các trường cần thiết khác từ ImageRealestate
@@ -226,22 +237,22 @@ namespace BatDongSan.Services
 		}
 
 		public dynamic findByUserSellFalse(int id)
-        {
-            return db.Realestates.Where(p => p.UsersellId == id && p.Status == false).Select(c => new
-            {
-                Id = c.Id,
-                Title = c.Title,
-                Describe = c.Describe,
-                Price = c.Price,
-                Type = c.Type,
-                Acreage = c.Acreage,
-                Bedrooms = c.Bedrooms,
-                Bathrooms = c.Bathrooms,
-                Status = c.Status,
-                CreatedAt = c.CreatedAt,
-                City = c.City,
-                Region = c.Region,
-                Street = c.Street,
+		{
+			return db.Realestates.Where(p => p.UsersellId == id && p.Status == false).Select(c => new
+			{
+				Id = c.Id,
+				Title = c.Title,
+				Describe = c.Describe,
+				Price = c.Price,
+				Type = c.Type,
+				Acreage = c.Acreage,
+				Bedrooms = c.Bedrooms,
+				Bathrooms = c.Bathrooms,
+				Status = c.Status,
+				CreatedAt = c.CreatedAt,
+				City = c.City,
+				Region = c.Region,
+				Street = c.Street,
 				UsersellId = c.UsersellId,
 				Users = c.Usersell.Avatar,
 				TypeRealState = c.TypeNavigation.Type,
@@ -257,6 +268,15 @@ namespace BatDongSan.Services
 					Id = a.Id,
 					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
 				}).ToList(),
+				TypeRealState = c.TypeNavigation.Type,
+				transactionType = c.TransactionType,
+                statusupdate = c.Statusupdate,
+                LastImage = c.ImageRealestates.Select(img => new
+				{
+					img.Id,
+					img.UrlImage, // Giả sử thuộc tính này tồn tại
+
+				}).FirstOrDefault()
 
 			}).ToList();
 		}
@@ -282,6 +302,12 @@ namespace BatDongSan.Services
 				LastImage = c.ImageRealestates.Select(img => new {
                     img.Id,
                     img.UrlImage, // Giả sử thuộc tính này tồn tại
+                statusupdate = c.Statusupdate,
+                transactionType = c.TransactionType,
+				LastImage = c.ImageRealestates.Select(img => new
+				{
+					img.Id,
+					img.UrlImage, // Giả sử thuộc tính này tồn tại
 
 				}).FirstOrDefault(),
 				UsersellId = c.UsersellId,
@@ -306,35 +332,35 @@ namespace BatDongSan.Services
 			db.SaveChanges();
 		}
 
-        public bool update(Realestate realestate)
-        {
-            try
-            {
-                db.Entry(realestate).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-                return db.SaveChanges() > 0;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-        public dynamic totalById(int id)
-        {
-            return db.Realestates.Where(p => p.UsersellId == id).Select(c => new
-            {
-                Id = c.Id,
-                Title = c.Title,
-                Describe = c.Describe,
-                Price = c.Price,
-                Type = c.Type,
-                Acreage = c.Acreage,
-                Bedrooms = c.Bedrooms,
-                Bathrooms = c.Bathrooms,
-                Status = c.Status,
-                CreatedAt = c.CreatedAt,
-                City = c.City,
-                Region = c.Region,
-                Street = c.Street,
+		public bool update(Realestate realestate)
+		{
+			try
+			{
+				db.Entry(realestate).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+				return db.SaveChanges() > 0;
+			}
+			catch
+			{
+				return false;
+			}
+		}
+		public dynamic totalById(int id)
+		{
+			return db.Realestates.Where(p => p.UsersellId == id).Select(c => new
+			{
+				Id = c.Id,
+				Title = c.Title,
+				Describe = c.Describe,
+				Price = c.Price,
+				Type = c.Type,
+				Acreage = c.Acreage,
+				Bedrooms = c.Bedrooms,
+				Bathrooms = c.Bathrooms,
+				Status = c.Status,
+				CreatedAt = c.CreatedAt,
+				City = c.City,
+				Region = c.Region,
+				Street = c.Street,
 				UsersellId = c.UsersellId,
 				Users = c.Usersell.Avatar,
 				TypeRealState = c.TypeNavigation.Type,
@@ -345,12 +371,15 @@ namespace BatDongSan.Services
 					Id = a.Id,
 					urlImage = a.UrlImage // Thêm các trường cần thiết khác từ ImageRealestate
 				}).ToList(),
+                statusupdate = c.Statusupdate,
+                TypeRealState = c.TypeNavigation.Type,
+				transactionType = c.TransactionType,
 			}).ToList();
-        }
+		}
 
 		public dynamic search(string key)
 		{
-			return db.Realestates.Where(p => p.Title == key || p.Acreage ==float.Parse(key)||p.Price==float.Parse(key)).Select(c => new
+			return db.Realestates.Where(p => p.Title == key || p.Acreage == float.Parse(key) || p.Price == float.Parse(key)).Select(c => new
 			{
 				Id = c.Id,
 				Title = c.Title,
@@ -367,7 +396,8 @@ namespace BatDongSan.Services
 				Street = c.Street,
 				TransactionType = c.TransactionType,
 				Usersell_Id = c.UsersellId,
-				TypeRealState = c.TypeNavigation.Type,
+                statusupdate = c.Statusupdate,
+                TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
 				Userrole = c.Usersell.RoleId,
 				Users = c.Usersell.Avatar,
@@ -435,6 +465,34 @@ namespace BatDongSan.Services
 			}).ToList();
 		}
 
+		public dynamic searchByTitle(string title)
+		{
+			return db.Realestates.Where(p => p.Title == title).Select(c => new
+			{
+				Id = c.Id,
+				Title = c.Title,
+				Describe = c.Describe,
+				Price = c.Price,
+				Type = c.Type,
+				Acreage = c.Acreage,
+				Bedrooms = c.Bedrooms,
+				Bathrooms = c.Bathrooms,
+				Status = c.Status,
+				CreatedAt = c.CreatedAt,
+				City = c.City,
+				Region = c.Region,
+				Street = c.Street,
+				transaction_type = c.TransactionType,
+				Usersell_Id = c.UsersellId,
+				TypeRealState = c.TypeNavigation.Type,
+				Nameusersell = c.Usersell.Name,
+				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+				{
+					Id = a.Id,
+					urlImage = a.UrlImage// Thêm các trường cần thiết khác từ ImageRealestate
 
+				}).ToList(),
+			}).ToList();
+		}
 	}
 }

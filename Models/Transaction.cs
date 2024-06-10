@@ -11,11 +11,11 @@ public partial class Transaction
 
     public int? IdAdv { get; set; }
 
-    public DateOnly? CreatedAt { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
-    public double? Price { get; set; }
+    public int? Price { get; set; }
 
-    public virtual User? IdAdvNavigation { get; set; }
+    public virtual Advertisement? IdAdvNavigation { get; set; }
 
     public virtual User? IdUserNavigation { get; set; }
 }

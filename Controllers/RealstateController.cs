@@ -96,6 +96,21 @@ namespace BatDongSan.Controllers
 		}
 
 		[Produces("application/json")]
+		[HttpGet("searchByTitle/{title}")]
+		public IActionResult searchByTitle(string title)
+		{
+			try
+			{
+				return Ok(realestateService.searchByTitle(title));
+
+			}
+			catch
+			{
+				return BadRequest();
+			}
+		}
+
+		[Produces("application/json")]
         [HttpGet("findByUserSellTrue/{id}")]
         public IActionResult FindByUserSellTrue(int id)
         {
@@ -237,7 +252,10 @@ namespace BatDongSan.Controllers
 		{
 			try
 			{
-				return Ok(realestateService.delete(id));
+				return Ok(new
+                {
+                    result = realestateService.delete(id)
+                });
 
 			}
 			catch
