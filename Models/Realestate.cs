@@ -41,6 +41,8 @@ public partial class Realestate
 
     public DateTime? CreatedEnd { get; set; }
 
+    public bool? Statusupdate { get; set; }
+
     public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 
     public virtual TypeRealestate? TypeNavigation { get; set; }

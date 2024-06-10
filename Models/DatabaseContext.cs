@@ -17,7 +17,7 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<Advertisement> Advertisements { get; set; }
 
-    public virtual DbSet<Comment> Comments { get; set; }
+    
 
     public virtual DbSet<ImageRealestate> ImageRealestates { get; set; }
 
@@ -35,7 +35,7 @@ public partial class DatabaseContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-   
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Advertisement>(entity =>
@@ -54,24 +54,7 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.Time).HasColumnName("time");
         });
 
-        modelBuilder.Entity<Comment>(entity =>
-        {
-            entity.ToTable("comment");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.BatdongsanId).HasColumnName("batdongsan_id");
-            entity.Property(e => e.Content)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("content");
-            entity.Property(e => e.CreatedAt).HasColumnName("created_at");
-            entity.Property(e => e.UserId).HasColumnName("user_id");
-
-            entity.HasOne(d => d.User).WithMany(p => p.Comments)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK_comment_user");
-        });
-
+        
         modelBuilder.Entity<ImageRealestate>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK_image_batdongsan");
@@ -145,6 +128,7 @@ public partial class DatabaseContext : DbContext
                 .HasColumnName("region");
             entity.Property(e => e.Sold).HasColumnName("sold");
             entity.Property(e => e.Status).HasColumnName("status");
+            entity.Property(e => e.Statusupdate).HasColumnName("statusupdate");
             entity.Property(e => e.Street)
                 .HasMaxLength(250)
                 .HasColumnName("street");

@@ -31,7 +31,7 @@ public partial class User
 
     public virtual Advertisement? Advertisement { get; set; }
 
-    public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
+    
 
     public virtual ICollection<ImageRealestate> ImageRealestates { get; set; } = new List<ImageRealestate>();
 

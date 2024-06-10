@@ -61,6 +61,7 @@ namespace BatDongSan.Services
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
+				statusupdate = c.Statusupdate,
 				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
 				{
 					Id = a.Id,
@@ -117,7 +118,8 @@ namespace BatDongSan.Services
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				transactionType = c.TransactionType,
-			}).ToList();
+                statusupdate = c.Statusupdate,
+            }).ToList();
 		}
 
 		public dynamic findById(int id)
@@ -141,7 +143,8 @@ namespace BatDongSan.Services
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Id,
 				transactionType = c.TransactionType,
-				Expired = c.Expired , 
+                statusupdate = c.Statusupdate,
+                Expired = c.Expired , 
 				sold = c.Sold
 			}).SingleOrDefault();
 		}
@@ -166,7 +169,8 @@ namespace BatDongSan.Services
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				transactionType = c.TransactionType,
-			}).SingleOrDefault();
+                statusupdate = c.Statusupdate,
+            }).SingleOrDefault();
 		}
 
 
@@ -191,7 +195,8 @@ namespace BatDongSan.Services
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
-				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
+                statusupdate = c.Statusupdate,
+                image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
 				{
 					Id = a.Id,
 					urlImage = a.UrlImage// Thêm các trường cần thiết khác từ ImageRealestate
@@ -220,7 +225,8 @@ namespace BatDongSan.Services
 				UsersellId = c.UsersellId,
 				TypeRealState = c.TypeNavigation.Type,
 				transactionType = c.TransactionType,
-				LastImage = c.ImageRealestates.Select(img => new
+                statusupdate = c.Statusupdate,
+                LastImage = c.ImageRealestates.Select(img => new
 				{
 					img.Id,
 					img.UrlImage, // Giả sử thuộc tính này tồn tại
@@ -247,7 +253,8 @@ namespace BatDongSan.Services
 				City = c.City,
 				Region = c.Region,
 				Street = c.Street,
-				transactionType = c.TransactionType,
+                statusupdate = c.Statusupdate,
+                transactionType = c.TransactionType,
 				LastImage = c.ImageRealestates.Select(img => new
 				{
 					img.Id,
@@ -299,7 +306,8 @@ namespace BatDongSan.Services
 				Region = c.Region,
 				Street = c.Street,
 				UsersellId = c.UsersellId,
-				TypeRealState = c.TypeNavigation.Type,
+                statusupdate = c.Statusupdate,
+                TypeRealState = c.TypeNavigation.Type,
 				transactionType = c.TransactionType,
 			}).ToList();
 		}
@@ -323,7 +331,8 @@ namespace BatDongSan.Services
 				Street = c.Street,
 				transaction_type = c.TransactionType,
 				Usersell_Id = c.UsersellId,
-				TypeRealState = c.TypeNavigation.Type,
+                statusupdate = c.Statusupdate,
+                TypeRealState = c.TypeNavigation.Type,
 				Nameusersell = c.Usersell.Name,
 				image = c.ImageRealestates.Where(x => x.RealestateId == c.Id).Select(a => new
 				{
